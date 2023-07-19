@@ -1,0 +1,62 @@
+import React, { useCallback } from "react";
+import Image from "next/image";
+
+const down = (
+  <svg
+    width="12"
+    height="8"
+    viewBox="0 0 12 8"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path
+      d="M10.59 0.59375L6 5.17375L1.41 0.59375L0 2.00375L6 8.00375L12 2.00375L10.59 0.59375Z"
+      fill="#2C2C2C"
+    />
+  </svg>
+);
+
+const ManagementTeamCard = (props) => {
+  const {
+    image,
+    name,
+    role,
+    cert,
+    showDetails,
+    step,
+    switchStep,
+    showStep,
+    myShow,
+  } = props;
+  const showMyDetails = () => {
+    switchStep(step);
+    showDetails();
+  };
+  console.log("showStep", showStep);
+  return (
+    <div>
+      <Image
+        src={image}
+        alt={`the image of ${name}`}
+        height="374px"
+        width="322px"
+      />
+      <h3 className="text-[#F08420] font-raleway font-bold text-[14px] mb-0">
+        {name} <span className="uppercase">{cert && `(${cert})`}</span>
+      </h3>
+      <h5 className="text-base font-inter font-bold my-0 text-[#4D4D4D] text-[11px] ">
+        {role}
+      </h5>
+      {/* {step === 4 && myShow ? 'na me' : 'no be me'} */}
+      <small
+        onClick={showMyDetails}
+        className="mt-3 font-inter text-[#2C2C2C] text-sm cursor-pointer flex items-center font-medium"
+      >
+        View details &nbsp; {down}
+        {/* {step} */}
+      </small>
+    </div>
+  );
+};
+
+export default ManagementTeamCard;

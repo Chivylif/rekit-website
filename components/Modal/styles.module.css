@@ -1,0 +1,30 @@
+.modal {
+  position: fixed;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  z-index: 1000;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: #F0F0F0;
+  opacity: 0.3;
+  z-index: 500;
+}
+.modal_content {
+  z-index: 4000;
+  position: relative;
+  overflow: scroll;
+  min-height: fit-content;
+  padding: 55px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

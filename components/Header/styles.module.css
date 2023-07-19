@@ -1,0 +1,27 @@
+.black{
+    background-color: #000000;
+    height: 30px;
+    width: 100vw;
+}
+.head_content {
+    height: 86px;
+    width: 100vw;
+    border-bottom: 1px solid #E3E1E1;
+    background-color: #FFFFFF;
+    padding: 0 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+@media screen and (max-width: 768px){
+    .head_content {
+        height: 70px;
+    }
+}
+/* top would be 116px  */
+.link {
+    color: #232323important;
+}
+.link:hover {
+color: #F08420important;
+}
