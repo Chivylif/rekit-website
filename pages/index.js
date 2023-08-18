@@ -1,3 +1,4 @@
+import React, { useState, useEffect } from "react";
 import Head from "next/head";
 import Image from "next/image";
 import Header from "../components/Header";
@@ -19,6 +20,8 @@ import babe2 from "../assets/images/babe2.jpeg";
 import babe3 from "../assets/images/babe3.jpeg";
 import babe4 from "../assets/images/babe4.jpeg";
 import babe5 from "../assets/images/babe5.jpeg";
+import Modal from "../components/Modal";
+import ZohoCampaign from "../components/Zoho";
 
 import styles from "../styles/Home.module.css";
 import Button from "../components/Button";
@@ -88,7 +91,52 @@ const Metaa = ({ title, desc }) => {
     </div>
   );
 };
+
+// const Zoho = () => {
+//   return(
+//     <div>
+//  <Row>
+//                 <Col span={24}>
+//                    <div className="my-5">
+//                   <Row gutter={16}>
+//                    <Col xs={24} lg={12}>
+//                     <Input type="text" placeholder="Enter your name" className="py-3" />
+//                     </Col>
+//                     <Col xs={24} lg={12} className="mt-5 lg:mt-0">
+//                     <Input type="email" placeholder="Enter your email address" className="py-3" />
+//                     </Col>
+//                   </Row>
+//                    </div>
+                  
+                  
+//                 </Col>
+                
+               
+
+//                 <Col span={24}>
+//                   <div className="mt-10">
+
+//                   <Button
+//                     shape="round"
+//                     size="large"
+//                     text="send message"
+//                     className="mybtn highlighted_btn rounded-xl uppercase"
+//                     style={{borderRadius: '2rem'}}
+//                     onClick={()=>setDone(!done)}
+//                     />
+//                     </div>
+//                 </Col>
+//               </Row>
+//     </div>
+//   )
+// }
 export default function Home() {
+  const [isOpenHome, setIsOpenHome] = useState(false);
+
+  useEffect(() => {
+    setIsOpenHome(true);
+  }, []);
+ 
   return (
     <div>
       <Head>
@@ -193,6 +241,7 @@ export default function Home() {
       </Head>
 
       <AppLayout>
+
         <Carousel
           autoplay
           dotsClass={{
@@ -272,6 +321,14 @@ export default function Home() {
             />
           </div>
         </Carousel>
+        <Modal
+            openModal={isOpenHome}
+            closeModal={() => setIsOpenHome(!isOpenHome)}
+            modalTop="16"
+            width="620px"
+          >
+            <ZohoCampaign />
+          </Modal>
         <div style={{ width: "95%", margin: "1.5rem auto" }}>
           <Space direction="vertical" size="large" style={{ display: "flex" }}>
             <Row>
