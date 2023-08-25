@@ -1,11 +1,71 @@
 import * as React from "react";
 import { useState, useEffect, useRef } from "react";
 import Head from "next/head";
+import Button from "../components/Button";
 import axios from "axios";
 import AppLayout from "../layouts/AppLayout";
 import styled from "styled-components";
 
 const ComingSoon = () => {
+  const [see, setSee] = useState(true);
+  const [formData, setFormData] = useState({
+    FIRSTNAME: '',
+    CONTACT_EMAIL: '',
+    zx: "1301cfa8f",
+    zcvers: "3.0",
+    mode: "OptinCreateView",
+    zcld: "1f44ee18f87779fa",
+    zctd: "1f44ee18f8714fc9",
+    zc_trackCode: "ZCFORMVIEW",
+    zc_formIx: "3z474e45f32a174e4551a44dce662aaf36c96df15370c8386abf9d258489f804cf",
+    scriptless: "yes",
+    zc_spmSubmit: "ZCSPMSUBMIT"
+  });
+
+  const handleInputChange = (event) => {
+    const { name, value } = event.target;
+    setFormData((prevData) => ({
+      ...prevData,
+      [name]: value,
+    }));
+  };
+
+  // const handleSubmit = (event) => {
+  //   event.preventDefault();
+
+  //   const queryString = new URLSearchParams(formData).toString();
+  //   console.log(queryString);
+  //   // const externalUrl = 'https://zcvrp-zgvfh.maillist-manage.com/weboptin.zc'; 
+
+  //   // window.location.href = `${externalUrl}?${queryString}`;
+  // };
+  const handleSubmit = async (event) => {
+    event.preventDefault();
+    setSee(false)
+
+    // const externalUrl = 'https://zcvrp-zgvfh.maillist-manage.com/weboptin.zc'; // Replace with the actual URL
+
+    // const requestOptions = {
+    //   method: 'POST',
+    //   headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+    //   body: JSON.stringify(formData),
+    // };
+    // console.log(requestOptions.body)
+
+    // try {
+    //   const response = await fetch(externalUrl, requestOptions);
+    //   if (response.ok) {
+    //     // Successful submission handling
+    //     console.log('Form submitted successfully');
+    //     console.log(response.json.toString())
+    //   } else {
+    //     // Error handling
+    //     console.error('Form submission failed');
+    //   }
+    // } catch (error) {
+    //   console.error('An error occurred:', error);
+    // }
+  };
   return (
     <div>
       <Head>
@@ -48,13 +108,47 @@ const ComingSoon = () => {
           <h1 className="text-4xl md:text-6xl text-orange-500 font-bold mb-4 text-center">
             Coming Soon
           </h1>
-          <p className="text-xl md:text-2xl text-gray-700 mb-4 text-center">
-            We are working hard to bring you an amazing Web App.
+          <p className="text-xl md:text-2xl text-gray-700 mb-10 text-center">
+            We are working hard to bring you an amazing Web App. Stay tuned!
           </p>
           <p className="text-xl md:text-2xl text-gray-700 mb-4 text-center">
-            Stay tuned!
+            
           </p>
+          {see && 
+          <form  method="POST" id="zcampaignOptinForm" action="https://zcvrp-zgvfh.maillist-manage.com/weboptin.zc" target="_zcSignup" > 
+          <p className="text-xl md:text-xl text-gray-700 mb-4 text-center">
+           You can stay up-to-date by getting finance insights and tips from our experts.
+          </p>
+          <p className="text-xl md:text-2xl text-gray-700 mb-4 text-center">
+          
+          </p>
+                     <div> <input className="mb-2" type="text" placeholder="Name"  name="FIRSTNAME" id="FIRSTNAME" /> </div> 
+                     <div> <input className="mb-6" placeholder="Email Address" name="CONTACT_EMAIL" id="EMBED_FORM_EMAIL_LABEL" type="text" /> </div>
+                    <div> <input className="mybtn highlighted_btn" type="submit" name="SIGNUP_SUBMIT_BUTTON" id="zcWebOptin" value="Sign Up" onBlur={handleSubmit} /> </div>
+                     <input type="hidden" id="fieldBorder" value=""/>
+                      <input type="hidden" id="submitType" name="submitType" value="optinCustomView" />  
+                      <input type="hidden" id="emailReportId" name="emailReportId" value=""/>  
+                      <input type="hidden" id="formType" name="formType" value="QuickForm" />
+                      <input type="hidden" name="zx" id="cmpZuid" value="1301cfa8f" /> 
+                      <input type="hidden" name="zcvers" value="3.0" /> 
+                      <input type="hidden" name="oldListIds" id="allCheckedListIds" value="" />  
+                      <input type="hidden" id="mode" name="mode" value="OptinCreateView" />
+                      <input type="hidden" id="zcld" name="zcld" value="1f44ee18f87779fa" /> 
+                      <input type="hidden" id="zctd" name="zctd" value="1f44ee18f8714fc9" /> 
+                      <input type="hidden" id="document_domain" value="" /> 
+                      <input type="hidden" id="zc_Url" value="zcvrp-zgvfh.maillist-manage.com" /> 
+                      <input type="hidden" id="new_optin_response_in" value="0" />
+                      <input type="hidden" id="duplicate_optin_response_in" value="0" />  
+                      <input type="hidden" name="zc_trackCode" id="zc_trackCode" value="ZCFORMVIEW" />  
+                      <input type="hidden" id="zc_formIx" name="zc_formIx" value="3z474e45f32a174e4551a44dce662aaf36c96df15370c8386abf9d258489f804cf" /> 
+                      <input type="hidden" id="viewFrom" value="URL_ACTION" /> 
+                      <input type="hidden" id="scriptless" name="scriptless" value="yes" /> 
+                      <input  type="hidden" id="zc_spmSubmit" name="zc_spmSubmit" value="ZCSPMSUBMIT" /> 
+                    </form> }
         </div>
+      
+   
+
       </AppLayout>
     </div>
   );

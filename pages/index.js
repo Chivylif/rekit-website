@@ -242,6 +242,15 @@ export default function Home() {
 
       <AppLayout>
 
+      {/* <iframe
+        title="Embedded Form"
+        src="https://zcvrp-zgvfh.maillist-manage.com/ua/Optin?od=11287ecc462579&zx=1301cfa8f&tD=1f44ee18f8714fc9&sD=1f44ee18f87779f1"
+        // width="100%"
+        // height="100%"
+        frameBorder="0"
+        className="h-[343px] lg:h-[543px] text-white text-center flex relative z-10"
+
+      /> */}
         <Carousel
           autoplay
           dotsClass={{
@@ -321,14 +330,7 @@ export default function Home() {
             />
           </div>
         </Carousel>
-        <Modal
-            openModal={isOpenHome}
-            closeModal={() => setIsOpenHome(!isOpenHome)}
-            modalTop="16"
-            width="620px"
-          >
-            <ZohoCampaign />
-          </Modal>
+        
         <div style={{ width: "95%", margin: "1.5rem auto" }}>
           <Space direction="vertical" size="large" style={{ display: "flex" }}>
             <Row>

@@ -4,26 +4,7 @@ import Button from "../Button";
 
 
 const ZohoCampaign = () => {
-  const [formData, setFormData] = useState({
-    name: '',
-    email: ''
-  });
-
-  const handleInputChange = (event) => {
-    const { name, value } = event.target;
-    setFormData((prevData) => ({
-      ...prevData,
-      [name]: value,
-    }));
-  };
   
-  const handleSubmit = (event) => {
-    event.preventDefault();
-
-  const queryString = new URLSearchParams(formData).toString();
-  const externalUrl = 'https://zcvrp-zgvfh.maillist-manage.com/weboptin.zc'
-  window.location.href = `${externalUrl}?${queryString}`;
-  }
  
   return (
     <div className="iframe-container">
@@ -33,6 +14,7 @@ const ZohoCampaign = () => {
         width="100%"
         height="100%"
         frameBorder="0"
+
       />
      
     </div>
