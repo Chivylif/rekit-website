@@ -16,7 +16,7 @@ const Modal = ({
   }, []);
   if (mounted)
     return createPortal(
-      <div className={`${styles.modal} ${openModal ? "flex" : "hidden"} overflow-auto `}>
+      <div className={`${styles.modal} ${openModal ? "flex" : "hidden"} overflow-auto drop-shadow-md`}>
         <div className={styles.overlay} onClick={closeModal}></div>
 
         <div  style={{ width: width, zIndex: 200000, overFlowY: 'auto', maxHeight: 'calc(100vh - 110px)'}} className={styles.modal_content + 'mt-20  overflow-auto shadow-lg'}>

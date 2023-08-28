@@ -58,19 +58,7 @@ const Header = () => {
       ),
       key: "wealthplanning",
     },
-    {
-      label: (
-        <Link href="/blog">
-          <a
-            rel="noopener noreferrer"
-            className="text-[#050504] text-base font-inter"
-          >
-            Blog
-          </a>
-        </Link>
-      ),
-      key: "blog",
-    },
+   
     {
       label: (
         <Link href="/our-edge" className="active:text-[#F08420]">
@@ -152,6 +140,19 @@ const Header = () => {
           key: "whoweserve",
         },
       ],
+    }, 
+    {
+      label: (
+        <Link href="/blog">
+          <a
+            rel="noopener noreferrer"
+            className="text-[#050504] text-base font-inter"
+          >
+            Blog
+          </a>
+        </Link>
+      ),
+      key: "blog",
     },
     {
       label: (
