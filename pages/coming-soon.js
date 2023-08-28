@@ -88,6 +88,7 @@ const ComingSoon = () => {
           width="400px"
           
         >
+           <div className="pr-10 bg-gray-200 p-5 rounded-lg shadow-lg">
           <form  method="POST" id="zcampaignOptinForm" action="https://zcvrp-zgvfh.maillist-manage.com/weboptin.zc" target="_zcSignup" > 
           
           <p className="text-2xl md:text-2xl drop-shadow-md mb-4 text-orange-500 font-bold text-center">
@@ -119,6 +120,7 @@ const ComingSoon = () => {
                       <input type="hidden" id="scriptless" name="scriptless" value="yes" /> 
                       <input  type="hidden" id="zc_spmSubmit" name="zc_spmSubmit" value="ZCSPMSUBMIT" /> 
                     </form> 
+                    </div>
         </Modal>
          }
         <div className="flex flex-col justify-center items-center h-screen bg-gray-100">

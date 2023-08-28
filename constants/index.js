@@ -20,6 +20,8 @@ import AFEXOne from "../assets/images/AFEXOne.png";
 import AFEXTwo from "../assets/images/AFEXTwo.png";
 import cashewOne from "../assets/images/cashewOne.jpg";
 import cashewTwo from "../assets/images/cashewTwo.jpg";
+import cashew from "../assets/images/cashew.jpg";
+import cashewThree from "../assets/images/raw-cashew.jpg";
 
 export const btnStyles = { padding: ".8em 2em", minHeight: "3rem" };
 export const boardData = [
@@ -303,7 +305,7 @@ export const blogPosts = [
   {
     title: "Why Cashew is the real deal now?",
     author: "Samuel Apanisile",
-    images: [cashewOne, cashewTwo],
+    images: [cashew, cashewTwo],
     updatedDate: "March 28, 2023 at 5:37:39 PM",
     content: [
       "The awesome thing about Cashew is that it is an easy nut to crack, whether you’re chewing it or trying to invest in it. We enjoy the fleshy, juicy apple-like part and the nuts can also be eaten as a snack. It is a massive export commodity for Nigeria; this and more is why we stan this versatile nut!",
@@ -314,12 +316,12 @@ export const blogPosts = [
       "According to The Minister of Agriculture and Rural Development, Dr. Mohammad Mahood Abubakar, the cashew export is expected to fetch Nigeria about $ 500 million by 2023.",
       "As an investor, you can make a quick return of 8-15% within a period of 3-5 months when you contact us REKIT Financial Advisors, an AFEX registered commodity advisor.",
     ],
-    description: "Investment Insights",
+    description: "Lifestyle",
   },
   {
     title: "Cashew Investment",
     author: "Samuel Apanisile",
-    images: [cashewOne, cashewTwo],
+    images: [cashewThree, cashewTwo],
     updatedDate: "April 6, 2023 at 10:00:36 AM",
     content: [
       "The awesome thing about Cashew is that it is an easy nut to crack, whether you are eating it or trying to invest in it. The commercial value of cashew nut as an ingredient in cereal, confectionery, and ready meals is evident in its use. Our passion for the versatile nut is driven by its nutritional value and economic viability as it contributes significantly to Nigeria’s total annual exports.",
@@ -331,7 +333,7 @@ export const blogPosts = [
       "According to the Minister of Agriculture and Rural Development, Dr. Mohammad Mahmood Abubakar, Nigeria generated N112 billion in revenue from the exports of cashew nuts in 2022, and forecasts revenue from exports to reach N231 billion by 2023. Cashew is projected to return up to 15% in 5 months in 2023 for moderate risk investors who take position and exit within the specified timeframe.",
       "Let us get you started on cashew investing today. Contact us at REKIT Financial Advisors, an AFEX registered commodity advisor.",
     ],
-    description: "Investment Insights",
+    description: "Stories",
   },
   {
     title: "Guess who had a great outing in a down market in 2022?",
@@ -349,6 +351,73 @@ export const blogPosts = [
       "Minimum For Portfolio management solution: N2M; Tenor: 6 months, 9months and 12 months",
       "Returns: Capital Preservation + (10% -15% annually) based on market performance.",
       "Please, confirm your risk profile from the link below and you will receive an email from us on how to activate your recommendation on Commodity Portfolio Management – ETC solution.",
+    ],
+    description: "Investment Insights",
+  },
+  {
+    title: "Why Cashew is the real deal now?",
+    author: "Samuel Apanisile",
+    images: [cashew, cashewTwo],
+    updatedDate: "March 28, 2023 at 5:37:39 PM",
+    content: [
+      "The awesome thing about Cashew is that it is an easy nut to crack, whether you’re chewing it or trying to invest in it. We enjoy the fleshy, juicy apple-like part and the nuts can also be eaten as a snack. It is a massive export commodity for Nigeria; this and more is why we stan this versatile nut!",
+      "Raw cashew nuts are grown in large quantities in West Africa and are a major export commodity in the agricultural sector. Still, the main commercial use is the Cashew nut as an ingredient in cereal, confectionery, and ready meals.",
+      "Commodities are the best-known hedge against inflation. In recent times, we have all been feeling the brunt of the rising inflation of food prices. We consume and live healthily by consuming food, so any hike in the price of food items in the market will influence even the smallest of households. However, commodities are the only major asset class to provide a hedge against inflation.",
+      "Also, most of these agricultural commodities are seasonal. This implies that when they are in the peak harvest season, the commodity’s price is lower than in other seasons. For instance, Cashew ripens by February, March, April, and May, and that’s it for the season. It has a short window for investors to enter and exit the market. It also provides an opportunity for capital appreciation as you buy low and sell high and It is an export crop that attracts foreign buyers.",
+      "In Q3, 2022 Cashew nuts export stood at N10.43 billion, representing 12.3% of the total agricultural export. Also, in the same year, Nigeria generated over $ 250 million, accounting for about 10% of the country’s agricultural export.",
+      "According to The Minister of Agriculture and Rural Development, Dr. Mohammad Mahood Abubakar, the cashew export is expected to fetch Nigeria about $ 500 million by 2023.",
+      "As an investor, you can make a quick return of 8-15% within a period of 3-5 months when you contact us REKIT Financial Advisors, an AFEX registered commodity advisor.",
+    ],
+    description: "Research",
+  },
+  {
+    title: "Cashew Investment",
+    author: "Samuel Apanisile",
+    images: [cashewThree, cashewTwo],
+    updatedDate: "April 6, 2023 at 10:00:36 AM",
+    content: [
+      "The awesome thing about Cashew is that it is an easy nut to crack, whether you are eating it or trying to invest in it. The commercial value of cashew nut as an ingredient in cereal, confectionery, and ready meals is evident in its use. Our passion for the versatile nut is driven by its nutritional value and economic viability as it contributes significantly to Nigeria’s total annual exports.",
+      "Raw cashew nuts are grown in large quantities in West Africa and are a major export commodity in the agricultural sector in Nigeria. The commercial value of cashew nut as an ingredient in cereal, confectionery, and ready meals is evident in its use.",
+      "Commodities are one of the best-known asset classes for hedging against inflation. In recent times, we have all felt the brunt of the rising inflation of food prices. We consume and live healthily by consuming food. Therefore, a hike in the price of food items in the market will influence even the smallest of households.",
+      "Also, most agricultural commodities are seasonal. This implies that prices of commodities are lower during harvest season than off-harvest season. For instance, cashew season is between February and May yearly. Consequently, investors have a limited period in a year to invest in and exit the cashew market.",
+      "As an export crop with high demand in the international market, cashew also provides an opportunity for capital appreciation for investors who buy low and sell high.",
+      "Nigeria’s cashew nuts export stood at N10.43 billion in Q3 2022, representing 12.3% of the total agricultural export of N84.21b in the same quarter.",
+      "According to the Minister of Agriculture and Rural Development, Dr. Mohammad Mahmood Abubakar, Nigeria generated N112 billion in revenue from the exports of cashew nuts in 2022, and forecasts revenue from exports to reach N231 billion by 2023. Cashew is projected to return up to 15% in 5 months in 2023 for moderate risk investors who take position and exit within the specified timeframe.",
+      "Let us get you started on cashew investing today. Contact us at REKIT Financial Advisors, an AFEX registered commodity advisor.",
+    ],
+    description: "Investment Insights",
+  },
+
+  {
+    title: "Why Cashew is the real deal now?",
+    author: "Samuel Apanisile",
+    images: [cashew, cashewTwo],
+    updatedDate: "March 28, 2023 at 5:37:39 PM",
+    content: [
+      "The awesome thing about Cashew is that it is an easy nut to crack, whether you’re chewing it or trying to invest in it. We enjoy the fleshy, juicy apple-like part and the nuts can also be eaten as a snack. It is a massive export commodity for Nigeria; this and more is why we stan this versatile nut!",
+      "Raw cashew nuts are grown in large quantities in West Africa and are a major export commodity in the agricultural sector. Still, the main commercial use is the Cashew nut as an ingredient in cereal, confectionery, and ready meals.",
+      "Commodities are the best-known hedge against inflation. In recent times, we have all been feeling the brunt of the rising inflation of food prices. We consume and live healthily by consuming food, so any hike in the price of food items in the market will influence even the smallest of households. However, commodities are the only major asset class to provide a hedge against inflation.",
+      "Also, most of these agricultural commodities are seasonal. This implies that when they are in the peak harvest season, the commodity’s price is lower than in other seasons. For instance, Cashew ripens by February, March, April, and May, and that’s it for the season. It has a short window for investors to enter and exit the market. It also provides an opportunity for capital appreciation as you buy low and sell high and It is an export crop that attracts foreign buyers.",
+      "In Q3, 2022 Cashew nuts export stood at N10.43 billion, representing 12.3% of the total agricultural export. Also, in the same year, Nigeria generated over $ 250 million, accounting for about 10% of the country’s agricultural export.",
+      "According to The Minister of Agriculture and Rural Development, Dr. Mohammad Mahood Abubakar, the cashew export is expected to fetch Nigeria about $ 500 million by 2023.",
+      "As an investor, you can make a quick return of 8-15% within a period of 3-5 months when you contact us REKIT Financial Advisors, an AFEX registered commodity advisor.",
+    ],
+    description: "Investment Insights",
+  },
+  {
+    title: "Cashew Investment",
+    author: "Samuel Apanisile",
+    images: [cashewThree, cashewTwo],
+    updatedDate: "April 6, 2023 at 10:00:36 AM",
+    content: [
+      "The awesome thing about Cashew is that it is an easy nut to crack, whether you are eating it or trying to invest in it. The commercial value of cashew nut as an ingredient in cereal, confectionery, and ready meals is evident in its use. Our passion for the versatile nut is driven by its nutritional value and economic viability as it contributes significantly to Nigeria’s total annual exports.",
+      "Raw cashew nuts are grown in large quantities in West Africa and are a major export commodity in the agricultural sector in Nigeria. The commercial value of cashew nut as an ingredient in cereal, confectionery, and ready meals is evident in its use.",
+      "Commodities are one of the best-known asset classes for hedging against inflation. In recent times, we have all felt the brunt of the rising inflation of food prices. We consume and live healthily by consuming food. Therefore, a hike in the price of food items in the market will influence even the smallest of households.",
+      "Also, most agricultural commodities are seasonal. This implies that prices of commodities are lower during harvest season than off-harvest season. For instance, cashew season is between February and May yearly. Consequently, investors have a limited period in a year to invest in and exit the cashew market.",
+      "As an export crop with high demand in the international market, cashew also provides an opportunity for capital appreciation for investors who buy low and sell high.",
+      "Nigeria’s cashew nuts export stood at N10.43 billion in Q3 2022, representing 12.3% of the total agricultural export of N84.21b in the same quarter.",
+      "According to the Minister of Agriculture and Rural Development, Dr. Mohammad Mahmood Abubakar, Nigeria generated N112 billion in revenue from the exports of cashew nuts in 2022, and forecasts revenue from exports to reach N231 billion by 2023. Cashew is projected to return up to 15% in 5 months in 2023 for moderate risk investors who take position and exit within the specified timeframe.",
+      "Let us get you started on cashew investing today. Contact us at REKIT Financial Advisors, an AFEX registered commodity advisor.",
     ],
     description: "Investment Insights",
   },

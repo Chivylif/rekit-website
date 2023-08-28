@@ -7,7 +7,6 @@ import Banner from "../components/Banner";
 import BlogRefresh from "../components/BlogRefresh";
 import SmallWrapper from "../components/SmallWrapper";
 import Image from "next/image";
-import Spending from "../assets/images/SPENDING.jpg"
 import Button from "../components/Button";
 import CircularProgress from "@mui/material/CircularProgress";
 import Box from "@mui/material/Box";
@@ -17,7 +16,7 @@ import InsightPost from "../components/InsightsPost";
 import Link from "next/link";
 import { blogPosts } from "../constants";
 
-const BlogPV = () => {
+const Insights = () => {
   const [loaderBtnMsg, setLoaderBtnMsg] = useState("Loading...");
   const [nextPage, setNextPage] = useState(false);
   const [prevPage, setPrevPage] = useState(false);
@@ -176,59 +175,120 @@ const BlogPV = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-
+      {/* <script
+        async
+        src={"https://www.googletagmanager.com/gtag/js?id=G-REJ602RMGQ"}
+      />
+      <script
+        dangerouslySetInnerHTML={{
+          __html: `
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-REJ602RMGQ', {
+              page_path: window.location.pathname,
+            });
+          `,
+        }}
+      /> */}
       <AppLayout>
-        <div className="flex-col justify-center content-center mx-50 lg:flex-col bg-white md:flex-col">
-            <div className="lg:flex">
-                <div className="lg:w-3/5 px-[0.2rem] pt-10 lg:pt-20 mx-auto pb-5 border-r-3"> 
-                <div className="mx-auto px-[1rem]">
-                    <Image
-                    src={Spending}
-                    alt="img"
-                    style={{
-                        borderRadius: "10px",
-                        }}
+        <div className="flex-col justify-center content-center lg:flex-row md:flex-col">
+          <div
+            className={`w-full lg:w-3/4 px-[0.5rem] lg:px-[2rem] pt-${paddingTop} mx-auto bg-${backgroundPost} pb-${paddingTop} `}
+          >
+            {
+              <div className="pt-1 lg:pt-2 pb-1 lg:pb-1">
+                <div className="flex-col justify-center content-center mb-1 lg:mb-1">
+                  {revealPost && (
+                    <InsightPost
+                      title={post.title}
+                      name={post.author}
+                      date={post.updatedDate}
+                      content={post.content}
+                      relatedPosts={relatedPosts}
+                      postHandler={postHandler}
+                      description={post.description}
+                      images={post.images}
                     />
-                    <h1 className="font-extrabold pt-0.5 text-[#F08420] text-xl font-raleway">
-                    Spending Habits
-                    </h1>
-                    <p className="leading-[1.2rem] font-normal font-inter text-[#212020] text-[1rem]">       
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Facilisi morbi tempus iaculis urna id volutpat lacus laoreet non. Libero enim sed faucibus turpis in eu mi bibendum neque. Ut ornare lectus sit amet est placerat in egestas.
-                    </p>  
+                  )}
                 </div>
-
-                </div>
-                <div className="lg:w-1/5 px-[1rem] lg:ml-[-2rem] pt-10 lg:pt-20 mx-auto  pb-5 ">
-                <h1 className="font-extrabold pt-1 pb-8 text-3xl font-raleway">
-                               Category
-                                </h1>
-                    {categoryArr.map((category, index)=> {
-                        return (
-                            <div
-                            className="pt-1 lg:pt-2 pb-6 lg:pb-6"
-                            id={index}
-                          >
-                            <div
-                              className="grid lg:grid-cols-1 mb-1 lg:mb-1"
-                            >
-                                <h1 className="font-extrabold pt-0.5 text-[#F08420] text-l font-raleway">
-                               {category}
-                                </h1>
-                                <p className="leading-[1.0rem] font-normal font-inter text-[#212020] text-[0.9rem]">       
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                                </p>
-                            </div>
-                          </div>
-                        )
-                    })}
-                </div>
-            </div>
-            <div className="w-full flex justify-center items-center pt-5 mx-auto my-auto bg-[#FFF] flex-row  content-center">
-            </div>
+              </div>
+            }
+          </div>
+          <div
+            className={`w-full lg:w-${columnTwoWidth} px-[0.5rem] lg:px-[2rem] pt-10 mx-auto bg-white pb-10`}
+          >
+            {effectLoad &&
+              blogPosts.map(
+                (
+                  { author, title, updatedDate, images, description, content },
+                  index
+                ) => {
+                  return (
+                    <div
+                      className="pt-1 lg:pt-2 pb-1 lg:pb-1 border-b-2"
+                      id={index}
+                    >
+                      <div
+                        className="grid lg:grid-cols-1 mb-1 lg:mb-1"
+                        id={index}
+                        data-postid={index}
+                        data-description={description}
+                      >
+                        <InsightCard
+                          clickHandler={postHandler}
+                          title={title}
+                          name={author}
+                          date={updatedDate}
+                          articleLink={`${index}`}
+                          description={content[0]}
+                          image={images[0]}
+                        />
+                      </div>
+                    </div>
+                  );
+                }
+              )}
+          </div>
         </div>
+        {
+          <div className="w-full flex justify-center items-center pt-5 mx-auto my-auto bg-[#FFF] flex-row  content-center">
+            {/* {prevPage && (
+              <div data-direction="previous">
+                <Button
+                  shape="round"
+                  data-direction="next"
+                  size="small"
+                  text="Prev"
+                  className="normal_btn highlighted_btn mt-1 font-semibold mx-2"
+                  onClick={changePage}
+                />
+              </div>
+            )} */}
+            {/* {nextPage && (
+              <div data-direction="next">
+                <Button
+                  shape="round"
+                  data-direction="next"
+                  size="small"
+                  text="Next"
+                  className="normal_btn highlighted_btn mt-1 font-semibold mx-2"
+                  onClick={changePage}
+                />
+              </div>
+            )} */}
+          </div>
+        }
+
+        {/* <BlogRefresh
+          btnText={loaderBtnMsg}
+          height="323px"
+          title={loaderMessage}
+          onClick={init}
+        /> */}
       </AppLayout>
     </div>
   );
 };
 
-export default BlogPV;
+export default Insights;
