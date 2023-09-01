@@ -144,7 +144,7 @@ export default function Home() {
         <meta charset="UTF-8" />
         <meta
           name="description"
-          content="Rekit Financial An Investment advisory company that delivers complementary and personalized, solutions to individuals and corporate organizations."
+          content="Rekit Financial Advisors An Investment advisory company that delivers complementary and personalized, solutions to individuals and corporate organizations."
         />
         <meta name="keywords" content="Investment, Finance, Advice" />
         <meta property="og:site_name" content="Rekit" />
@@ -270,7 +270,7 @@ export default function Home() {
               />
             </div>
             <SliderBox
-              title="rekit advisory"
+              title="Rekit Financial Advisors"
               btnText="GET STARTED"
               desc="Get the support you need to build a diversified investment portfolio and meet your financial goals"
             />

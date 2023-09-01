@@ -1,6 +1,7 @@
 import * as React from "react";
 import { useState, useEffect, useRef } from "react";
 import Head from "next/head";
+import { useRouter } from 'next/router';
 import axios from "axios";
 import AppLayout from "../layouts/AppLayout";
 import Banner from "../components/Banner";
@@ -18,6 +19,9 @@ import Link from "next/link";
 import { blogPosts } from "../constants";
 
 const BlogPV = () => {
+
+  const router = useRouter();
+ 
   const [loaderBtnMsg, setLoaderBtnMsg] = useState("Loading...");
   const [nextPage, setNextPage] = useState(false);
   const [prevPage, setPrevPage] = useState(false);
@@ -38,6 +42,21 @@ const BlogPV = () => {
     "View all our Recent Blog Posts"
   );
   const ref = useRef(null);
+  const postRef = useRef(null);
+
+  const handleNavigate = (e) => {
+    e.preventDefault()
+    console.log(e.target.closest("[data-category]").dataset)
+      const {index, category} = e.target.closest("[data-category]").dataset
+      console.log(index, " ", category)
+       router.push({
+      pathname: `/blog/${encodeURIComponent(category)}`,
+      query: { param1: index }
+    });
+    
+    
+   
+  };
 
   const changePage = (e) => {
     e.preventDefault();
@@ -78,6 +97,13 @@ const BlogPV = () => {
     "Investment Insights",
     "Research",
   ];
+
+  const obj = {
+    lifestyle: "Lifestyle",
+    stories: "Stories",
+    investmentInsights: "Investment Insights",
+    research: "Research"
+  }
   const [sortedPosts, setSortedPosts] = useState({
     Lifestyle: [],
     Stories: [],
@@ -97,47 +123,47 @@ const BlogPV = () => {
     else return sliceToTen(sortedPosts.description);
   };
 
-  const postHandler = (event) => {
-    event.preventDefault();
-    let { postid } = event.target.closest("[data-postid]").dataset;
-    let { description } = event.target.closest("[data-description]").dataset;
-    for (let i = 0; i < categoryArr.length; i++) {
-      let category = categoryArr[i];
-      if (categoryArr[i] === "Investment Insights") {
-        const categorisedArr = insightsFetch.filter(
-          ({ description }) => description === category
-        );
-        setSortedPosts({
-          ...sortedPosts,
-          [sortedPosts.investmentInsights]: categorisedArr,
-        });
-      } else {
-        const categorisedArr = insightsFetch.filter(
-          ({ description }) => description === category
-        );
-        setSortedPosts({
-          ...sortedPosts,
-          [sortedPosts[`${category}`]]: categorisedArr,
-        });
-      }
-    }
-    setRelatedPosts(
-      sliceToTen(
-        insightsFetch.filter((post) => post.description === description)
-      )
-    );
+  // const postHandler = (event) => {
+  //   event.preventDefault();
+  //   let { postid } = event.target.closest("[data-postid]").dataset;
+  //   let { description } = event.target.closest("[data-description]").dataset;
+  //   for (let i = 0; i < categoryArr.length; i++) {
+  //     let category = categoryArr[i];
+  //     if (categoryArr[i] === "Investment Insights") {
+  //       const categorisedArr = insightsFetch.filter(
+  //         ({ description }) => description === category
+  //       );
+  //       setSortedPosts({
+  //         ...sortedPosts,
+  //         [sortedPosts.investmentInsights]: categorisedArr,
+  //       });
+  //     } else {
+  //       const categorisedArr = insightsFetch.filter(
+  //         ({ description }) => description === category
+  //       );
+  //       setSortedPosts({
+  //         ...sortedPosts,
+  //         [sortedPosts[`${category}`]]: categorisedArr,
+  //       });
+  //     }
+  //   }
+  //   setRelatedPosts(
+  //     sliceToTen(
+  //       insightsFetch.filter((post) => post.description === description)
+  //     )
+  //   );
 
-    setPost(insightsFetch.find((blogs, index) => index === +postid));
-    setNextPage(false);
-    setPrevPage(false);
-    setRevealPost(true);
-    setEffectLoad(false);
-    setColumnTwoWidth("0");
-    setColumnOneWidth("4/5");
-    setSeperateBorder("2");
-    setPaddingTop("10");
-    setBackgroundPost("white");
-  };
+  //   setPost(insightsFetch.find((blogs, index) => index === +postid));
+  //   setNextPage(false);
+  //   setPrevPage(false);
+  //   setRevealPost(true);
+  //   setEffectLoad(false);
+  //   setColumnTwoWidth("0");
+  //   setColumnOneWidth("4/5");
+  //   setSeperateBorder("2");
+  //   setPaddingTop("10");
+  //   setBackgroundPost("white");
+  // };
 
   return (
     <div>
@@ -202,47 +228,67 @@ const BlogPV = () => {
                 <h1 className="font-extrabold pt-1 pb-8 text-3xl font-raleway">
                                Category
                                 </h1>
-                    {categoryArr.map((category, index)=> {
+                    {Object.entries(obj).map(([category, name], index)=> {
                         return (
                             <div
                             className="pt-1 lg:pt-2 pb-8 lg:pb-8"
-                            id={index}
+                            key={index}
                           >
-                            <div
+                           <Link
+                            href={{
+                              pathname: '/blog/[slug]',
+                              query: { slug: category },
+                            }}
+                          >
+                             <div
                               className="grid lg:grid-cols-1 mb-1 lg:mb-1"
                             >
-                                <h1 className="font-extrabold pt-0.5 text-[#F08420] text-l font-raleway">
-                               {category}
+                             <h1 className="font-extrabold pt-0.5 text-[#F08420] text-l font-raleway">
+                               {name}
                                 </h1>
                                 <p className="leading-[1.0rem] font-normal font-inter text-[#212020] text-[0.9rem]">       
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
                                 </p>
-                            </div>
+                                </div>
+                          </Link>
+                               
+                           
                           </div>
                         )
                     })}
                 </div>
             </div>
             <div className="grid lg:grid-cols-4 mb-1 lg:mb-1 justify-items-center px-[3rem] pt-[3rem] pb-[3rem] ">
-                {blogPosts.map(({ author, title, updatedDate, images, description, content }, idx) => {
+                {blogPosts.map(({ images, slug, description, title }, idx) => {
                     return(
-                        <div className="mx-auto px-[1rem] w-5/6 pb-[3rem]" id={idx} >
-                        <Image
-                        src={images[0]}
-                        alt="img"
-                        width="250px"
-                        height="200px"
-                        style={{
-                            borderRadius: "10px",
-                            }}
-                        />
-                        <h1 className="font-extrabold pt-0.5 text-[#F08420] text-l font-raleway">
-                        {description}
-                        </h1>
-                        <p className="leading-[1.0rem] font-normal font-inter text-[#212020] text-[0.8rem]">       
-                        {title}
-                        </p>  
+                   
+                        <div
+                        ref={postRef} 
+                        className="mx-auto px-[1rem] w-5/6 pb-[3rem]" 
+                        key={idx} 
+                        data-index={idx}
+                        data-category={slug}
+                        onClick={handleNavigate} 
+                        
+                        >
+                          <Image
+                          id={idx} 
+                          src={images[0]}
+                          alt="img"
+                          width="250px"
+                          height="200px"
+                          style={{
+                              borderRadius: "10px",
+                              }}
+                          />
+                          <h1 id={idx}  className="font-extrabold pt-0.5 text-[#F08420] text-l font-raleway">
+                          {description}
+                          </h1>
+                          <p id={idx}  className="leading-[1.0rem] font-normal font-inter text-[#212020] text-[0.8rem]">       
+                          {title}
+                          </p>  
                     </div>
+                    
                     )
                 })}
             </div>

@@ -317,6 +317,7 @@ export const blogPosts = [
       "As an investor, you can make a quick return of 8-15% within a period of 3-5 months when you contact us REKIT Financial Advisors, an AFEX registered commodity advisor.",
     ],
     description: "Lifestyle",
+    slug: "lifestyle"
   },
   {
     title: "Cashew Investment",
@@ -334,6 +335,7 @@ export const blogPosts = [
       "Let us get you started on cashew investing today. Contact us at REKIT Financial Advisors, an AFEX registered commodity advisor.",
     ],
     description: "Stories",
+    slug: "stories"
   },
   {
     title: "Guess who had a great outing in a down market in 2022?",
@@ -353,6 +355,7 @@ export const blogPosts = [
       "Please, confirm your risk profile from the link below and you will receive an email from us on how to activate your recommendation on Commodity Portfolio Management – ETC solution.",
     ],
     description: "Investment Insights",
+    slug: "investmentInsights"
   },
   {
     title: "Why Cashew is the real deal now?",
@@ -369,6 +372,7 @@ export const blogPosts = [
       "As an investor, you can make a quick return of 8-15% within a period of 3-5 months when you contact us REKIT Financial Advisors, an AFEX registered commodity advisor.",
     ],
     description: "Research",
+    slug: "research"
   },
   {
     title: "Cashew Investment",
@@ -386,6 +390,7 @@ export const blogPosts = [
       "Let us get you started on cashew investing today. Contact us at REKIT Financial Advisors, an AFEX registered commodity advisor.",
     ],
     description: "Investment Insights",
+    slug: "investmentInsights"
   },
 
   {
@@ -403,6 +408,7 @@ export const blogPosts = [
       "As an investor, you can make a quick return of 8-15% within a period of 3-5 months when you contact us REKIT Financial Advisors, an AFEX registered commodity advisor.",
     ],
     description: "Investment Insights",
+    slug: "investmentInsights"
   },
   {
     title: "Cashew Investment",
@@ -420,5 +426,6 @@ export const blogPosts = [
       "Let us get you started on cashew investing today. Contact us at REKIT Financial Advisors, an AFEX registered commodity advisor.",
     ],
     description: "Investment Insights",
+    slug: "investmentInsights"
   },
 ];
