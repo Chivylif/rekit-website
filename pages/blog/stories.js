@@ -24,7 +24,7 @@ export async function getServerSideProps(context) {
 }
 
 const Lifestyle = () => {
-  const relatedPosts = blogPosts.filter(p=> p.slug.toLowerCase() == "lifestyle".toLowerCase());
+  const relatedPosts = blogPosts.filter(p=> p.slug.toLowerCase() == "stories".toLowerCase());
   const [post, setPost] = useState(false);
   const [blogPost, setBlogPost] = useState(null)
   const router = useRouter()
@@ -39,7 +39,7 @@ const Lifestyle = () => {
   const clickHandler = (e) => {
     e.preventDefault()
     const {index} = e.target.closest("[data-index]").dataset
-    setBlogPost(relatedPosts[+index]);
+    setBlogPost(relatedPosts[+index])
     setPost(true);
   }
   
@@ -86,8 +86,8 @@ const Lifestyle = () => {
 
       <AppLayout>
         <div className="flex-col justify-center content-center mx-50 lg:flex-col bg-white md:flex-col pb-10">
-        <h1 className="flex justify-center content-center pt-5 text-[#F08420] font-raleway font-bold text-[1.5rem] lg:mx-10 lg:text-[2.5rem] uppercase">
-          Lifestyle
+        <h1 className="flex justify-center content-center pt-5 text-[#F08420] font-raleway font-bold text-[1.5rem] lg:mx-5 lg:text-[2.5rem] uppercase">
+          Stories
         </h1>
             <div className="lg:flex">
                 <div className="lg:w-4/5 px-[2rem] pt-5 lg:pt-5 mx-auto pb-5 border-r-3"> 

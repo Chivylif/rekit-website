@@ -203,7 +203,7 @@ const BlogPV = () => {
                         data-category={slug}
                         onClick={handleNavigate}                        
                         >   
-                               
+
                           <Image
                           id={idx} 
                           src={images[0]}
