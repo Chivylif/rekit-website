@@ -22,81 +22,20 @@ const BlogPV = () => {
 
   const router = useRouter();
  
-  const [loaderBtnMsg, setLoaderBtnMsg] = useState("Loading...");
-  const [nextPage, setNextPage] = useState(false);
-  const [prevPage, setPrevPage] = useState(false);
-  const [insightsFetch, setInsightsFetch] = useState(blogPosts);
-  const [page, setPage] = useState(0);
-  const [viewPost, setViewPost] = useState(blogPosts);
-  const [paginatedPosts, setPaginatedPosts] = useState([]);
-  const [revealPost, setRevealPost] = useState(false);
-  const [effectLoad, setEffectLoad] = useState(true);
-  const [post, setPost] = useState({});
-  const [columnOneWidth, setColumnOneWidth] = useState("0");
-  const [columnTwoWidth, setColumnTwoWidth] = useState("full");
-  const [seperateBorder, setSeperateBorder] = useState("0");
-  const [paddingTop, setPaddingTop] = useState("0");
-  const [backgroundPost, setBackgroundPost] = useState("inherit");
-  const [relatedPosts, setRelatedPosts] = useState([]);
-  const [loaderMessage, setLoaderMessage] = useState(
-    "View all our Recent Blog Posts"
-  );
+  
   const ref = useRef(null);
   const postRef = useRef(null);
 
   const handleNavigate = (e) => {
     e.preventDefault()
-    console.log(e.target.closest("[data-category]").dataset)
       const {index, category} = e.target.closest("[data-category]").dataset
-      console.log(index, " ", category)
        router.push({
       pathname: `/blog/${encodeURIComponent(category)}`,
       query: { param1: index }
     });
-    
-    
+
    
   };
-
-  const changePage = (e) => {
-    e.preventDefault();
-    const { direction } = e.target.closest("[data-direction]").dataset;
-    if (direction === "next") setPage(++page);
-    else if (direction === "previous") setPage(--page);
-  };
-
-  useEffect(() => {
-    setViewPost(paginatedPosts[page]);
-    if (paginatedPosts.length - page === 1) setNextPage(false);
-    else setNextPage(true);
-    if (page === 0) setPrevPage(false);
-    else setPrevPage(true);
-  }, [page]);
-
-  const init = (e) => {
-    e.preventDefault();
-    const { category } = e.target.closest("[data-category]").dataset;
-    if (category) {
-      setPaginatedPosts(
-        insightsFetch.filter(({ category }) => category === category)
-      );
-    }
-    setPaddingTop("0");
-    setRevealPost(false);
-    setEffectLoad(true);
-    setColumnTwoWidth("full");
-    setPage(0);
-    setViewPost(paginatedPosts[0]);
-    paginatedPosts.length > 1 && setNextPage(true);
-    setPrevPage(false);
-  };
-
-  const categoryArr = [
-    "Lifestyle",
-    "Stories",
-    "Investment Insights",
-    "Research",
-  ];
 
   const obj = {
     lifestyle: "Lifestyle",
@@ -104,17 +43,11 @@ const BlogPV = () => {
     investmentInsights: "Investment Insights",
     research: "Research"
   }
-  const [sortedPosts, setSortedPosts] = useState({
-    Lifestyle: [],
-    Stories: [],
-    investmentInsights: [],
-    Research: [],
-  });
 
-  const sliceToTen = (arr) => {
-    return arr.slice(0, 10);
-  };
+  
 
+
+  
 
 
   const setRelatedPostMethod = (description) => {
@@ -268,9 +201,9 @@ const BlogPV = () => {
                         key={idx} 
                         data-index={idx}
                         data-category={slug}
-                        onClick={handleNavigate} 
-                        
-                        >
+                        onClick={handleNavigate}                        
+                        >   
+                               
                           <Image
                           id={idx} 
                           src={images[0]}
@@ -286,7 +219,8 @@ const BlogPV = () => {
                           </h1>
                           <p id={idx}  className="leading-[1.0rem] font-normal font-inter text-[#212020] text-[0.8rem]">       
                           {title}
-                          </p>  
+                          </p> 
+                        
                     </div>
                     
                     )

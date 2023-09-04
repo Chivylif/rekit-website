@@ -425,7 +425,7 @@ export const blogPosts = [
       "According to the Minister of Agriculture and Rural Development, Dr. Mohammad Mahmood Abubakar, Nigeria generated N112 billion in revenue from the exports of cashew nuts in 2022, and forecasts revenue from exports to reach N231 billion by 2023. Cashew is projected to return up to 15% in 5 months in 2023 for moderate risk investors who take position and exit within the specified timeframe.",
       "Let us get you started on cashew investing today. Contact us at REKIT Financial Advisors, an AFEX registered commodity advisor.",
     ],
-    description: "Investment Insights",
-    slug: "investmentInsights"
+    description: "Life Style",
+    slug: "lifestyle"
   },
 ];
