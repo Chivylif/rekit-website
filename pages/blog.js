@@ -104,7 +104,7 @@ const BlogPV = () => {
         <title>Rekit | REKIT Blog</title>
         <meta
           name="description"
-          content="International reach of Specialist expertise in family wealth management, protection, personalised solutions for the preservation of family wealth"
+          content="Our Blog. This is the landing page where insightful posts are shared about money habits and investment opportunities from our in-house professionals."
         />
         <meta
           name="keywords"
@@ -116,7 +116,7 @@ const BlogPV = () => {
         <meta charset="UTF-8" />
         <meta
           name="description"
-          content="Our Edge Members Rekit Financial An Investment advisory company that delivers complementary and personalized, solutions to individuals and corporate organizations."
+          content="Our Blog. This is the landing page where insightful posts are shared about money habits and investment opportunities from our in-house professionals."
         />
         <meta name="keywords" content="Investment, Finance, Advice" />
         <meta property="og:site_name" content="Rekit" />
@@ -125,11 +125,11 @@ const BlogPV = () => {
         <meta property="og:image" content="/rekit.png" />
         <meta
           property="og:description"
-          content="Insights Rekit Financial An Investment advisory company that delivers complementary and personalized, solutions to individuals and corporate organizations."
+          content="Our Blog. This is the landing page where insightful posts are shared about money habits and investment opportunities from our in-house professionals."
         />
         <meta
           property="og:title"
-          content="Insights | Rekit Financial Advisors Limited"
+          content="Blogs | Rekit Financial Advisors Limited"
         />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="icon" href="/favicon.ico" />

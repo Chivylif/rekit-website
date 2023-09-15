@@ -26,10 +26,10 @@ const LegalDisclaimer = () => {
     <div>
       
       <Head>
-        <title>Rekit | Contact Us</title>
+        <title>Rekit | Legal Disclaimer</title>
         <meta
           name="description"
-          content="Rekit Web app Wealth Generator Contact Page"
+          content="Rekit Web app Wealth Generator Legal Disclaimer Page"
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>

@@ -48,7 +48,7 @@ const ComingSoon = () => {
         <title>Rekit | Coming Soon</title>
         <meta
           name="description"
-          content="International reach of Specialist expertise in family wealth management, protection, personalised solutions for the preservation of family wealth"
+          content="Coming Soon Page - Portal to WebApp"
         />
         <meta
           name="keywords"
@@ -60,7 +60,7 @@ const ComingSoon = () => {
         <meta charset="UTF-8" />
         <meta
           name="description"
-          content="Our Edge Members Rekit Financial An Investment advisory company that delivers complementary and personalized, solutions to individuals and corporate organizations."
+          content="Coming Soon Page - Portal to WebApp"
         />
         <meta name="keywords" content="Investment, Finance, Advice" />
         <meta property="og:site_name" content="Rekit" />

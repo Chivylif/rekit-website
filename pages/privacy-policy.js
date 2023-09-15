@@ -30,10 +30,10 @@ const PrivacyPolicy = () => {
       </Head>
       
       <Head>
-        <title>Rekit | Contact Us</title>
+        <title>Rekit | Privacy Policy</title>
         <meta
           name="description"
-          content="Rekit Web app Wealth Generator Contact Page"
+          content="Privacy Policy Rekit Financial An Investment advisory company that delivers complementary and personalized, solutions to individuals and corporate organizations."
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>
