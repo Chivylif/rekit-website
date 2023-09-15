@@ -86,13 +86,6 @@ export const managementTeamData = [
   },
   {
     key: 5,
-    name: "Henry Mba",
-    role: "Head - Technology",
-    cert: "",
-    image: managementTeamFive,
-  },
-  {
-    key: 6,
     name: "Faith Ike",
     role: "Head - Accounts",
     cert: "",

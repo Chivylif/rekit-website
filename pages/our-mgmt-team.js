@@ -77,20 +77,7 @@ const OurMgmtTeam = () => {
           step={step}
         />
       );
-    } else if (step === 5) {
-      return (
-        <ManagementTeamDetails
-          about={[
-            "Henry has over 15 years of experience in proffering strategic business, and technology solutions for Banks,Fintech and Investment companies.",
-            "An Information Technology business leader, leading business transformations with a focus on delivering impactful projects centered around automating expert systems, financial technology and payment solutions.",
-            "A Computer Science degree holder with Cisco, Oracle and Microsoft Certifications with experience working in Telecoms, Banking and Financial Technology companies.",
-          ]}
-          showDetails={handleShowDetails}
-          displayDetails={showDetails}
-          step={step}
-        />
-      );
-    } else {
+    }  else {
       return (
         <ManagementTeamDetails
           about={[
