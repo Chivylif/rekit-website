@@ -78,7 +78,7 @@ const InvestmentSolutions = () => {
         <SmallWrapper>
             <div className="grid gap-y-10 lg:gap-y-0 lg:grid-cols-2 gap-x-10 mb-20">
                 <p className="text-base font-inter font-normal leading-[1.8rem] text-[#212020]">
-                We all have unique, wonderful goals and aspirations. Rekit’s advisors are just the people you need to ensure that financing these goals would be easier. Our wide range of plans allows you to plan for life’s milestones conveniently. We also provide the opportunity to create custom plans.
+                We all have unique, wonderful goals and aspirations. Our expert advisors at REKIT are just the people you need to ensure that financing these goals would be easier. Our wide range of plans allows you to plan for life’s milestones conveniently. We also provide the opportunity to create custom plans.
                 </p>
                 <div>
                     <Image src={investtop} alt="investtop" />

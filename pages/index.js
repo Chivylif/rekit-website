@@ -14,7 +14,11 @@ import wealth from "../assets/images/wealth.png";
 import goal from "../assets/images/goal.png";
 import succession from "../assets/images/succession.png";
 import taxplanning from "../assets/images/taxplanning.png";
-
+import homeCarouselOne from "../assets/images/home-carousel-1.jpeg"
+import homeCarouselThree from "../assets/images/home-carousel-3.jpeg"
+import homeCarouselFour from "../assets/images/home-carousel-4.jpeg"
+import homeCarouselSix from "../assets/images/home-carousel-6.jpeg"
+import taxPlanning from "../assets/images/tax-planning.jpeg"
 import babe from "../assets/images/babe.jpeg";
 import babe2 from "../assets/images/babe2.jpeg";
 import babe3 from "../assets/images/babe3.jpeg";
@@ -147,6 +151,7 @@ export default function Home() {
           content="Rekit Financial Advisors An Investment advisory company that delivers complementary and personalized, solutions to individuals and corporate organizations."
         />
         <meta name="keywords" content="Investment, Finance, Advice" />
+        <meta name="google-siteverification" content="3ENe10NVQGctLCfN2hBiVwwpDyrRCFCjtkKo2XQHvz8" />
         <meta property="og:site_name" content="Rekit" />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://www.rekitonline.com" />
@@ -264,7 +269,7 @@ export default function Home() {
             <div className="pt-2 h-[96.66vw] lg:h-[36.66vw] w-full relative">
               <Image
                 // src="/assets/images/unsplash-1.jpeg"
-                src={rekitadvisory}
+                src={homeCarouselSix}
                 layout="fill"
                 objectFit="cover"
               />
@@ -287,7 +292,7 @@ export default function Home() {
             <div className="pt-2 h-[96.66vw] lg:h-[36.66vw] w-full relative">
               <Image
                 // src="/assets/images/unsplash-1.jpeg"
-                src={investmentgoals}
+                src={homeCarouselFour}
                 layout="fill"
                 objectFit="cover"
               />
@@ -310,7 +315,7 @@ export default function Home() {
             <div className="pt-2 h-[96.66vw] lg:h-[36.66vw] w-full relative">
               <Image
                 // src="/assets/images/unsplash-1.jpeg"
-                src={experience}
+                src={homeCarouselOne}
                 layout="fill"
                 objectFit="cover"
               />
@@ -417,7 +422,7 @@ export default function Home() {
             <div className="image-wrapper">
               <Image
                 alt="..."
-                src={babe4}
+                src={babe5}
                 width={800}
                 height={700}
                 quality={70}

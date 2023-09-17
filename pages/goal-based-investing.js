@@ -16,6 +16,7 @@ import goalthree from "../assets/images/goal-3.png";
 import goalfour from "../assets/images/goal-4.png";
 import goalfive from "../assets/images/goal-5.png";
 import goalsix from "../assets/images/goal-6.png";
+import savingsPlan from "../assets/images/savings-plan.jpeg"
 import goaltop from "../assets/images/goal-top.png";
 
 import calculator from "../assets/images/calculator.jpeg";
@@ -151,7 +152,7 @@ const GoalBasedInvesting = () => {
           <AboutUsCard
             viewButton={true}
             open={() => setIsSavings(!isSavings)}
-            image={goalsix}
+            image={savingsPlan}
             title="Savings Plan"
             desc="With our custom-made plans, you can achieve unique goals that are not captured on our list of predefined plans. Our financial advisors will work with you to create personalised strategies that fit your life and goals for the future."
           />
@@ -188,7 +189,7 @@ const GoalBasedInvesting = () => {
         <Banner
           image={bannerthree}
           headline="GOAL-BASED INVESTING"
-          desc="We provide the opportunity to create custom plans the address goals that might not be captured by our list of predefined plans."
+          desc="We provide the opportunity to create custom plans that address goals that might not be captured by our list of predefined plans."
         />
         <SmallWrapper>
           <div className="grid lg:grid-cols-1 gap-y-10 lg:gap-y-0 lg:gap-x-10 mb-20">

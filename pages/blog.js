@@ -164,7 +164,7 @@ const BlogPV = () => {
                     {Object.entries(obj).map(([category, name], index)=> {
                         return (
                             <div
-                            className="pt-1 lg:pt-2 pb-8 lg:pb-8"
+                            className="pt-1 lg:pt-2 pb-8 lg:pb-8 cursor-pointer"
                             key={index}
                           >
                            <Link

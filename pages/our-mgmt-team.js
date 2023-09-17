@@ -125,7 +125,7 @@ const OurMgmtTeam = () => {
           desc="Our employees have a combined industry experience of 100+ years."
         />
         <SmallWrapper>
-          <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-x-2 pb-16">
+          <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-x-5 pb-16 mx-auto md:px-20">
             <ManagementTeamCardContainer
               data={data}
               myShow={showDetails}

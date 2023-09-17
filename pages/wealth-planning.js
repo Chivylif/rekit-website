@@ -14,6 +14,7 @@ import wealthtwo from "../assets/images/wealth-2-tab.png";
 import wealththree from "../assets/images/wealth-3-tab.png";
 import wealthfour from "../assets/images/wealth-4-tab.png";
 import wealthfive from "../assets/images/wealth-5-tab.png";
+import wealthPlanning from "../assets/images/wealth-planning.jpeg";
 
 import goalone from "../assets/images/goal-1.png";
 import goaltwo from "../assets/images/goal-2.png";
@@ -255,7 +256,7 @@ const WealthPlanning = () => {
       </Head>
       <AppLayout>
         <Banner
-          image={bannertwo}
+          image={wealthPlanning}
           headline="Wealth Planning"
           desc="Wealth planning is the process of structuring, building, and preserving your wealth, in order to transfer it to the next generation."
         />
