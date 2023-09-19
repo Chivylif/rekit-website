@@ -191,13 +191,13 @@ const BlogPV = () => {
                     })}
                 </div>
             </div>
-            <div className="grid lg:grid-cols-4 mb-1 lg:mb-1 justify-items-center px-[3rem] pt-[3rem] pb-[3rem] ">
+            <div className="grid lg:grid-cols-4 mb-1 lg:mb-1 justify-items-center px-[3rem] pt-[3rem] pb-[3rem]">
                 {blogPosts.map(({ images, slug, description, title }, idx) => {
                     return(
                    
                         <div
                         ref={postRef} 
-                        className="mx-auto px-[1rem] w-5/6 pb-[3rem]" 
+                        className="mx-auto px-[1rem] w-5/6 pb-[3rem] cursor-pointer" 
                         key={idx} 
                         data-index={idx}
                         data-category={slug}
