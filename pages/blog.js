@@ -37,11 +37,17 @@ const BlogPV = () => {
    
   };
 
-  const obj = {
-    lifestyle: "Lifestyle",
-    stories: "Stories",
+  const blogCategories = {
     investmentInsights: "Investment Insights",
-    research: "Research"
+    personalFinance: "Personal Finance",
+    retirementPlanning: "Retirement Planning",
+    taxation: "Taxation",
+    financialMarketAnalysis: "Financial Market Analysis",
+    realEstate: "Real Estate",
+    financialEducation: "Financial Education",
+    businessFinance: "Business Finance",
+    financialNewsAndUpdates: "Financial News and Updates",
+    insurance: "Insurance"
   }
 
   
@@ -56,48 +62,8 @@ const BlogPV = () => {
     else return sliceToTen(sortedPosts.description);
   };
 
-  // const postHandler = (event) => {
-  //   event.preventDefault();
-  //   let { postid } = event.target.closest("[data-postid]").dataset;
-  //   let { description } = event.target.closest("[data-description]").dataset;
-  //   for (let i = 0; i < categoryArr.length; i++) {
-  //     let category = categoryArr[i];
-  //     if (categoryArr[i] === "Investment Insights") {
-  //       const categorisedArr = insightsFetch.filter(
-  //         ({ description }) => description === category
-  //       );
-  //       setSortedPosts({
-  //         ...sortedPosts,
-  //         [sortedPosts.investmentInsights]: categorisedArr,
-  //       });
-  //     } else {
-  //       const categorisedArr = insightsFetch.filter(
-  //         ({ description }) => description === category
-  //       );
-  //       setSortedPosts({
-  //         ...sortedPosts,
-  //         [sortedPosts[`${category}`]]: categorisedArr,
-  //       });
-  //     }
-  //   }
-  //   setRelatedPosts(
-  //     sliceToTen(
-  //       insightsFetch.filter((post) => post.description === description)
-  //     )
-  //   );
 
-  //   setPost(insightsFetch.find((blogs, index) => index === +postid));
-  //   setNextPage(false);
-  //   setPrevPage(false);
-  //   setRevealPost(true);
-  //   setEffectLoad(false);
-  //   setColumnTwoWidth("0");
-  //   setColumnOneWidth("4/5");
-  //   setSeperateBorder("2");
-  //   setPaddingTop("10");
-  //   setBackgroundPost("white");
-  // };
-
+  
   return (
     <div>
       <Head>
@@ -161,7 +127,7 @@ const BlogPV = () => {
                 <h1 className="font-extrabold pt-1 pb-8 text-3xl font-raleway">
                                Category
                                 </h1>
-                    {Object.entries(obj).map(([category, name], index)=> {
+                    {Object.entries(blogCategories).map(([category, name], index)=> {
                         return (
                             <div
                             className="pt-1 lg:pt-2 pb-8 lg:pb-8 cursor-pointer"

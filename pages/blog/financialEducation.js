@@ -23,8 +23,8 @@ export async function getServerSideProps(context) {
   };
 }
 
-const Lifestyle = () => {
-  const relatedPosts = blogPosts.filter(p=> p.slug.toLowerCase() == "stories".toLowerCase());
+const FinancialEducation = () => {
+  const relatedPosts = blogPosts.filter(p=> p.slug.toLowerCase() == "financialEducation".toLowerCase());
   const [post, setPost] = useState(false);
   const [blogPost, setBlogPost] = useState(null)
   const router = useRouter()
@@ -39,7 +39,7 @@ const Lifestyle = () => {
   const clickHandler = (e) => {
     e.preventDefault()
     const {index} = e.target.closest("[data-index]").dataset
-    setBlogPost(relatedPosts[+index])
+    setBlogPost(relatedPosts[+index]);
     setPost(true);
   }
   
@@ -49,7 +49,7 @@ const Lifestyle = () => {
   return (
     <div>
       <Head>
-        <title>Rekit | REKIT Blog</title>
+        <title>Rekit | REKIT Blog | Financial Education</title>
         <meta
           name="description"
           content="International reach of Specialist expertise in family wealth management, protection, personalised solutions for the preservation of family wealth"
@@ -60,11 +60,11 @@ const Lifestyle = () => {
         />
         <link rel="icon" href="/favicon.ico" />
 
-        <title>REKIT Blog | Rekit Financial Advisors Limited</title>
+        <title>REKIT Blog | Financial Education | Rekit Financial Advisors Limited</title>
         <meta charset="UTF-8" />
         <meta
           name="description"
-          content="Our Edge Members Rekit Financial An Investment advisory company that delivers complementary and personalized, solutions to individuals and corporate organizations."
+          content="This is the blog page for Financial Education"
         />
         <meta name="keywords" content="Investment, Finance, Advice" />
         <meta property="og:site_name" content="Rekit" />
@@ -77,7 +77,7 @@ const Lifestyle = () => {
         />
         <meta
           property="og:title"
-          content="Insights | Rekit Financial Advisors Limited"
+          content="Blog | Financial Education | Rekit Financial Advisors Limited"
         />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="icon" href="/favicon.ico" />
@@ -86,8 +86,8 @@ const Lifestyle = () => {
 
       <AppLayout>
         <div className="flex-col justify-center content-center mx-50 lg:flex-col bg-white md:flex-col pb-10">
-        <h1 className="flex justify-center content-center pt-5 text-[#F08420] font-raleway font-bold text-[1.5rem] lg:mx-5 lg:text-[2.5rem] uppercase">
-          Stories
+        <h1 className="flex justify-center content-center pt-5 text-[#F08420] font-raleway font-bold text-[1.5rem] lg:mx-10 lg:text-[2.5rem] uppercase">
+          Financial Education
         </h1>
             <div className="lg:flex">
                 <div className="lg:w-4/5 px-[2rem] pt-5 lg:pt-5 mx-auto pb-5 border-r-3"> 
@@ -140,4 +140,4 @@ const Lifestyle = () => {
   );
 };
 
-export default Lifestyle;
+export default FinancialEducation;
