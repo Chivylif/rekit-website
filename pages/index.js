@@ -14,10 +14,10 @@ import wealth from "../assets/images/wealth.png";
 import goal from "../assets/images/goal.png";
 import succession from "../assets/images/succession.png";
 import taxplanning from "../assets/images/taxplanning.png";
-import homeCarouselOne from "../assets/images/home-carousel-1.jpeg"
+import homeCarouselOne from "../assets/images/homeCarouselOneNew.jpg"
 import homeCarouselThree from "../assets/images/home-carousel-3.jpeg"
 import homeCarouselFour from "../assets/images/home-carousel-4.jpeg"
-import homeCarouselSix from "../assets/images/home-carousel-6.jpeg"
+import homeCarouselSix from "../assets/images/home-carousel-1.jpeg"
 import taxPlanning from "../assets/images/tax-planning.jpeg"
 import babe from "../assets/images/babe.jpeg";
 import babe2 from "../assets/images/babe2.jpeg";
@@ -269,7 +269,7 @@ export default function Home() {
             <div className="pt-2 h-[96.66vw] lg:h-[36.66vw] w-full relative">
               <Image
                 // src="/assets/images/unsplash-1.jpeg"
-                src={homeCarouselSix}
+                src={homeCarouselOne}
                 layout="fill"
                 objectFit="cover"
               />
@@ -315,7 +315,7 @@ export default function Home() {
             <div className="pt-2 h-[96.66vw] lg:h-[36.66vw] w-full relative">
               <Image
                 // src="/assets/images/unsplash-1.jpeg"
-                src={homeCarouselOne}
+                src={homeCarouselSix}
                 layout="fill"
                 objectFit="cover"
               />

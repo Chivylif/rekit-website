@@ -14,14 +14,14 @@ import PostBanner from "../../components/PostBanner";
 import { blogPosts } from "../../constants";
 
 
-export async function getServerSideProps(context) {
-  // Disable caching for this page
-  context.res.setHeader('Cache-Control', 'no-store');
+// export async function getServerSideProps(context) {
+//   // Disable caching for this page
+//   context.res.setHeader('Cache-Control', 'no-store');
 
-  return {
-    props: {},
-  };
-}
+//   return {
+//     props: {},
+//   };
+// }
 
 const Insurance = () => {
   const relatedPosts = blogPosts.filter(p=> p.slug.toLowerCase() == "insurance".toLowerCase());
