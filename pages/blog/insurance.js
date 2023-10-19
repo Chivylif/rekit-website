@@ -110,7 +110,7 @@ const Insurance = () => {
                 {relatedPosts.map(({ author, title, updatedDate, images, description, content }, idx) => {
                     return(
                         <div 
-                        className="mx-auto px-[1rem] w-5/6 pb-[3rem]" 
+                        className="mx-auto px-[1rem] w-5/6 pb-[3rem] cursor-pointer" 
                         key={idx}
                         data-index={idx}
                         onClick={clickHandler} >
