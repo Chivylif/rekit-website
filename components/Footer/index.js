@@ -50,7 +50,7 @@ const quicklinksone = [
   },
   {
     title: "Our Services",
-    href: "/our-services",
+    href: "/investment-solutions",
   },
   {
     title: "Contact Us",
