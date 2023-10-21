@@ -55,14 +55,6 @@ const BlogPV = () => {
 
   
 
-
-  const setRelatedPostMethod = (description) => {
-    if (description === "Investment Insights")
-      return sliceToTen(sortedPosts.investmentInsights);
-    else return sliceToTen(sortedPosts.description);
-  };
-
-
   
   return (
     <div>
@@ -115,7 +107,7 @@ const BlogPV = () => {
                         }}
                     />
                     <h1 className="font-extrabold pt-0.5 text-[#F08420] text-xl font-raleway">
-                    Spending Habits
+                    Money Habits
                     </h1>
                     <p className="leading-[1.2rem] font-normal font-inter text-[#212020] text-[1rem]">       
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Facilisi morbi tempus iaculis urna id volutpat lacus laoreet non. Libero enim sed faucibus turpis in eu mi bibendum neque. Ut ornare lectus sit amet est placerat in egestas.
@@ -145,9 +137,6 @@ const BlogPV = () => {
                              <h1 className="font-extrabold pt-0.5 text-[#F08420] text-l font-raleway">
                                {name}
                                 </h1>
-                                <p className="leading-[1.0rem] font-normal font-inter text-[#212020] text-[0.9rem]">       
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                                </p>
                                 </div>
                           </Link>
                                
@@ -158,18 +147,24 @@ const BlogPV = () => {
                 </div>
             </div>
             <div className="grid lg:grid-cols-4 mb-1 lg:mb-1 justify-items-center px-[3rem] pt-[3rem] pb-[3rem]">
-                {blogPosts.map(({ images, slug, description, title }, idx) => {
+                {blogPosts.map(({ images, slug, category, description, title }, idx) => {
                     return(
-                   
+                      <Link
+                      href={{
+                        pathname: `/blog/${category}/[slug]`,
+                        query: { slug: slug },
+                      }}
+                      key={idx} 
+                    >
                         <div
                         ref={postRef} 
                         className="mx-auto px-[1rem] w-5/6 pb-[3rem] cursor-pointer" 
-                        key={idx} 
+                        
                         data-index={idx}
                         data-category={slug}
                         onClick={handleNavigate}                        
                         >   
-
+                      
                           <Image
                           id={idx} 
                           src={images[0]}
@@ -186,8 +181,8 @@ const BlogPV = () => {
                           <p id={idx}  className="leading-[1.0rem] font-normal font-inter text-[#212020] text-[0.8rem]">       
                           {title}
                           </p> 
-                        
                     </div>
+                          </Link>
                     
                     )
                 })}

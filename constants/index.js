@@ -296,21 +296,14 @@ export const serviceCardItems = [
 ];
 export const blogPosts = [
   {
-    title: "Why Cashew is the real deal now?",
+    title: "Unlock the Wealth-Building Secrets of Billionaires: A Financial Planning Roadmap for Aspiring Young Adults",
     author: "Samuel Apanisile",
     images: [cashew, cashewTwo],
-    updatedDate: "March 28, 2023 at 5:37:39 PM",
-    content: [
-      "The awesome thing about Cashew is that it is an easy nut to crack, whether you’re chewing it or trying to invest in it. We enjoy the fleshy, juicy apple-like part and the nuts can also be eaten as a snack. It is a massive export commodity for Nigeria; this and more is why we stan this versatile nut!",
-      "Raw cashew nuts are grown in large quantities in West Africa and are a major export commodity in the agricultural sector. Still, the main commercial use is the Cashew nut as an ingredient in cereal, confectionery, and ready meals.",
-      "Commodities are the best-known hedge against inflation. In recent times, we have all been feeling the brunt of the rising inflation of food prices. We consume and live healthily by consuming food, so any hike in the price of food items in the market will influence even the smallest of households. However, commodities are the only major asset class to provide a hedge against inflation.",
-      "Also, most of these agricultural commodities are seasonal. This implies that when they are in the peak harvest season, the commodity’s price is lower than in other seasons. For instance, Cashew ripens by February, March, April, and May, and that’s it for the season. It has a short window for investors to enter and exit the market. It also provides an opportunity for capital appreciation as you buy low and sell high and It is an export crop that attracts foreign buyers.",
-      "In Q3, 2022 Cashew nuts export stood at N10.43 billion, representing 12.3% of the total agricultural export. Also, in the same year, Nigeria generated over $ 250 million, accounting for about 10% of the country’s agricultural export.",
-      "According to The Minister of Agriculture and Rural Development, Dr. Mohammad Mahood Abubakar, the cashew export is expected to fetch Nigeria about $ 500 million by 2023.",
-      "As an investor, you can make a quick return of 8-15% within a period of 3-5 months when you contact us REKIT Financial Advisors, an AFEX registered commodity advisor.",
-    ],
+    updatedDate: "October 20, 2023 at 5:37:39 PM",
     description: "Personal Finance",
-    slug: "personalFinance"
+    category: "personalFinance",
+    slug: "secrets-of-billionaires"
+
   },
   {
     title: "Cashew Investment",
@@ -328,7 +321,7 @@ export const blogPosts = [
       "Let us get you started on cashew investing today. Contact us at REKIT Financial Advisors, an AFEX registered commodity advisor.",
     ],
     description: "Retirement Planning",
-    slug: "retirementPlanning"
+    category: "retirementPlanning"
   },
   {
     title: "Guess who had a great outing in a down market in 2022?",
@@ -348,7 +341,7 @@ export const blogPosts = [
       "Please, confirm your risk profile from the link below and you will receive an email from us on how to activate your recommendation on Commodity Portfolio Management – ETC solution.",
     ],
     description: "Taxation",
-    slug: "taxation"
+    category: "taxation"
   },
   {
     title: "Why Cashew is the real deal now?",
@@ -365,7 +358,7 @@ export const blogPosts = [
       "As an investor, you can make a quick return of 8-15% within a period of 3-5 months when you contact us REKIT Financial Advisors, an AFEX registered commodity advisor.",
     ],
     description: "Financial Market Analysis",
-    slug: "financialMarketAnalysis"
+    category: "financialMarketAnalysis"
   },
   {
     title: "Cashew Investment",
@@ -383,7 +376,7 @@ export const blogPosts = [
       "Let us get you started on cashew investing today. Contact us at REKIT Financial Advisors, an AFEX registered commodity advisor.",
     ],
     description: "Real Estate",
-    slug: "realEstate"
+    category: "realEstate"
   },
 
   {
@@ -401,7 +394,7 @@ export const blogPosts = [
       "As an investor, you can make a quick return of 8-15% within a period of 3-5 months when you contact us REKIT Financial Advisors, an AFEX registered commodity advisor.",
     ],
     description: "Financial Education",
-    slug: "financialEducation"
+    category: "financialEducation"
   },
   {
     title: "Cashew Investment",
@@ -419,7 +412,7 @@ export const blogPosts = [
       "Let us get you started on cashew investing today. Contact us at REKIT Financial Advisors, an AFEX registered commodity advisor.",
     ],
     description: "Business Finance",
-    slug: "businessFinance"
+    category: "businessFinance"
   },
   {
     title: "Why Cashew is the real deal now?",
@@ -436,7 +429,7 @@ export const blogPosts = [
       "As an investor, you can make a quick return of 8-15% within a period of 3-5 months when you contact us REKIT Financial Advisors, an AFEX registered commodity advisor.",
     ],
     description: "Financial News and Updates",
-    slug: "financialNewsAndUpdates"
+    category: "financialNewsAndUpdates"
   },
   {
     title: "Cashew Investment",
@@ -454,7 +447,7 @@ export const blogPosts = [
       "Let us get you started on cashew investing today. Contact us at REKIT Financial Advisors, an AFEX registered commodity advisor.",
     ],
     description: "Insurance",
-    slug: "insurance"
+    category: "insurance"
   },
 
   {
@@ -472,7 +465,7 @@ export const blogPosts = [
       "As an investor, you can make a quick return of 8-15% within a period of 3-5 months when you contact us REKIT Financial Advisors, an AFEX registered commodity advisor.",
     ],
     description: "Financial Education",
-    slug: "financialEducation"
+    category: "financialEducation"
   },
   {
     title: "Cashew Investment",
@@ -490,6 +483,6 @@ export const blogPosts = [
       "Let us get you started on cashew investing today. Contact us at REKIT Financial Advisors, an AFEX registered commodity advisor.",
     ],
     description: "Investment Insights",
-    slug: "investmentInsights"
+    category: "investmentInsights"
   },
 ];

@@ -38,6 +38,7 @@ const BusinessFinance = () => {
 
   const clickHandler = (e) => {
     e.preventDefault()
+    //When you click any of the post, it looks for the index and sets it to that post
     const {index} = e.target.closest("[data-index]").dataset
     setBlogPost(relatedPosts[+index]);
     setPost(true);

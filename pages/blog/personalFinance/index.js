@@ -3,15 +3,15 @@ import { useState, useEffect, useRef } from "react";
 import Head from "next/head";
 import { useRouter } from 'next/router'
 import axios from "axios";
-import AppLayout from "../../layouts/AppLayout";
-import Banner from "../../components/Banner";
-import BlogRefresh from "../../components/BlogRefresh";
-import SmallWrapper from "../../components/SmallWrapper";
+import AppLayout from "../../../layouts/AppLayout";
+import Banner from "../../../components/Banner";
+import BlogRefresh from "../../../components/BlogRefresh";
+import SmallWrapper from "../../../components/SmallWrapper";
 import Image from "next/image";
-import Spending from "../../assets/images/SPENDING.jpg"
-import PostBanner from "../../components/PostBanner";
 
-import { blogPosts } from "../../constants";
+import Link from "next/link";
+
+import { blogPosts } from "../../../constants";
 
 
 // export async function getServerSideProps(context) {
@@ -24,24 +24,11 @@ import { blogPosts } from "../../constants";
 // }
 
 const PersonalFinance = () => {
-  const relatedPosts = blogPosts.filter(p=> p.slug.toLowerCase() == "personalFinance".toLowerCase());
-  const [post, setPost] = useState(false);
+  const relatedPosts = blogPosts.filter(p=> p.category.toLowerCase() == "personalFinance".toLowerCase());
   const [blogPost, setBlogPost] = useState(null)
   const router = useRouter()
-  
-  useEffect(() => {
-    console.log(router.query.param1);
-    if(router.query?.param1) {
-      setBlogPost(blogPosts[+router.query?.param1]);
-      setPost(!post)}
-  }, []);
 
-  const clickHandler = (e) => {
-    e.preventDefault()
-    const {index} = e.target.closest("[data-index]").dataset
-    setBlogPost(relatedPosts[+index]);
-    setPost(true);
-  }
+ 
   
 
 
@@ -89,31 +76,19 @@ const PersonalFinance = () => {
         <h1 className="flex justify-center content-center pt-5 text-[#F08420] font-raleway font-bold text-[1.5rem] lg:mx-10 lg:text-[2.5rem] uppercase">
           Personal Finance
         </h1>
-            <div className="lg:flex">
-                <div className="lg:w-4/5 px-[2rem] pt-5 lg:pt-5 mx-auto pb-5 border-r-3"> 
-                {post && <div className="mx-auto px-[1rem]">
-               <PostBanner 
-               image={blogPost.images[0]}
-               headline={blogPost.title}
-               desc={`${blogPost.author} - ${blogPost.updatedDate}`}
-               /> 
-               <p className="leading-[1.4rem] pt-10 font-normal font-inter text-[#212020] text-[0.8rem] lg:text-[1rem]">       
-          {blogPost.content}
-              </p>  
-                   
-                </div>}
-
-                </div>
-               
-            </div>
             <div className="grid lg:w-4/5 sm:grid-cols-2 lg:grid-cols-4 mx-auto mb-1 lg:mb-1 justify-items-center lg:justify-items-center px-[4rem] ">
-                {relatedPosts.map(({ author, title, updatedDate, images, description, content }, idx) => {
+                {relatedPosts.map(({ title, images, description, category, slug }, idx) => {
                     return(
+                      <Link
+                      href={{
+                        pathname: `/blog/${category}/[slug]`,
+                        query: { slug: slug },
+                      }}
+                      key={idx} 
+                    >
                         <div 
-                        className="mx-auto px-[1rem] w-5/6 pb-[3rem] cursor-pointer" 
-                        key={idx}
-                        data-index={idx}
-                        onClick={clickHandler} >
+                        className="mx-auto px-[1rem] w-5/6 pb-[3rem] cursor-pointer"
+                         >
 
                         <Image
                         src={images[0]}
@@ -131,6 +106,7 @@ const PersonalFinance = () => {
                         {title}
                         </p>  
                     </div>
+                    </Link>
                     )
                 })}
             </div>
