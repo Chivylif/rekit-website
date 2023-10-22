@@ -77,7 +77,7 @@ const PersonalFinance = () => {
           Personal Finance
         </h1>
             <div className="grid lg:w-4/5 sm:grid-cols-2 lg:grid-cols-4 mx-auto mb-1 lg:mb-1 justify-items-center lg:justify-items-center px-[4rem] ">
-                {relatedPosts.map(({ title, images, description, category, slug }, idx) => {
+                {relatedPosts.map(({ title, author, category, slug }, idx) => {
                     return(
                       <Link
                       href={{
@@ -87,20 +87,10 @@ const PersonalFinance = () => {
                       key={idx} 
                     >
                         <div 
-                        className="mx-auto px-[1rem] w-5/6 pb-[3rem] cursor-pointer"
+                        className="mx-auto px-[1rem] w-full pb-[3rem] cursor-pointer"
                          >
-
-                        <Image
-                        src={images[0]}
-                        alt="img"
-                        width="200px"
-                        height="150px"
-                        style={{
-                            borderRadius: "10px",
-                            }}
-                        />
                         <h1 className="font-extrabold pt-0.5 text-[#F08420] text-l font-raleway">
-                        {description}
+                        {author}
                         </h1>
                         <p className="leading-[1.0rem] font-normal font-inter text-[#212020] text-[0.8rem]">       
                         {title}

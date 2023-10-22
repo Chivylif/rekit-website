@@ -3,20 +3,11 @@ import { useState, useEffect, useRef } from "react";
 import Head from "next/head";
 import { useRouter } from 'next/router';
 import axios from "axios";
-import AppLayout from "../layouts/AppLayout";
-import Banner from "../components/Banner";
-import BlogRefresh from "../components/BlogRefresh";
-import SmallWrapper from "../components/SmallWrapper";
+import AppLayout from "../../layouts/AppLayout";
 import Image from "next/image";
-import Spending from "../assets/images/SPENDING.jpg"
-import Button from "../components/Button";
-import CircularProgress from "@mui/material/CircularProgress";
-import Box from "@mui/material/Box";
-import bannerfive from "../assets/images/bannerfive.png";
-import InsightCard from "../components/investInsightCard";
-import InsightPost from "../components/InsightsPost";
+import clipThree from "./assets/personalFinance-2.png"
 import Link from "next/link";
-import { blogPosts } from "../constants";
+import { blogPosts } from "../../constants";
 
 const BlogPV = () => {
 
@@ -26,16 +17,6 @@ const BlogPV = () => {
   const ref = useRef(null);
   const postRef = useRef(null);
 
-  const handleNavigate = (e) => {
-    e.preventDefault()
-      const {index, category} = e.target.closest("[data-category]").dataset
-       router.push({
-      pathname: `/blog/${encodeURIComponent(category)}`,
-      query: { param1: index }
-    });
-
-   
-  };
 
   const blogCategories = {
     investmentInsights: "Investment Insights",
@@ -97,20 +78,29 @@ const BlogPV = () => {
       <AppLayout>
         <div className="flex-col justify-center content-center mx-50 lg:flex-col bg-white md:flex-col pb-10">
             <div className="lg:flex">
+              
                 <div className="lg:w-3/5 px-[0.2rem] pt-10 lg:pt-20 mx-auto pb-5 border-r-3"> 
                 <div className="mx-auto px-[1rem]">
                     <Image
-                    src={Spending}
+                    src={clipThree}
                     alt="img"
                     style={{
                         borderRadius: "10px",
                         }}
                     />
-                    <h1 className="font-extrabold pt-0.5 text-[#F08420] text-xl font-raleway">
-                    Money Habits
+                     <Link
+                      href={{
+                        pathname: `/blog/personalFinance/[slug]`,
+                        query: { slug: 'secrets-of-billionaires' },
+                      }}
+                      
+                    >
+                    <h1 className="font-extrabold pt-0.5 text-[#F08420] text-xl font-raleway cursor-pointer">
+                    Unlock the Wealth-Building Secrets of Billionaires: A Financial Planning Roadmap for Aspiring Young Adults
                     </h1>
+                    </Link>
                     <p className="leading-[1.2rem] font-normal font-inter text-[#212020] text-[1rem]">       
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Facilisi morbi tempus iaculis urna id volutpat lacus laoreet non. Libero enim sed faucibus turpis in eu mi bibendum neque. Ut ornare lectus sit amet est placerat in egestas.
+                    Many young adults aspire to be as wealthy as Dangote, Otedola, Elon Musk, and other successful entrepreneurs. While there is no single formula for success, research has shown that billionaires have certain traits that help them build and sustain their wealth. These traits include an appetite for smart risk-taking, long-term focus on their business, and sheer determination. However, it is important to note that these traits are not the only factors that contribute to success.
                     </p>  
                 </div>
 
@@ -122,7 +112,7 @@ const BlogPV = () => {
                     {Object.entries(blogCategories).map(([category, name], index)=> {
                         return (
                             <div
-                            className="pt-1 lg:pt-2 pb-8 lg:pb-8 cursor-pointer"
+                            className="pt-1 lg:pt-2 pb-2 lg:pb-2 cursor-pointer"
                             key={index}
                           >
                            <Link
@@ -145,9 +135,13 @@ const BlogPV = () => {
                         )
                     })}
                 </div>
+               
             </div>
-            <div className="grid lg:grid-cols-4 mb-1 lg:mb-1 justify-items-center px-[3rem] pt-[3rem] pb-[3rem]">
-                {blogPosts.map(({ images, slug, category, description, title }, idx) => {
+            <div className="lg:w-full flex justify-center content-center px-[0.2rem] pt-1 lg:pt-3 mx-auto"> 
+                <h1 className="font-extrabold pt-1 pb-8 text-3xl font-raleway"> Recent Posts </h1>
+                </div>
+            <div className="grid lg:grid-cols-4 mb-1 lg:mb-1 justify-items-center px-[3rem] pt-[1rem] pb-[3rem]">
+                {blogPosts.map(({ slug, category, description, title }, idx) => {
                     return(
                       <Link
                       href={{
@@ -162,19 +156,8 @@ const BlogPV = () => {
                         
                         data-index={idx}
                         data-category={slug}
-                        onClick={handleNavigate}                        
+                                               
                         >   
-                      
-                          <Image
-                          id={idx} 
-                          src={images[0]}
-                          alt="img"
-                          width="250px"
-                          height="200px"
-                          style={{
-                              borderRadius: "10px",
-                              }}
-                          />
                           <h1 id={idx}  className="font-extrabold pt-0.5 text-[#F08420] text-l font-raleway">
                           {description}
                           </h1>

@@ -3,15 +3,15 @@ import { useState, useEffect, useRef } from "react";
 import Head from "next/head";
 import { useRouter } from 'next/router'
 import axios from "axios";
-import AppLayout from "../../layouts/AppLayout";
-import Banner from "../../components/Banner";
-import BlogRefresh from "../../components/BlogRefresh";
-import SmallWrapper from "../../components/SmallWrapper";
+import AppLayout from "../../../layouts/AppLayout";
+import Banner from "../../../components/Banner";
+import BlogRefresh from "../../../components/BlogRefresh";
+import SmallWrapper from "../../../components/SmallWrapper";
 import Image from "next/image";
-import Spending from "../../assets/images/SPENDING.jpg"
-import PostBanner from "../../components/PostBanner";
 
-import { blogPosts } from "../../constants";
+import Link from "next/link";
+
+import { blogPosts } from "../../../constants";
 
 
 // export async function getServerSideProps(context) {
@@ -23,25 +23,12 @@ import { blogPosts } from "../../constants";
 //   };
 // }
 
-const FinancialEducation = () => {
-  const relatedPosts = blogPosts.filter(p=> p.slug.toLowerCase() == "financialEducation".toLowerCase());
-  const [post, setPost] = useState(false);
+const RealEstate = () => {
+  const relatedPosts = blogPosts.filter(p=> p.category.toLowerCase() == "realEstate".toLowerCase());
   const [blogPost, setBlogPost] = useState(null)
   const router = useRouter()
-  
-  useEffect(() => {
-    console.log(router.query.param1);
-    if(router.query?.param1) {
-      setBlogPost(blogPosts[+router.query?.param1]);
-      setPost(!post)}
-  }, []);
 
-  const clickHandler = (e) => {
-    e.preventDefault()
-    const {index} = e.target.closest("[data-index]").dataset
-    setBlogPost(relatedPosts[+index]);
-    setPost(true);
-  }
+ 
   
 
 
@@ -49,7 +36,7 @@ const FinancialEducation = () => {
   return (
     <div>
       <Head>
-        <title>Rekit | REKIT Blog | Financial Education</title>
+        <title>Rekit | REKIT Blog | Real Estate</title>
         <meta
           name="description"
           content="International reach of Specialist expertise in family wealth management, protection, personalised solutions for the preservation of family wealth"
@@ -60,11 +47,11 @@ const FinancialEducation = () => {
         />
         <link rel="icon" href="/favicon.ico" />
 
-        <title>REKIT Blog | Financial Education | Rekit Financial Advisors Limited</title>
+        <title>REKIT Blog | Rekit Financial Advisors Limited</title>
         <meta charset="UTF-8" />
         <meta
           name="description"
-          content="This is the blog page for Financial Education"
+          content="This is the blog page for Real Estate"
         />
         <meta name="keywords" content="Investment, Finance, Advice" />
         <meta property="og:site_name" content="Rekit" />
@@ -77,7 +64,7 @@ const FinancialEducation = () => {
         />
         <meta
           property="og:title"
-          content="Blog | Financial Education | Rekit Financial Advisors Limited"
+          content="Blog | Real Estate | Rekit Financial Advisors Limited"
         />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="icon" href="/favicon.ico" />
@@ -87,50 +74,29 @@ const FinancialEducation = () => {
       <AppLayout>
         <div className="flex-col justify-center content-center mx-50 lg:flex-col bg-white md:flex-col pb-10">
         <h1 className="flex justify-center content-center pt-5 text-[#F08420] font-raleway font-bold text-[1.5rem] lg:mx-10 lg:text-[2.5rem] uppercase">
-          Financial Education
+          Real Estate
         </h1>
-            <div className="lg:flex">
-                <div className="lg:w-4/5 px-[2rem] pt-5 lg:pt-5 mx-auto pb-5 border-r-3"> 
-                {post && <div className="mx-auto px-[1rem]">
-               <PostBanner 
-               image={blogPost.images[0]}
-               headline={blogPost.title}
-               desc={`${blogPost.author} - ${blogPost.updatedDate}`}
-               /> 
-               <p className="leading-[1.4rem] pt-10 font-normal font-inter text-[#212020] text-[0.8rem] lg:text-[1rem]">       
-          {blogPost.content}
-              </p>  
-                   
-                </div>}
-
-                </div>
-               
-            </div>
             <div className="grid lg:w-4/5 sm:grid-cols-2 lg:grid-cols-4 mx-auto mb-1 lg:mb-1 justify-items-center lg:justify-items-center px-[4rem] ">
-                {relatedPosts.map(({ author, title, updatedDate, images, description, content }, idx) => {
+                {relatedPosts.map(({ title, author, category, slug }, idx) => {
                     return(
+                      <Link
+                      href={{
+                        pathname: `/blog/${category}/[slug]`,
+                        query: { slug: slug },
+                      }}
+                      key={idx} 
+                    >
                         <div 
-                        className="mx-auto px-[1rem] w-5/6 pb-[3rem] cursor-pointer" 
-                        key={idx}
-                        data-index={idx}
-                        onClick={clickHandler} >
-
-                        <Image
-                        src={images[0]}
-                        alt="img"
-                        width="200px"
-                        height="150px"
-                        style={{
-                            borderRadius: "10px",
-                            }}
-                        />
+                        className="mx-auto px-[1rem] w-full pb-[3rem] cursor-pointer"
+                         >
                         <h1 className="font-extrabold pt-0.5 text-[#F08420] text-l font-raleway">
-                        {description}
+                        {author}
                         </h1>
                         <p className="leading-[1.0rem] font-normal font-inter text-[#212020] text-[0.8rem]">       
                         {title}
                         </p>  
                     </div>
+                    </Link>
                     )
                 })}
             </div>
@@ -140,4 +106,4 @@ const FinancialEducation = () => {
   );
 };
 
-export default FinancialEducation;
+export default RealEstate;

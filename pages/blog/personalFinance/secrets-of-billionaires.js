@@ -9,9 +9,9 @@ import BlogRefresh from "../../../components/BlogRefresh";
 import SmallWrapper from "../../../components/SmallWrapper";
 import Image from "next/image";
 import Link from "next/link";
-import clipOne from "./assets/clip.png"
-import clipTwo from "./assets/clip-1.png"
-import clipThree from "./assets/clip-2.png"
+import clipOne from "../assets/personalFinance.png"
+import clipTwo from "../assets/personalFinance-1.png"
+import clipThree from "../assets/personalFinance-2.png"
 
 import { blogPosts } from "../../../constants";
 
@@ -144,28 +144,28 @@ const PersonalFinance = () => {
                     Category Percentage of Income 
                     </p>
 
-                    <p className="leading-[1.2rem] px-[1rem] pb-1 font-normal font-inter text-[#212020] text-justify text-[1rem]">       
+                    <p className="leading-[1.2rem] px-[2rem] pb-1 font-normal font-inter text-[#212020] text-justify text-[1rem]">       
                     Savings 30% 
                    </p>
-                   <p className="leading-[1.2rem] px-[1rem] pb-1 font-normal font-inter text-[#212020] text-justify text-[1rem]">       
+                   <p className="leading-[1.2rem] px-[2rem] pb-1 font-normal font-inter text-[#212020] text-justify text-[1rem]">       
                    Housing 25% 
                    </p>
-                   <p className="leading-[1.2rem] px-[1rem] pb-1 font-normal font-inter text-[#212020] text-justify text-[1rem]">       
+                   <p className="leading-[1.2rem] px-[2rem] pb-1 font-normal font-inter text-[#212020] text-justify text-[1rem]">       
                    Transportation 10% 
                    </p>
-                   <p className="leading-[1.2rem] px-[1rem] pb-1 font-normal font-inter text-[#212020] text-justify text-[1rem]">       
+                   <p className="leading-[1.2rem] px-[2rem] pb-1 font-normal font-inter text-[#212020] text-justify text-[1rem]">       
                    Food 10% 
                    </p>
-                   <p className="leading-[1.2rem] px-[1rem] pb-1 font-normal font-inter text-[#212020] text-justify text-[1rem]">       
+                   <p className="leading-[1.2rem] px-[2rem] pb-1 font-normal font-inter text-[#212020] text-justify text-[1rem]">       
                    Utilities 5%  
                     </p>
-                    <p className="leading-[1.2rem] px-[1rem] pb-1 font-normal font-inter text-[#212020] text-justify text-[1rem]">       
+                    <p className="leading-[1.2rem] px-[2rem] pb-1 font-normal font-inter text-[#212020] text-justify text-[1rem]">       
                    Entertainment 10% 
                    </p>
-                   <p className="leading-[1.2rem] px-[1rem] pb-1 font-normal font-inter text-[#212020] text-justify text-[1rem]">       
+                   <p className="leading-[1.2rem] px-[2rem] pb-1 font-normal font-inter text-[#212020] text-justify text-[1rem]">       
                    Miscellaneous 5% 
                    </p>
-                   <p className="leading-[1.2rem] px-[1rem] pb-4 font-normal font-inter text-[#212020] text-justify text-[1rem]">        
+                   <p className="leading-[1.2rem] px-[2rem] pb-4 font-normal font-inter text-[#212020] text-justify text-[1rem]">        
                    Emergency fund 5%
                     </p>
 
@@ -228,7 +228,7 @@ const PersonalFinance = () => {
                     return(
                       <Link
                       href={{
-                        pathname: `/blog/${category}/[slug]`,
+                        pathname: `/${category}/[slug]`,
                         query: { slug: slug },
                       }}
                       key={idx} 
