@@ -32,7 +32,7 @@ const PersonalFinance = () => {
   return (
     <div>
       <Head>
-        <title>Rekit | REKIT Blog | Personal Finance</title>
+        <title>Rekit | REKIT Blog | Secrets of Billionaires</title>
         <meta
           name="description"
           content="International reach of Specialist expertise in family wealth management, protection, personalised solutions for the preservation of family wealth"

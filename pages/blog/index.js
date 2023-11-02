@@ -5,7 +5,7 @@ import { useRouter } from 'next/router';
 import axios from "axios";
 import AppLayout from "../../layouts/AppLayout";
 import Image from "next/image";
-import clipThree from "./assets/personalFinance-2.png"
+import clipThree from "./assets/financialEducation2.jpg"
 import Link from "next/link";
 import { blogPosts } from "../../constants";
 
@@ -96,11 +96,11 @@ const BlogPV = () => {
                       
                     >
                     <h1 className="font-extrabold pt-0.5 text-[#F08420] text-xl font-raleway cursor-pointer">
-                    Unlock the Wealth-Building Secrets of Billionaires: A Financial Planning Roadmap for Aspiring Young Adults
+                    Financial Advisor: What They Do and Why You Need One. 
                     </h1>
                     </Link>
                     <p className="leading-[1.2rem] font-normal font-inter text-[#212020] text-[1rem]">       
-                    Many young adults aspire to be as wealthy as Dangote, Otedola, Elon Musk, and other successful entrepreneurs. While there is no single formula for success, research has shown that billionaires have certain traits that help them build and sustain their wealth. These traits include an appetite for smart risk-taking, long-term focus on their business, and sheer determination. However, it is important to note that these traits are not the only factors that contribute to success.
+                    Ever wondered why you should engage the services of a financial advisor? Well, let me drive this home with the story of a friend named John. John is a self-directed and cerebral gentleman who was convinced that he could navigate the complicated world of investments without support from the experts. Initially, he appeared to do well on his investment decisions and activities. He invested his hard-earned money in a flashy new tech stock, certain that he had it all figured out. However, the tech stock took a nosedive, and so did John's investment capital. John was undaunted still, expecting a market recovery that will help him recover invested capital and achieve projected return through capital gains and dividends. Regrettably, John was blinded by his bias and never realized his expectations as he lost money daily on the investment. 
                     </p>  
                 </div>
 
