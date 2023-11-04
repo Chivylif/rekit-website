@@ -296,6 +296,15 @@ export const serviceCardItems = [
 ];
 export const blogPosts = [
   {
+    title: "Financial Advisor: What They Do and Why You Need One.",
+    author: "Samuel Apanisile",
+    updatedDate: "November 1, 2023 at 12:04:39 PM",
+    description: "Financial Education",
+    category: "financialEducation",
+    slug: "what-they-do"
+
+  },
+  {
     title: "Unlock the Wealth-Building Secrets of Billionaires: A Financial Planning Roadmap for Aspiring Young Adults",
     author: "Samuel Apanisile",
     updatedDate: "October 20, 2023 at 5:37:39 PM",
