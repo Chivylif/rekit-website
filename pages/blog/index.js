@@ -5,7 +5,7 @@ import { useRouter } from 'next/router';
 import axios from "axios";
 import AppLayout from "../../layouts/AppLayout";
 import Image from "next/image";
-import clipThree from "./assets/blog-home.png"
+import clipThree from "./assets/entrepreneur.jpg"
 import Link from "next/link";
 import { blogPosts } from "../../constants";
 
@@ -91,16 +91,16 @@ const BlogPV = () => {
                      <Link
                       href={{
                         pathname: `/blog/financialEducation/[slug]`,
-                        query: { slug: 'what-they-do' },
+                        query: { slug: 'must-have-skills-of-an-entrepreneur' },
                       }}
                       
                     >
                     <h1 className="font-extrabold pt-0.5 text-[#F08420] text-xl font-raleway cursor-pointer">
-                    Financial Advisor: What They Do and Why You Need One. 
+                    The Six Must-Have Skills for Thriving as an Entrepreneur. 
                     </h1>
                     </Link>
                     <p className="leading-[1.2rem] font-normal font-inter text-[#212020] text-[1rem]">       
-                    Ever wondered why you should engage the services of a financial advisor? Well, let me drive this home with the story of a friend named John. John is a self-directed and cerebral gentleman who was convinced that he could navigate the complicated world of investments without support from the experts. Initially, he appeared to do well on his investment decisions and activities. He invested his hard-earned money in a flashy new tech stock, certain that he had it all figured out. However, the tech stock took a nosedive, and so did John's investment capital. John was undaunted still, expecting a market recovery that will help him recover invested capital and achieve projected return through capital gains and dividends. Regrettably, John was blinded by his bias and never realized his expectations as he lost money daily on the investment. 
+                    Hey there, friends! Today, we are diving into the world of your hidden superpowers, and no, we are not talking about flying or disappearing. We are talking about the six must-have skills that all budding entrepreneurs must have to thrive in today’s economy. The interesting thing is these super skills are linked to managing money and investments. 
                     </p>  
                 </div>
 

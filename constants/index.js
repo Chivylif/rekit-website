@@ -296,6 +296,15 @@ export const serviceCardItems = [
 ];
 export const blogPosts = [
   {
+    title: "The Six Must-Have Skills for Thriving as an Entrepreneur",
+    author: "Samuel Apanisile",
+    updatedDate: "November 20, 2023 at 10:15:19 AM",
+    description: "Financial Education",
+    category: "financialEducation",
+    slug: "must-have-skills-of-an-entrepreneur"
+
+  },
+  {
     title: "Financial Advisor: What They Do and Why You Need One.",
     author: "Samuel Apanisile",
     updatedDate: "November 1, 2023 at 12:04:39 PM",
