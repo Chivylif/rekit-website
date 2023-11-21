@@ -90,7 +90,7 @@ const BlogPV = () => {
                     />
                      <Link
                       href={{
-                        pathname: `/blog/financialEducation/[slug]`,
+                        pathname: `/blog/businessFinance/[slug]`,
                         query: { slug: 'must-have-skills-of-an-entrepreneur' },
                       }}
                       

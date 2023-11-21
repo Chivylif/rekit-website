@@ -24,8 +24,8 @@ import { blogPosts } from "../../../constants";
 //   };
 // }
 
-const FinancialEducation = () => {
-  const relatedPosts = blogPosts.filter(p => p.category.toLowerCase() == "financialEducation".toLowerCase());
+const BusinessFinance = () => {
+  const relatedPosts = blogPosts.filter(p => p.category.toLowerCase() == "businessFinance".toLowerCase());
   const router = useRouter()
 
   return (
@@ -69,7 +69,7 @@ const FinancialEducation = () => {
       <AppLayout>
         <div className="flex-col justify-center content-center mx-50 lg:flex-col bg-white md:flex-col pb-10">
         <h1 className="flex justify-center content-center pt-5 text-[#F08420] font-raleway font-bold text-[1.5rem] lg:mx-10 lg:text-[2.5rem] uppercase">
-          Financial Education
+          Business Finance
         </h1>
 
         <div className="lg:w-4/5 px-[0.2rem] pt-5 lg:pt-5 mx-auto pb-5 border-r-3"> 
@@ -231,4 +231,4 @@ const FinancialEducation = () => {
   );
 };
 
-export default FinancialEducation;
+export default BusinessFinance;

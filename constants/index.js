@@ -299,8 +299,8 @@ export const blogPosts = [
     title: "The Six Must-Have Skills for Thriving as an Entrepreneur",
     author: "Samuel Apanisile",
     updatedDate: "November 20, 2023 at 10:15:19 AM",
-    description: "Financial Education",
-    category: "financialEducation",
+    description: "Business Finance",
+    category: "businessFinance",
     slug: "must-have-skills-of-an-entrepreneur"
 
   },
