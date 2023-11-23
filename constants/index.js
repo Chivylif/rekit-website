@@ -80,7 +80,7 @@ export const managementTeamData = [
   {
     key: 4,
     name: "Apanisile Samuel Temitope",
-    role: "Head - Investment Management",
+    role: "Head - Investment & Risk Advisory",
     cert: "",
     image: sam,
   },
