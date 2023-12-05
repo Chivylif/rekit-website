@@ -5,7 +5,7 @@ import { useRouter } from 'next/router';
 import axios from "axios";
 import AppLayout from "../../layouts/AppLayout";
 import Image from "next/image";
-import clipThree from "./assets/entrepreneur.jpg"
+import clipThree from "./assets/retirement-planning.jpeg"
 import Link from "next/link";
 import { blogPosts } from "../../constants";
 
@@ -90,17 +90,17 @@ const BlogPV = () => {
                     />
                      <Link
                       href={{
-                        pathname: `/blog/businessFinance/[slug]`,
-                        query: { slug: 'must-have-skills-of-an-entrepreneur' },
+                        pathname: `/blog/retirementPlanning/[slug]`,
+                        query: { slug: 'how-to-retire-rich' },
                       }}
                       
                     >
                     <h1 className="font-extrabold pt-0.5 text-[#F08420] text-xl font-raleway cursor-pointer">
-                    The Six Must-Have Skills for Thriving as an Entrepreneur. 
+                    HOW TO RETIRE RICH: 7 STEPS TO RETIRE LIKE A BOSS. 
                     </h1>
                     </Link>
                     <p className="leading-[1.2rem] font-normal font-inter text-[#212020] text-[1rem]">       
-                    Hey there, friends! Today, we are diving into the world of your hidden superpowers, and no, we are not talking about flying or disappearing. We are talking about the six must-have skills that all budding entrepreneurs must have to thrive in today’s economy. The interesting thing is these super skills are linked to managing money and investments. 
+                    One of my favourite personal wise sayings which I often share with those who care to listen is:  "People who refuse to learn from the rich may find themselves forever locked in the cycle of financial ignorance and poverty, by missing out on valuable lessons that could pave the way to prosperity." Today, I will show you 7 solid ways to achieve your goal of retiring rich through the story of Bosede Lorie.
                     </p>  
                 </div>
 
