@@ -66,7 +66,7 @@ export const managementTeamData = [
   {
     key: 2,
     name: "Vincent Damian Akioyamen",
-    role: "Head - HR, Compliance & Ethics",
+    role: "Head - Compliance & Ethics Director",
     cert: "",
     image: managementTeamTwo,
   },
@@ -80,7 +80,7 @@ export const managementTeamData = [
   {
     key: 4,
     name: "Apanisile Samuel Temitope",
-    role: "Head - Investment Management",
+    role: "Head - Investment & Risk Advisory",
     cert: "",
     image: sam,
   },
@@ -295,6 +295,15 @@ export const serviceCardItems = [
   },
 ];
 export const blogPosts = [
+  {
+    title: "HOW TO RETIRE RICH: 7 STEPS TO RETIRE LIKE A BOSS. ",
+    author: "Samuel Apanisile",
+    updatedDate: "December 5, 2023 at 8:15:19 AM",
+    description: "Retirement Planning",
+    category: "retirementPlanning",
+    slug: "how-to-retire-rich"
+
+  },
   {
     title: "The Six Must-Have Skills for Thriving as an Entrepreneur",
     author: "Samuel Apanisile",
