@@ -296,6 +296,15 @@ export const serviceCardItems = [
 ];
 export const blogPosts = [
   {
+    title: " What are bonds? Let's discuss bonds. ",
+    author: "Samuel Apanisile",
+    updatedDate: "December 15, 2023 at 10:22:06 AM",
+    description: "Investment Insights",
+    category: "investmentInsights",
+    slug: "what-are-bonds"
+
+  },
+  {
     title: "HOW TO RETIRE RICH: 7 STEPS TO RETIRE LIKE A BOSS. ",
     author: "Samuel Apanisile",
     updatedDate: "December 5, 2023 at 8:15:19 AM",
