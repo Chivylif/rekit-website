@@ -5,7 +5,7 @@ import { useRouter } from 'next/router';
 import axios from "axios";
 import AppLayout from "../../layouts/AppLayout";
 import Image from "next/image";
-import clipThree from "./assets/retirement-planning.jpeg"
+import clipThree from "./assets/bonds-2.png"
 import Link from "next/link";
 import { blogPosts } from "../../constants";
 
@@ -90,17 +90,17 @@ const BlogPV = () => {
                     />
                      <Link
                       href={{
-                        pathname: `/blog/retirementPlanning/[slug]`,
-                        query: { slug: 'how-to-retire-rich' },
+                        pathname: `/blog/investmentInsights/[slug]`,
+                        query: { slug: 'what-are-bonds' },
                       }}
                       
                     >
                     <h1 className="font-extrabold pt-0.5 text-[#F08420] text-xl font-raleway cursor-pointer">
-                    HOW TO RETIRE RICH: 7 STEPS TO RETIRE LIKE A BOSS. 
+                    What are bonds? Let's discuss bonds.
                     </h1>
                     </Link>
                     <p className="leading-[1.2rem] font-normal font-inter text-[#212020] text-[1rem]">       
-                    One of my favourite personal wise sayings which I often share with those who care to listen is:  "People who refuse to learn from the rich may find themselves forever locked in the cycle of financial ignorance and poverty, by missing out on valuable lessons that could pave the way to prosperity." Today, I will show you 7 solid ways to achieve your goal of retiring rich through the story of Bosede Lorie.
+                    Welcome dear readers, to the fascinating world of bonds. Whether you are a seasoned investor or just dipping your toes into the financial waters, understanding bonds is the key to unlocking a world of opportunities.
                     </p>  
                 </div>
 
