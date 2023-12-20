@@ -5,7 +5,7 @@ import { useRouter } from 'next/router';
 import axios from "axios";
 import AppLayout from "../../layouts/AppLayout";
 import Image from "next/image";
-import clipThree from "./assets/bonds-2.png"
+import clipThree from "./assets/financialMarketAnalysisTwo.png"
 import Link from "next/link";
 import { blogPosts } from "../../constants";
 
@@ -90,17 +90,17 @@ const BlogPV = () => {
                     />
                      <Link
                       href={{
-                        pathname: `/blog/investmentInsights/[slug]`,
-                        query: { slug: 'what-are-bonds' },
+                        pathname: `/blog/financialMarketAnalysis/[slug]`,
+                        query: { slug: 'financial-overview-2023-recommendations-2024' },
                       }}
                       
                     >
                     <h1 className="font-extrabold pt-0.5 text-[#F08420] text-xl font-raleway cursor-pointer">
-                    What are bonds? Let's discuss bonds.
+                    Financial Overview of 2023 and Insightful Investment Recommendations for 2024
                     </h1>
                     </Link>
                     <p className="leading-[1.2rem] font-normal font-inter text-[#212020] text-[1rem]">       
-                    Welcome dear readers, to the fascinating world of bonds. Whether you are a seasoned investor or just dipping your toes into the financial waters, understanding bonds is the key to unlocking a world of opportunities.
+                    As we bid farewell to 2023, a year that has been marked by both challenges and triumphs, the financial landscape in Nigeria reveals a tale of resilience and transformation. As we gear up for the upcoming year, REKIT Financial Advisors is excited to share insights and strategic investment recommendations to guide our clients through the opportunities and challenges that lie ahead.
                     </p>  
                 </div>
 

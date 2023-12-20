@@ -295,8 +295,17 @@ export const serviceCardItems = [
   },
 ];
 export const blogPosts = [
+   {
+    title: " Financial Overview of 2023 and Insightful Investment Recommendations for 2024",
+    author: "Samuel Apanisile",
+    updatedDate: "December 20, 2023 at 13:45:06 PM",
+    description: "Financial Market Analysis",
+    category: "financialMarketAnalysis",
+    slug: "financial-overview-2023-recommendations-2024"
+
+  },
   {
-    title: " What are bonds? Let's discuss bonds. ",
+    title: " What are bonds? Let's discuss bonds ",
     author: "Samuel Apanisile",
     updatedDate: "December 15, 2023 at 10:22:06 AM",
     description: "Investment Insights",
@@ -305,7 +314,7 @@ export const blogPosts = [
 
   },
   {
-    title: "HOW TO RETIRE RICH: 7 STEPS TO RETIRE LIKE A BOSS. ",
+    title: "HOW TO RETIRE RICH: 7 STEPS TO RETIRE LIKE A BOSS ",
     author: "Samuel Apanisile",
     updatedDate: "December 5, 2023 at 8:15:19 AM",
     description: "Retirement Planning",
@@ -323,7 +332,7 @@ export const blogPosts = [
 
   },
   {
-    title: "Financial Advisor: What They Do and Why You Need One.",
+    title: "Financial Advisor: What They Do and Why You Need One",
     author: "Samuel Apanisile",
     updatedDate: "November 1, 2023 at 12:04:39 PM",
     description: "Financial Education",
