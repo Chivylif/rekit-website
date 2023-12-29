@@ -74,7 +74,7 @@ const GoalBasedInvesting = () => {
             open={() => setIsOpenWedding(!isOpenWedding)}
             image={goaltwo}
             title="Wedding Plan"
-            desc="Bring your dream wedding to life with REKIT's comprehensive wedding plan that allows you to conveniently set financial goals and shoulder all expenses for your big day."
+            desc="Bring your dream wedding to life with REKIT's comprehensive wedding plan that allows you to conveniently shoulder all of the big day's expenses."
           />
         </>
       );
@@ -94,7 +94,7 @@ const GoalBasedInvesting = () => {
             open={() => setIsRetirement(!isRetirement)}
             image={goalthree}
             title="Retirement Plan"
-            desc="Planning to retire in a few years? Enjoy life after active service with our personalised retirement plan which gives you access to tax-free monthly income for your continued sustenance."
+            desc="Enjoy life after active service with our personalised retirement plan which gives you access to tax-free monthly income to enable you maintain a comfortable lifestyle at retirement."
           />
         </>
       );
@@ -114,7 +114,7 @@ const GoalBasedInvesting = () => {
             open={() => setIsOpen(!isOpen)}
             image={goalfour}
             title="Car Purchase Plan"
-            desc="You don't have to break the bank to buy a new car. Fund your next vehicle purchase with our wide range of custom-made and convenient advisory plans."
+            desc="You don't have to break the bank to buy a new car. Fund your vehicle purchase with our accessible savings and credit solutions."
           />
         </>
       );
@@ -134,7 +134,7 @@ const GoalBasedInvesting = () => {
             open={() => setIsEducation(!isEducation)}
             image={goalfive}
             title="Education Plan"
-            desc="The best gift for anyone is a solid education, finance your studies with top-notch financial planning solutions that help you achieve yours and your ward’s educational goals."
+            desc="The gift of solid education cannot be over emphasized. Gift one to yourself or loved ones through our education plan."
           />
         </>
       );
@@ -153,8 +153,8 @@ const GoalBasedInvesting = () => {
             viewButton={true}
             open={() => setIsSavings(!isSavings)}
             image={savingsPlan}
-            title="Savings Plan"
-            desc="With our custom-made plans, you can achieve unique goals that are not captured on our list of predefined plans. Our financial advisors will work with you to create personalised strategies that fit your life and goals for the future."
+            title="Umbrella Solution"
+            desc="With our all-inclusive umbrella solution, you can achieve your life ambitions that are not captured on our list of predefined plans."
           />
         </>
       );
@@ -192,22 +192,22 @@ const GoalBasedInvesting = () => {
           desc="We provide the opportunity to create custom plans that address goals that might not be captured by our list of predefined plans."
         />
         <SmallWrapper>
-          <div className="grid lg:grid-cols-1 gap-y-10 lg:gap-y-0 lg:gap-x-10 mb-20">
+          {/* <div className="grid lg:grid-cols-1 gap-y-10 lg:gap-y-0 lg:gap-x-10 mb-20"> */}
             {/* <div>
               <Image src={goaltop} alt="investtop" />
             </div> */}
-            <div
+            {/* <div
               id="calulator"
               className="text-base font-inter flex justify-center lg:pl-[4rem] lg:pt-[1rem] font-normal leading-[1.8rem] text-[#212020]"
             >
               We all have unique, wonderful goals and aspirations. Rekit’s
-              advisors are just the people you need to ensure that the financing
-              of these goals would be easier. Our wide range of plans allows you
+              advisors are the people you need to ensure that financing
+              these goals and aspirations would be easier. Our wide range of plans allows you
               to plan for life milestones conveniently. Let our advisors work
               with you to finance your big-picture objectives and conveniently
               attain major life milestones.
-            </div>
-          </div>
+            </div> */}
+          {/* </div> */}
 
           <div className="py-10">
             <div className="flex flex-col lg:flex-row space-y-3 lg:space-y-0 lg:space-x-2">

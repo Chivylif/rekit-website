@@ -11,7 +11,7 @@ const NextStep = (props) => {
       className={`w-full gap-y-3 flex flex-col justify-center items-center h-52 ${theheight} mx-auto bg-[#F8FAFD]`}
       >
         <h1 className="w-[95%] py-3 text-lg font-bold lg:text-4xl lg:w-[39%] text-center lg:leading-[3rem]" >{title}</h1>
-        <Link href="/contact-us">
+        <Link href="/create-a-plan">
           <a>
 
         <Button

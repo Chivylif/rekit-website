@@ -238,8 +238,8 @@ const Footer = () => {
         </Col>
       </Row>
       <div className="w-full text-center font-bold font-raleway mt-5 text-gray-700 underline">
-        REKIT does not receive cash and all payment to be made, should be made
-        through the platform.
+        REKIT does not receive cash. Therefore, all payments must be made
+        through REKIT advised channels.
       </div>
     </footer>
   );

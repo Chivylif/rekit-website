@@ -300,7 +300,7 @@ export default function Home() {
             <SliderBox
               title="Working to meet your investment goals"
               btnText="GET STARTED"
-              desc="Understand Global and Domestic Financial Markets through the help of our trusted financial advisors"
+              desc="Understand global and domestic financial markets through the help of our trusted financial advisors"
             />
           </div>
           <div className="h-[343px] lg:h-[543px] text-white text-center flex relative z-10">
@@ -368,8 +368,8 @@ export default function Home() {
               />
             </div>
             <Metaa
-              title="Lifestyle Financial Planning"
-              desc="Detailed understanding of our Clients values, needs, choices and experience."
+              title="Personal Financial Planning"
+              desc="With a thorough understanding of our clients investment objectives, risk apetites and time horizon, we provide a unique and comprehensive financial plan to enable them meet their major life goals"
             />
           </div>
           <div className="bg-white shadow-lg">
@@ -385,7 +385,7 @@ export default function Home() {
             </div>
             <Metaa
               title="Wealth Management"
-              desc="We partner with our clients through innovative solutions to support wealth accumulation, protection and retirement planning."
+              desc="We partner with our clients through innovative solutions that support wealth accumulation, enhancement, consolidation and protection."
             />
           </div>
           <div className="bg-white shadow-lg">
@@ -400,7 +400,7 @@ export default function Home() {
             </div>
             <Metaa
               title="Goal-Based Investing"
-              desc="We develop investment solutions that address specific goals such as: Home acquisition, Car Purchase, Education, etc."
+              desc="Our unparalleled goal-based investing solutions that address specific goals such as: home acquisition, car purchase, education, etc."
             />
           </div>
           <div className="bg-white shadow-lg">
@@ -415,7 +415,7 @@ export default function Home() {
             </div>
             <Metaa
               title="Sucession Planning"
-              desc="We partner with our clients to develop bespoke solutions which include wills, trusts, and foundations. To ensure protection and conservation through proficient and efficient management of assets."
+              desc="We co-create with our clients to develop bespoke generational wealth protection and transfer solutions through wills, trusts, endownment funds and foundations."
             />
           </div>
           <div className="bg-white shadow-lg">
@@ -430,8 +430,8 @@ export default function Home() {
               />
             </div>
             <Metaa
-              title="Tax Planning Strategies"
-              desc="Understanding and complying with the various taxes that can apply to asset ownership in different jurisdictions."
+              title="Tax and Insurance Planning"
+              desc="Through our premium insurance and tax solutions, our clients are assured of asset protection and timely compliance with tax expectations."
             />
           </div>
         </div>

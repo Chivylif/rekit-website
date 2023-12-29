@@ -33,13 +33,13 @@ const AboutUsCard = (props) => {
         </p>
         <p className="text-[#212020] text-base font-normal mb-2">{listHead}</p>
         {list && (
-          <ul className="m-0 ml-5 p-0">
+          <ul className="m-0 ml-0 p-0">
             {list.map((item, idx) => (
               <li
                 key={idx}
                 className={`text-[#212020] ${
                   !listStyle ? "list-none" : "list-disc"
-                } font-inter font-normal text-base py-[0.3rem]`}
+                } font-inter font-normal text-base py-[0.3rem] text-justify`}
               >
                 {item}
               </li>

@@ -79,35 +79,38 @@ const ContactUs = () => {
         )
       }
       <Head>
-        <title>Contact Us | Rekit Financial Advisors Limited</title>
+        <title>Create a plan | Rekit Financial Advisors Limited</title>
         <meta charset="UTF-8" />
-        <meta name="description" content="Contact Us Rekit Financial An Investment advisory company that delivers complementary and personalized, solutions to individuals and corporate organizations." />
+        <meta name="description" content="Create a Plan Rekit Financial An Investment advisory company that delivers complementary and personalized, solutions to individuals and corporate organizations." />
         <meta name="keywords" content="Investment, Finance, Advice" />
         <meta property="og:site_name" content="Rekit" />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://www.rekitonline.com" />
         <meta property="og:image" content="/rekit.png" />
         <meta property="og:description" content="Contact Us Rekit Financial An Investment advisory company that delivers complementary and personalized, solutions to individuals and corporate organizations." />
-        <meta property="og:title" content="Contact Us | Rekit Financial Advisors Limited" />
+        <meta property="og:title" content="Create a Plan | Rekit Financial Advisors Limited" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <AppLayout>
         <Banner
           image={bannerfive}
-          headline="REACH OUT TO US"
+          headline="LET'S CREATE A PLAN TOGETHER"
           desc="One step closer to achieving your investment goals"
         />
         <SmallWrapper>
           <Row gutter={{ xs: 8, sm: 16, md: 24, lg: 96 }}>
             <Col xs={24} sm={24} md={24} lg={16}>
               <div className="text-[#16130F] text-base leading-[1.8rem] font-inter">
-              Our partners including government,
-                trend-setting companies and individuals have
-                always been appreciative of our professional dynamism.
+              Do you want to achieve your goals faster and easier? Do you want to track your progress and celebrate your successes?<br/> 
+              <br/>
+              If yes is your answer to any of these questions, then you need a plan and our advisors are only an email or call away to help create a unique financial plan for you. <br/>
+              <br/>
+              Don’t wait any longer. Start living your best life now
               </div>
 
-              <h1 id="frame" className="my-5 font-bold text-[#050504] text-[26px]">Drop A Line</h1>
+              {/* <h1  className="my-5 font-bold text-[#050504] text-[26px]">Drop A Line</h1> */}
+              <h1 id="frame" className="my-5 font-bold text-[#050504] text-[22px]">Send us a message to get started</h1>
               
               <Row>
                 <Col span={24}>
@@ -125,7 +128,7 @@ const ContactUs = () => {
                   
                 </Col>
                 
-                <Col span={24}>
+                {/* <Col span={24}>
                 <div className="my-2">
                   <Radio.Group onChange={onChange} value={value}>
                     <Radio value={1}>Enquiries</Radio>
@@ -133,13 +136,13 @@ const ContactUs = () => {
                     <Radio value={3}>Others</Radio>
                   </Radio.Group>
                   </div>
-                </Col>
+                </Col> */}
 
                 <Col span={24}>
                 <div className="my-5">
                   <TextArea
                     rows={8}
-                    placeholder="Type your message here"
+                    placeholder="Share a summary of your investment objective here"
                     maxLength={6}
                   />
                   </div>
@@ -182,7 +185,7 @@ const ContactUs = () => {
                   </div>
                 </Col>
               </Row>
-              <Row>
+              {/* <Row>
                 <Col>
                   <h2 className="font-bold font-raleway text-base uppercase">SAY HELLO!</h2>
                   <div className="py-1">
@@ -198,7 +201,7 @@ const ContactUs = () => {
                     info@rekitadvisory.com
                   </a>
                 </Col>
-              </Row>
+              </Row> */}
             </Col>
           </Row>
         </SmallWrapper>
