@@ -126,13 +126,13 @@ export const goalsTabsData = [
   { key: "four", text: "Car Purchase Plan" },
   { key: "five", text: "Education Planning" },
   // { key: "six", text: "Customize your Plan" },
-  { key: "six", text: "Savings Plan" },
+  { key: "six", text: "Umbrella Solution" },
 ];
 
 export const investmentTabsData = [
   { key: "one", text: "Strategic Solutions and Products​" },
   { key: "two", text: "Multi-Asset Class Investment Solutions" },
-  { key: "three", text: "Equity & Fixed income Trading​" },
+  { key: "three", text: "Equity & Fixed Income Trading​" },
   { key: "four", text: "Alternative Investments" },
 ];
 
@@ -141,8 +141,8 @@ export const wearedata = [
     id: 1,
     image: weareone,
     desc: [
-      "Founded in 2019, REKIT Financial Advisors Limited (“REKIT”) is a leading Nigerian investment and financial advisory firm that helps clients turn risk into a path for growth. With a combined 100+ years worth of industry experience, we design and deliver solutions that manage risk, optimize benefits, cultivate talent, and expand the power of capital to protect and strengthen individuals and institutions.",
-      "We aim to develop bespoke, comprehensive, personalized, financial and investment advisory, as well as consulting services, including wealth management and financial planning to a range of clients including individuals and corporates.",
+      "Founded in 2019, REKIT Financial Advisors Limited (“REKIT”) is a leading Nigerian investment and financial advisory firm that helps clients turn risk into a path for growth. With a combined 100+ years worth of industry experience, we design and deliver solutions that Manage risks, hone talents....we are poised to develop bespoke, comprehensive, personalized investment advisory services including wealth planning and management to our clientele.",
+      "Working closely with selected financial and non-financial institutions, we develop evidenced based, tried and tested winning investment solutions that ensures our clients meet their goals efficiently and cost effectively. Our uniques perspective allows us to see the critical interception between talents, assets and ideas, the dynamic formula that drives business performance.",
     ],
     order: false,
   },
@@ -151,78 +151,78 @@ export const wearedata = [
     image: wearetwo,
     desc: [
       "Working closely with selected independent and trusted third party fund/asset managers, we aim to develop bespoke investment solutions, as well as financial planning services that ensure our clients meet their goals efficiently and cost-effectively. Our unique perspective allows us to see the critical intersections between talent, assets, and ideas — the dynamic formula that drives business performance.",
-      "At REKIT, professionalism, client service, fairness, and integrity are our top priorities. We provide our clients with honest advice and dedicated support to jointly achieve effective results. We seek to develop long–term professional relationships based on mutual trust and respect.",
+      "At REKIT, our clients are our topmost priorities. At such, professionalism, client service, fairness, and integrity underscore everythigng we do. We provide our clients with honest advice and dedicated support to help them achieve positive outcomes. We continously develop long term invaluable proffesional relationships based on mutual trust and respect.",
     ],
     order: true,
   },
 ];
 
 export const whoWeServe = [
-  "At REKIT, we serve a diverse range of clients, all of whom require specialized financial expertise and strategic advice to achieve their goals.",
-  "We offer personalized and corporate advisory services to individuals, corporations, governments, and institutional investors. We provide a variety of financial service advisory, including mergers and acquisitions (M&A), capital raising, corporate restructuring, and strategic planning.",
-  "Individual clients may seek our services for lifestyle financial planning, goal-based planning, wealth management and succession planning. In general, advising clients on how to manage their personal investments and create wealth over time.",
-  "Corporate clients, on the other hand, may need assistance with mergers and acquisitions, capital raising, or restructuring their operations to become more efficient and profitable.",
-  "Governments may also use our advisory services to help them manage their finances and attract foreign investment.",
-  "Institutional investors, such as pension funds and endowments, may need advice on how to allocate their assets and generate returns for their beneficiaries.",
+  "At REKIT, we serve a global clitentele all of whom require specialized financial expertise and strategic advice to achieve their goals.",
+  " We offer personalized and corporate advisory services to individuals, corporations, governments, and institutional investors. We provide a variety of financial advisory services including mergers and acquisitions (M&A), capital raising, corporate restructuring, and strategic planning.",
+  " Individual clients may seek our services for lifestyle financial planning, goal-based planning, wealth management and succession planning. In general, advising clients on how to manage their personal investments and create wealth over time.",
+  " On the other hand, corporate clients may require our expertise and proffesional support with mergers and acquisitions, capital raising and restructuring of their operations to become more efficient and profitable.",
+  " Governments may also leverage our advisory services to help them manage their processes and internal structures including finances to attract foreign investment and investors. ",
+  " Institutional investors, such as pension funds and endowments, may require our advice and specialization on winning asset allocation strategies to generate competitive returns on their portfolios.",
 ];
 
 export const serviceCardItems = [
   {
     image: servicecardone,
     title:
-      "A specially designed investment product that helps in wealth accumulation.",
+      "Discover Your Wealth Potential With Our Free Online Calculator",
     data: [
       {
-        lead: "Calculate your",
+        lead: "Determine your",
         title: "Wealth",
-        description: "in real time over a range of years.",
+        description: "in real time over a range of years",
       },
       {
-        lead: "Provides",
+        lead: "Get",
         title: "Insightful",
-        description: "Investment advice.",
+        description: "Investment advice",
       },
       {
-        lead: "Wide",
-        title: "Variety",
+        lead: "Enjoy",
+        title: "a Variety",
         description:
-          "investor income and opportunity for capital appreciation.",
+          "of investment solutions just right for you ",
       },
     ],
-    cardTitle: "Wealth Accumulation Calculator",
+    cardTitle: "Wealth Planning Calculator",
     cardDescription:
-      "Calculate future wealth that can be created through your regular investments.",
+      "Estimate your future wealth today",
     btnOneText: "get started",
     btnOneClick: () => {},
-    btnTwoText: "wealth calculator",
+    btnTwoText: "calculate here!!",
     btnTwoClick: () => {},
   },
   {
     image: servicecardtwo,
-    title: "Wealth Planning Solutions for building and preserving your wealth.",
+    title: "Wealth Planning Solutions For Building and Preserving Your Wealth",
     data: [
       {
-        lead: "Consultative approach",
-        title: "Understand",
+        lead: "",
+        title: "Consultative Model",
         description:
-          "each client’s need and to establish a close working relationship.",
+          "Understanding our client needs is key to our investment advice",
       },
       {
-        lead: "We consult with our",
-        title: "Specialists",
+        lead: "",
+        title: "Team of Specialists",
         description:
-          "from our team of experts to prioritize each client’s financial need in order of importance.",
+          "Our team of specialists ensure that each client’s financial goal is prioritized in order of importance",
       },
       {
-        lead: "We customize",
-        title: "Solution",
+        lead: "",
+        title: "Customized Solutions",
         description:
-          "to fit each need, working closely with every client throughout their lifecycle.",
+          "Our solutions fit into your needs and ensure that each stage of your financial lifecycle is adequately catered to",
       },
     ],
-    cardTitle: "Preserving Your Wealth",
+    cardTitle: "",
     cardDescription:
-      "Calculate future wealth that can be created through your regular Investments.",
+      "",
     btnOneText: "get started",
     btnOneClick: () => {},
     btnTwoText: "learn more",
@@ -231,30 +231,30 @@ export const serviceCardItems = [
   },
   {
     image: servicecardthree,
-    title: "Investment Solutions for your strategic asset allocation.",
+    title: "Optimizing Your Asset Allocation",
     data: [
       {
-        lead: "We offer tailored",
-        title: "Solutions",
+        lead: "",
+        title: "",
         description:
-          "on individual and corporate accounts that suits your distinct needs.",
+          "",
       },
       {
-        lead: "Diversify your",
-        title: "Portfolio",
+        lead: "",
+        title: "",
         description:
-          "with sources of returns beyond traditional asset classes (stocks, bonds, and cash).",
+          "",
       },
       {
-        lead: "We help clients take",
-        title: "Advantage",
+        lead: "",
+        title: "",
         description:
-          "we help Clients take advantage of opportunities by providing access recommendation on investments across all asset classes.",
+          "",
       },
     ],
     cardTitle: "Strategic Asset allocation",
     cardDescription:
-      "With our understanding of our client needs, we are able to make bespoke asset allocation recommendations that allow them access an array of suitable investment options across asset classes including equities, money market, fixed income, real estate and alternative investments.",
+      "We deploy strategic asset allocation tools to ensure that your portfolio has the right mix of assets that result in winning outcomes across markets, sectors and companies",
     btnOneText: "get started",
     btnOneClick: () => {},
     btnTwoText: "learn more",
@@ -269,24 +269,24 @@ export const serviceCardItems = [
         lead: "Advisors work with you to",
         title: "Create",
         description:
-          "personalized strategies that fit your life and your plans for the future.",
+          "personalized strategies that fit your plans for the future.",
       },
       {
         lead: "We help",
         title: "Actualize",
         description:
-          "your dreams by drawing out a convenient plan of investment targeted towards your goals.",
+          "your dreams by developing an investment plan to help you realize your goals.",
       },
       {
         lead: "We provide the",
         title: "Opportunity",
         description:
-          "to create custom plans that address goals that might not be captured by our list of predefined plans.",
+          "for flexibility in your unique plan to accomodate changes in your circumstances.",
       },
     ],
-    cardTitle: "Our services are designed to help you meet your goals",
+    cardTitle: "Our wide range of plans allows you to meet your major life goals conveniently",
     cardDescription:
-      "Our wide range of plans allows you to plan for life milestones conveniently.",
+      "",
     btnOneText: "get started",
     btnOneClick: () => {},
     btnTwoText: "learn more",
@@ -295,8 +295,17 @@ export const serviceCardItems = [
   },
 ];
 export const blogPosts = [
+   {
+    title: " Financial Overview of 2023 and Insightful Investment Recommendations for 2024",
+    author: "Samuel Apanisile",
+    updatedDate: "December 20, 2023 at 13:45:06 PM",
+    description: "Financial Market Analysis",
+    category: "financialMarketAnalysis",
+    slug: "financial-overview-2023-recommendations-2024"
+
+  },
   {
-    title: " What are bonds? Let's discuss bonds. ",
+    title: " What are bonds? Let's discuss bonds ",
     author: "Samuel Apanisile",
     updatedDate: "December 15, 2023 at 10:22:06 AM",
     description: "Investment Insights",
@@ -305,7 +314,7 @@ export const blogPosts = [
 
   },
   {
-    title: "HOW TO RETIRE RICH: 7 STEPS TO RETIRE LIKE A BOSS. ",
+    title: "HOW TO RETIRE RICH: 7 STEPS TO RETIRE LIKE A BOSS ",
     author: "Samuel Apanisile",
     updatedDate: "December 5, 2023 at 8:15:19 AM",
     description: "Retirement Planning",
@@ -323,7 +332,7 @@ export const blogPosts = [
 
   },
   {
-    title: "Financial Advisor: What They Do and Why You Need One.",
+    title: "Financial Advisor: What They Do and Why You Need One",
     author: "Samuel Apanisile",
     updatedDate: "November 1, 2023 at 12:04:39 PM",
     description: "Financial Education",

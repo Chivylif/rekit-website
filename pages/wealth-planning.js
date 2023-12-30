@@ -48,7 +48,7 @@ const WealthPlanning = () => {
           viewButton={false}
           image={wealthone}
           title="Will, Trusts, and Estate Planning​"
-          desc="We understand that our clients work very hard to create wealth, provide comfort and security to themselves and their loved ones and as such need to preserve and protect the wealth and assets that they have accumulated over their lifetime. We are here to help create an action plan for your future and that of your loved ones leveraging well-crafted estate planning tools including wills, trusts, holding companies, foundations and endowment funds."
+          desc="We understand that our clients work very hard to create wealth, provide comfort and security for themselves and their loved ones and such, it is imperative to preserve and protect the assets accumulated over time. Our well-crafted estate planning tools including wills, trusts, holding companies, foundations and endowment funds will ensure that your assets and protected and preserved for posterity."
         />
       );
     } else if (activeTab === "two") {
@@ -58,20 +58,16 @@ const WealthPlanning = () => {
             viewButton={false}
             image={wealthtwo}
             title="Tax Planning Strategies"
-            listHead="Reduce your tax bill with our effective tax planning strategies. We provide access to the collaborative community of our global accounting network comprising trusted experts with experience in local and international tax laws. Our tax planning experts provide support with:"
+            listHead="Reduce your tax bill with our effective tax planning strategies. We provide access to the collaborative community of our global accounting network comprising trusted experts with experience in local and international tax laws. Our tax planning solutions help you avoid tax penalties that jeopardise family wealth and comply with international and local taxation laws covering estate planning, second citizenship, amongst other goals."
             list={[
-              "Avoidance of tax penalties that jeopardise family wealth by ensuring you understand and comply with taxation laws covering inheritance, death, and wealth tax both locally and internationally.",
+              "",
             ]}
           />
           <AboutUsCard
             viewButton={false}
             image={wealththree}
             order={true}
-            list={[
-              "Analysis of double tax treaties to manage wealth across multiple jurisdictions in order to advise on asset protection structures.",
-              "Understanding and complying with various tax laws that apply to real estate ownership in different countries whether a property is vacant or occupied. ",
-              "Planning for relocation of either people — which will include advice on visa or passport applications, identifying educational institutions, and paying school fees or assets which include wealth management and tax planning support.",
-            ]}
+            list={[]}
           />
         </div>
       );
@@ -81,11 +77,11 @@ const WealthPlanning = () => {
           viewButton={false}
           image={wealthfour}
           title="Global Family Office​"
-          listHead="We develop investment solutions that address specific goals such as:"
+          listHead=""
           listStyle={false}
           list={[
-            "From managing investment assets in various locations worldwide to providing advice on structuring the legal holding of these assets in the best way possible for optimal taxation.",
-            "Our global team of advisors help our clients to set up, administer and manage their family offices, providing advice and support in the areas of family governance, trust and corporate services, asset holding, tax planning, wealth management, probate, estate administration and wealth planning for charity and philanthropy.",
+            "From managing investment assets in various locations worldwide to providing advice on structuring the legal holding of these assets in the best way possible for optimal taxation. Our global team of advisors help our clients to set up, administer and manage their family offices, providing advice and support in the areas of family governance, trust and corporate services, asset holding, tax planning, wealth management, probate, estate administration and wealth planning for charity and philanthropy.",
+            "",
           ]}
         />
       );
@@ -96,7 +92,7 @@ const WealthPlanning = () => {
           image={wealthfive}
           title="Risk Management & Insurance"
           listStyle
-          listHead="Having the right insurance coverage and asset protection strategies help mitigate the financial impact of unforeseen events. Our advisors will analyse your current level of risk exposure and offer personalised solutions to protect the vulnerable areas of your financial life. Our insurance cover includes:"
+          listHead="The right blend of insurance coverage and asset protection solutions can mitigate the financial impact of unforeseen events. Our advisors will analyse your current level of risk exposure and offer personalised solutions to protect the vulnerable areas of your financial life. Our insurance cover includes:"
           list={[
             "Comprehensive insurance reviews for you, your family, and your business.",
             "Advanced asset protection strategies and structures.",

@@ -24,7 +24,7 @@ const InvestmentSolutions = () => {
           <AboutUsCard
             image={investone}
             title="Strategic Solutions and Structured Products"
-            desc="Get tailor-made investment solutions that suit both your financial goals and risk appetite. These range from structured products, initial public offering (IPO), loans, private equity, real estate funds, and other customised private offerings."
+            desc="Get tailor-made investment solutions that suit both your financial goals and risk appetite. This range of investment solutions includes equities, bonds, fixed income, money market, commercial papers and real estate. We also have a bouquet of specialised solutions including structured products, derivatives, private equities, venture capital and several asset-backed solutions in multicurrency."
           />
         );
       } else if (activeTab === "two") {
@@ -32,15 +32,15 @@ const InvestmentSolutions = () => {
           <AboutUsCard
             image={investtwo}
             title="Multi-Asset Class Investment Solutions"
-            desc="Reduce investment volatility and diversify across multiple asset classes and regions that are appropriate for you."
+            desc="Manage investment volatility by diversifying across multiple asset classes and regions that are appropriate for you."
           />
         );
       } else if (activeTab === "three") {
         return (
           <AboutUsCard
             image={investthree}
-            title="Equity and Fixed income Trading"
-            desc="REKIT's financial advisors are strategically positioned to help you take advantage of the financial markets to achieve your investment objectives in a safe and informed way. Our multiple partnerships with fund managers, brokers, and research firms equip you with up-to-date financial knowledge that enables you trade equities and fixed income for maximum returns"
+            title="Equity and Fixed Income Trading"
+            desc="Our financial advisors will expose you to global financial markets and solutions that fit your aspirations in a safe and informed way. Our expertise and valuable partnerships with leading financial and non-financial institutions keep us abreast of unfolding events and equip us with relevant information to serve you better."
           />
         );
       } else {
@@ -78,7 +78,7 @@ const InvestmentSolutions = () => {
         <SmallWrapper>
             <div className="grid gap-y-10 lg:gap-y-0 lg:grid-cols-2 gap-x-10 mb-20">
                 <p className="text-base font-inter font-normal leading-[1.8rem] text-[#212020]">
-                We all have unique, wonderful goals and aspirations. Our expert advisors at REKIT are just the people you need to ensure that financing these goals would be easier. Our wide range of plans allows you to plan for life’s milestones conveniently. We also provide the opportunity to create custom plans.
+                We all have unique, wonderful goals and aspirations. Our expert advisors at REKIT are the people you need to ensure that financing these goals and aspirations would be easier. Our wide range of plans allows you to plan for life’s milestones conveniently. We also provide the opportunity to create custom plans.
                 </p>
                 <div>
                     <Image src={investtop} alt="investtop" />
