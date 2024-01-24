@@ -295,6 +295,15 @@ export const serviceCardItems = [
   },
 ];
 export const blogPosts = [
+  {
+    title: "Real Estate: Getting Started in Real Estate Investments: A Beginner's Guide",
+    author: "Samuel Apanisile",
+    updatedDate: "January 23, 2023 at 11:35:33 AM",
+    description: "Real Estate",
+    category: "realEstate",
+    slug: "getting-started-in-real-estate"
+
+  },
    {
     title: " Financial Overview of 2023 and Insightful Investment Recommendations for 2024",
     author: "Samuel Apanisile",
