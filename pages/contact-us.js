@@ -202,11 +202,11 @@ const ContactUs = () => {
             </Col>
           </Row>
         </SmallWrapper>
-        <NextStep
+        {/* <NextStep
           title="Take the next step toward your personal and professional goals"
           height="406px"
           btnText="create a plan"
-        />
+        /> */}
       </AppLayout>
     </div>
   );

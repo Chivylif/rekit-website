@@ -21,7 +21,7 @@ const Card = (props) => {
       <h1 className="font-extrabold pt-12 text-[#F08420] text-xl mb-4 font-raleway">
         {title}
       </h1>
-      <p className="leading-[1.7rem] font-normal font-inter text-[#212020] text-[.8rem]">
+      <p className="leading-[1.8rem] font-normal font-inter text-[#212020] text-base">
         {description}
       </p>
       {/* <Link href="https://app.rekitonline.com/"><a>
@@ -111,7 +111,7 @@ const OurEdge = () => {
           </div>
         </SmallWrapper>
 
-        <NextStep link="/our-mgmt-team" btnText="Learn more" height="323px" title="Meet our board" />
+        <NextStep link="/our-board" btnText="Learn more" height="323px" title="Meet our board" />
       </AppLayout>
     </div>
   );
