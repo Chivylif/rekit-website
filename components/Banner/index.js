@@ -25,10 +25,10 @@ const Banner = ({ image, headline, desc }) => {
         />
       </div>
       <div className=" absolute z-10 left-2  lg:left-[6rem] bottom-5 lg:bottom-[10rem] w-11/12 lg:w-5/12 ">
-        <h1 className="text-white font-raleway font-bold text-[25px] lg:text-[45px] uppercase">
+        <h1 className="text-white font-raleway font-bold text-[25px] lg:text-[45px] uppercase drop-shadow-lg shadow-black">
           {headline}
         </h1>
-        <p className="text-[14px] text-white font-[500] font-inter mb-8">
+        <p className="text-[14px] text-white font-[500] font-inter mb-8 drop-shadow-lg shadow-black">
           {desc}
         </p>
 

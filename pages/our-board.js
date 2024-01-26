@@ -101,7 +101,7 @@ const OurBoard = () => {
         <Banner
           image={bannersix}
           headline="Our Board"
-          desc="Our employees have a combined industry experience of 76 years."
+          desc="Our employees have a combined industry experience of 100 years."
         />
         <SmallWrapper>
           <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-x-5 pb-16">

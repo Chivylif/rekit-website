@@ -57,10 +57,10 @@ const SliderBox = ({ title, desc, btnText }) => {
   };
   return (
     <div className="left-[10px] right-[10px] lg:right-0 bottom-16 lg:bottom-32 w-11/12 lg:w-5/12 gap-y-4 lg:gap-y-8 flex flex-col lg:left-[50px] text-left z-30 absolute">
-      <div className="uppercase leading-[1.8rem] lg:leading-[3.8rem] w-[684] font-semibold text-white font-raleway text-lg lg:text-3xl">
+      <div className="uppercase leading-[1.8rem] lg:leading-[3.8rem] w-[684] font-semibold text-white font-raleway text-lg lg:text-3xl drop-shadow-2xl shadow-black">
         {title}{" "}
       </div>
-      <div className="open-sans w-full lg:w-[756] font-inter font-semibold text-white text-xs lg:text-lg leading-[1.2rem] lg:leading-[1.8rem]">
+      <div className="open-sans w-full lg:w-[756] font-inter font-semibold text-white text-xs lg:text-lg leading-[1.2rem] lg:leading-[1.8rem] drop-shadow-2xl shadow-black">
         {desc}
       </div>
 
