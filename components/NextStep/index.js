@@ -4,14 +4,14 @@ import React from 'react'
 import Button from '../Button'
 // #F8FAFD
 const NextStep = (props) => {
-    const { title, btnText, onClick, height="530px" } = props
+    const { title, btnText, link="/create-a-plan", onClick, height="530px" } = props
     const theheight = height === '406px' ? 'lg:h-[406px]' : height === "323px" ? 'lg:h-[323px]' :  'lg:h-[530px]'
   return (
     <div
       className={`w-full gap-y-3 flex flex-col justify-center items-center h-52 ${theheight} mx-auto bg-[#F8FAFD]`}
       >
         <h1 className="w-[95%] py-3 text-lg font-bold lg:text-4xl lg:w-[39%] text-center lg:leading-[3rem]" >{title}</h1>
-        <Link href="/create-a-plan">
+        <Link href={link}>
           <a>
 
         <Button

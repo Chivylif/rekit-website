@@ -48,7 +48,7 @@ const WealthPlanning = () => {
           viewButton={false}
           image={wealthone}
           title="Will, Trusts, and Estate Planning​"
-          desc="We understand that our clients work very hard to create wealth, provide comfort and security for themselves and their loved ones and such, it is imperative to preserve and protect the assets accumulated over time. Our well-crafted estate planning tools including wills, trusts, holding companies, foundations and endowment funds will ensure that your assets and protected and preserved for posterity."
+          desc="We understand that our clients work very hard to create wealth, provide comfort and security for themselves and their loved ones and at such, it is imperative to preserve and protect the assets accumulated over time. Our well-crafted estate planning tools including wills, trusts, holding companies, foundations and endowment funds will ensure that your assets are protected and preserved for posterity."
         />
       );
     } else if (activeTab === "two") {
@@ -306,7 +306,7 @@ const WealthPlanning = () => {
 
         <NextStep
           title="Book a consultation to begin"
-          btnText="create a plan"
+          btnText="Book Now"
           height="406px"
         />
       </AppLayout>

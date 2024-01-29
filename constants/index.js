@@ -295,6 +295,24 @@ export const serviceCardItems = [
   },
 ];
 export const blogPosts = [
+  {
+    title: "How to navigate Nigeria's current tax landscape: Insights, Changes, and Smart Strategies",
+    author: "Samuel Apanisile",
+    updatedDate: "January 24, 2023 at 16:12:42 PM",
+    description: "Taxation",
+    category: "taxation",
+    slug: "nigerias-current-tax-landscape"
+
+  },
+  {
+    title: "Real Estate: Getting Started in Real Estate Investments: A Beginner's Guide",
+    author: "Samuel Apanisile",
+    updatedDate: "January 23, 2023 at 11:35:33 AM",
+    description: "Real Estate",
+    category: "realEstate",
+    slug: "getting-started-in-real-estate"
+
+  },
    {
     title: " Financial Overview of 2023 and Insightful Investment Recommendations for 2024",
     author: "Samuel Apanisile",

@@ -21,7 +21,7 @@ const Card = (props) => {
       <h1 className="font-extrabold pt-12 text-[#F08420] text-xl mb-4 font-raleway">
         {title}
       </h1>
-      <p className="leading-[1.7rem] font-normal font-inter text-[#212020] text-[.8rem]">
+      <p className="leading-[1.8rem] font-normal font-inter text-[#212020] text-base">
         {description}
       </p>
       {/* <Link href="https://app.rekitonline.com/"><a>
@@ -84,14 +84,14 @@ const OurEdge = () => {
               <Card
                 title="International reach"
                 right
-                description="From managing investment assets in various locations worldwide, to providing advice on structuring the legal holding of these assets for optimal taxation, we provide you with access to specialist advice throughout the UK, Europe, North America and South America."
+                description="From managing investment assets in various locations worldwide, to providing advice on structuring the legal holding of these assets for optimal taxation, we provide you with access to specialist advice throughout the Australia, Europe, Asia, Africa and America."
               />
             </div>
 
             <div className="grid lg:grid-cols-2 lg:gap-x-10 mb-8 lg:mb-16">
               <Card
                 title="Specialist expertise in family wealth management and protection"
-                description="Our global team of advisors provide advice and support in the areas of family governance, trust and corporate services, asset holding, tax planning, wealth management, probate, estate administration and wealth planning, and charity and philanthropy."
+                description="Our global team of advisors provide advice and support in the areas of family governance, trust and corporate services, asset holding, tax planning, wealth management, probate, estate administration, wealth planning, charity and philanthropy."
               />
               <div>
                 <Image src={edgetwo} alt="edgethree" />
@@ -111,7 +111,7 @@ const OurEdge = () => {
           </div>
         </SmallWrapper>
 
-        <NextStep btnText="Learn more" height="323px" title="Meet our board" />
+        <NextStep link="/our-board" btnText="Learn more" height="323px" title="Meet our board" />
       </AppLayout>
     </div>
   );
