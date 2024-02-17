@@ -296,9 +296,27 @@ export const serviceCardItems = [
 ];
 export const blogPosts = [
   {
+    title: "5 money question to ask your partner before marriage",
+    author: "",
+    updatedDate: "February 16, 2024 at 16:02:55 PM",
+    description: "Financial Education",
+    category: "financialEducation",
+    slug: "5-money-question-to-ask-your-partner-before-marriage"
+
+  },
+  {
+    title: "Finance News - 12/02/2024",
+    author: "",
+    updatedDate: "February 12, 2024 at 09:22:12 AM",
+    description: "Financial News and Updates",
+    category: "financialNewsAndUpdates",
+    slug: "financial-news-12-02-2024"
+
+  },
+  {
     title: "How to navigate Nigeria's current tax landscape: Insights, Changes, and Smart Strategies",
     author: "Samuel Apanisile",
-    updatedDate: "January 24, 2023 at 16:12:42 PM",
+    updatedDate: "January 24, 2024 at 16:12:42 PM",
     description: "Taxation",
     category: "taxation",
     slug: "nigerias-current-tax-landscape"
@@ -307,7 +325,7 @@ export const blogPosts = [
   {
     title: "Real Estate: Getting Started in Real Estate Investments: A Beginner's Guide",
     author: "Samuel Apanisile",
-    updatedDate: "January 23, 2023 at 11:35:33 AM",
+    updatedDate: "January 23, 2024 at 11:35:33 AM",
     description: "Real Estate",
     category: "realEstate",
     slug: "getting-started-in-real-estate"

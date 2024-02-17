@@ -5,7 +5,7 @@ import { useRouter } from 'next/router';
 import axios from "axios";
 import AppLayout from "../../layouts/AppLayout";
 import Image from "next/image";
-import clipThree from "./assets/realEstate1.jpeg"
+import clipThree from "./assets/money-question-two.png"
 import Link from "next/link";
 import { blogPosts } from "../../constants";
 
@@ -90,17 +90,17 @@ const BlogPV = () => {
                     />
                      <Link
                       href={{
-                        pathname: `/blog/realEstate/[slug]`,
-                        query: { slug: 'getting-started-in-real-estate' },
+                        pathname: `/blog/financialEducation/[slug]`,
+                        query: { slug: '5-money-question-to-ask-your-partner-before-marriage' },
                       }}
                       
                     >
                     <h1 className="font-extrabold pt-0.5 text-[#F08420] text-xl font-raleway cursor-pointer">
-                    Real Estate: Getting Started in Real Estate Investments: A Beginner's Guide
+                    5 Money Question To Ask Your Partner Before Marriage
                     </h1>
                     </Link>
                     <p className="leading-[1.2rem] font-normal font-inter text-[#212020] text-[1rem]">       
-                    Investing in real estate can be a rewarding journey, offering financial growth and portfolio diversification. Investing in real estate involves the acquisition and ownership of property with the expectation of generating income, achieving capital appreciation, or both. Real estate investments can take various forms, ranging from residential properties such as single-family homes and multi-family units to commercial properties like office buildings, retail spaces, and industrial complexes.
+                    Love is all around during this romantic season, and with it comes the anticipation of proposals. While it's a dream for many to be proposed to now, it's important to pause and consider some questions. Have you delved into his spending habits? This step, often overlooked, is crucial before saying "Yes," and we don't want you to overlook it.
                     </p>  
                 </div>
 
