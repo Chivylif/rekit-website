@@ -10,8 +10,8 @@ import Button from "../components/Button";
 import bannerseven from "../assets/images/bannerseven.png";
 import bannersevenplus from "../assets/images/bannersevenplus.jpeg";
 import edgeone from "../assets/images/edge-1.png";
-import edgetwo from "../assets/images/edge-2.png";
-import edgethree from "../assets/images/edge-3.png";
+import edgetwo from "../assets/images/edge-4.png";
+import edgethree from "../assets/images/edge-5.png";
 import Link from "next/link";
 
 const Card = (props) => {
