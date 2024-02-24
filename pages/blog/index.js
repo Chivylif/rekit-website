@@ -4,7 +4,7 @@ import Head from "next/head";
 import { useRouter } from 'next/router';
 import AppLayout from "../../layouts/AppLayout";
 import Image from "next/image";
-import clipThree from "./assets/money-question-two.png"
+import clipThree from "./assets/insurance3.png"
 import Link from "next/link";
 import { blogPosts } from "../../constants";
 
@@ -89,17 +89,17 @@ const BlogPV = () => {
                     />
                      <Link
                       href={{
-                        pathname: `/blog/financialEducation/[slug]`,
-                        query: { slug: '5-money-question-to-ask-your-partner-before-marriage' },
+                        pathname: `/blog/insurance/[slug]`,
+                        query: { slug: 'what-is-insurance' },
                       }}
                       
                     >
                     <h1 className="font-extrabold pt-0.5 text-[#F08420] text-xl font-raleway cursor-pointer">
-                    5 Money Question To Ask Your Partner Before Marriage
+                    What is Insurance
                     </h1>
                     </Link>
                     <p className="leading-[1.2rem] font-normal font-inter text-[#212020] text-[1rem]">       
-                    Love is all around during this romantic season, and with it comes the anticipation of proposals. While it's a dream for many to be proposed to now, it's important to pause and consider some questions. Have you delved into his spending habits? This step, often overlooked, is crucial before saying "Yes," and we don't want you to overlook it.
+                    Insurance is a financial product designed to protect individuals or organizations from financial loss or uncertainty by transferring the risk of loss to an insurance company in exchange for payment of a premium. It serves as a safety net, providing coverage for various risks such as property damage, medical expenses, liability, or loss of income.
                     </p>  
                 </div>
 

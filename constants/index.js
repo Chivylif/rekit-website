@@ -296,13 +296,20 @@ export const serviceCardItems = [
 ];
 export const blogPosts = [
   {
+    title: "Insurance",
+    author: "-",
+    updatedDate: "February 21, 2024 at 11:12:00 AM",
+    description: "Insurance",
+    category: "insurance",
+    slug: "what-is-insurance"
+  },
+  {
     title: "5 money question to ask your partner before marriage",
     author: "-",
     updatedDate: "February 16, 2024 at 16:02:55 PM",
     description: "Financial Education",
     category: "financialEducation",
     slug: "5-money-question-to-ask-your-partner-before-marriage"
-
   },
   {
     title: "Finance News - 12/02/2024",
