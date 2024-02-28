@@ -296,8 +296,16 @@ export const serviceCardItems = [
 ];
 export const blogPosts = [
   {
+    title: "Finance News - 26/02/2024",
+    author: "Rekit Financial Advisory",
+    updatedDate: "February 26, 2024 at 15:16:10 PM",
+    description: "Financial News and Updates",
+    category: "financialNewsAndUpdates",
+    slug: "financial-news-12-02-2024"
+  },
+  {
     title: "Insurance",
-    author: "-",
+    author: "Rekit Financial Advisory",
     updatedDate: "February 21, 2024 at 11:12:00 AM",
     description: "Insurance",
     category: "insurance",
@@ -305,7 +313,7 @@ export const blogPosts = [
   },
   {
     title: "5 money question to ask your partner before marriage",
-    author: "-",
+    author: "Rekit Financial Advisory",
     updatedDate: "February 16, 2024 at 16:02:55 PM",
     description: "Financial Education",
     category: "financialEducation",
@@ -313,7 +321,7 @@ export const blogPosts = [
   },
   {
     title: "Finance News - 12/02/2024",
-    author: "-",
+    author: "Rekit Financial Advisory",
     updatedDate: "February 12, 2024 at 09:22:12 AM",
     description: "Financial News and Updates",
     category: "financialNewsAndUpdates",
