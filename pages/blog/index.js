@@ -4,7 +4,7 @@ import Head from "next/head";
 import { useRouter } from 'next/router';
 import AppLayout from "../../layouts/AppLayout";
 import Image from "next/image";
-import clipThree from "./assets/insurance3.png"
+import clipThree from "./assets/plan-for-retirement.png"
 import Link from "next/link";
 import { blogPosts } from "../../constants";
 
@@ -89,17 +89,17 @@ const BlogPV = () => {
                     />
                      <Link
                       href={{
-                        pathname: `/blog/insurance/[slug]`,
-                        query: { slug: 'what-is-insurance' },
+                        pathname: `/blog/retirementPlanning/[slug]`,
+                        query: { slug: 'how-to-plan-for-retirement' },
                       }}
                       
                     >
                     <h1 className="font-extrabold pt-0.5 text-[#F08420] text-xl font-raleway cursor-pointer">
-                    What is Insurance
+                    How to Plan for retirement: Exploring the Benefits of Annuities for Retirement Planning.
                     </h1>
                     </Link>
                     <p className="leading-[1.2rem] font-normal font-inter text-[#212020] text-[1rem]">       
-                    Insurance is a financial product designed to protect individuals or organizations from financial loss or uncertainty by transferring the risk of loss to an insurance company in exchange for payment of a premium. It serves as a safety net, providing coverage for various risks such as property damage, medical expenses, liability, or loss of income.
+                    Why do so many hardworking and intelligent individuals find themselves struggling financially after retirement as if they never earned an income before? 
                     </p>  
                 </div>
 

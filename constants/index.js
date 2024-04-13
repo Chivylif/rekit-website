@@ -296,6 +296,14 @@ export const serviceCardItems = [
 ];
 export const blogPosts = [
   {
+    title: "How to Plan for retirement: Exploring the Benefits of Annuities for Retirement Planning",
+    author: "Adachi Obi",
+    updatedDate: "April 5, 2024 at 12:18:00 PM",
+    description: "Retirement Planning",
+    category: "retirementPlaning",
+    slug: "how-to-plan-for-retirement"
+  },
+  {
     title: "Insurance",
     author: "-",
     updatedDate: "February 21, 2024 at 11:12:00 AM",
@@ -361,7 +369,7 @@ export const blogPosts = [
     author: "Samuel Apanisile",
     updatedDate: "December 5, 2023 at 8:15:19 AM",
     description: "Retirement Planning",
-    category: "retirementPlanning",
+    category: "retirementPlaning",
     slug: "how-to-retire-rich"
 
   },
