@@ -75,7 +75,7 @@ const Insurance = () => {
         <div className="lg:w-4/5 px-[0.2rem] pt-5 lg:pt-5 mx-auto pb-5 border-r-3"> 
                 <div className="mx-auto px-[1rem]">
                     <h1 className="font-extrabold pt-0.5 text-[#F08420] text-xl font-raleway">
-                    Insurance
+                    Insurance: A Beginner's Guide to Understanding the Basics
                     </h1>
                     {/* <h3 className="pb-3 text-[#212020] text-l  font-raleway">
                     Author:  Samuel Apanisile

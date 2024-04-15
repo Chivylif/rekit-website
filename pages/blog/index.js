@@ -4,7 +4,7 @@ import Head from "next/head";
 import { useRouter } from 'next/router';
 import AppLayout from "../../layouts/AppLayout";
 import Image from "next/image";
-import clipThree from "./assets/naira-notes.png"
+import clipThree from "./assets/plan-for-retirement.png"
 import Link from "next/link";
 import { blogPosts } from "../../constants";
 
@@ -89,17 +89,17 @@ const BlogPV = () => {
                     />
                      <Link
                       href={{
-                        pathname: `/blog/financialNewsAndUpdates/[slug]`,
-                        query: { slug: 'financial-news-26-02-2024' },
+                        pathname: `/blog/retirementPlanning/[slug]`,
+                        query: { slug: 'how-to-plan-for-retirement' },
                       }}
                       
                     >
                     <h1 className="font-extrabold pt-0.5 text-[#F08420] text-xl font-raleway cursor-pointer">
-                    World Macro-economic report as of 26th February, 2024
+                    How to Plan for retirement: Exploring the Benefits of Annuities for Retirement Planning.
                     </h1>
                     </Link>
                     <p className="leading-[1.2rem] font-normal font-inter text-[#212020] text-[1rem]">       
-                    The IMF warns of a potential 35% depreciation in Nigeria's official exchange rate this year, possibly leading to a peak inflation rate of 44%. The current rate stands at N1,542.58 per dollar, but could reach N2,081 per dollar. Nigeria's monetary policy lacks tightening to curb inflation below 20%, exacerbated by factors like limited local production and recent import liberalization. Adverse climate events have further weakened the economy, prompting the IMF to recommend collaborative efforts with development partners for a comprehensive economic strategy. Domestic demand is declining, and growth could stagnate in 2024, gradually recovering to 2% by 2028. Concerns over Nigeria's international reserves and potential shocks impacting stability and poverty are raised, with a projected rise in the fiscal deficit driven by social unrest and fuel subsidies. Despite efforts to address expenditure, the debt-to-GDP ratio may still rise, and inflation spikes could restrict access to external financing, potentially leading to reserves declining to $17 billion by 2025, posing challenges for debt repayment and humanitarian needs.
+                    Why do so many hardworking and intelligent individuals find themselves struggling financially after retirement as if they never earned an income before? 
                     </p>  
                 </div>
 

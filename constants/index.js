@@ -296,12 +296,12 @@ export const serviceCardItems = [
 ];
 export const blogPosts = [
   {
-    title: "Finance News - 26/02/2024",
-    author: "Rekit Financial Advisory",
-    updatedDate: "February 26, 2024 at 15:16:10 PM",
-    description: "Financial News and Updates",
-    category: "financialNewsAndUpdates",
-    slug: "financial-news-12-02-2024"
+    title: "How to Plan for retirement: Exploring the Benefits of Annuities for Retirement Planning",
+    author: "Adachi Obi",
+    updatedDate: "April 5, 2024 at 12:18:00 PM",
+    description: "Retirement Planning",
+    category: "retirementPlaning",
+    slug: "how-to-plan-for-retirement"
   },
   {
     title: "Insurance",
@@ -369,7 +369,7 @@ export const blogPosts = [
     author: "Samuel Apanisile",
     updatedDate: "December 5, 2023 at 8:15:19 AM",
     description: "Retirement Planning",
-    category: "retirementPlanning",
+    category: "retirementPlaning",
     slug: "how-to-retire-rich"
 
   },
