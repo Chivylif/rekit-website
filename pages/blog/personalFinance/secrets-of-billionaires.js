@@ -78,9 +78,9 @@ const PersonalFinance = () => {
                     <h1 className="font-extrabold pt-0.5 text-[#F08420] text-xl font-raleway">
                     Unlock the Wealth-Building Secrets of Billionaires: A Financial Planning Roadmap for Aspiring Young Adults
                     </h1>
-                    <h3 className="pb-3 text-[#212020] text-l  font-raleway">
+                    {/* <h3 className="pb-3 text-[#212020] text-l  font-raleway">
                     Author:  Samuel Apanisile
-                    </h3>
+                    </h3> */}
 
                     <p className="leading-[1.2rem] pb-4 font-normal font-inter text-[#212020] text-[1rem]">       
                     Many young adults aspire to be as wealthy as Dangote, Otedola, Elon Musk, and other successful entrepreneurs. While there is no single formula for success, research has shown that billionaires have certain traits that help them build and sustain their wealth. These traits include an appetite for smart risk-taking, long-term focus on their business, and sheer determination. However, it is important to note that these traits are not the only factors that contribute to success.

@@ -78,9 +78,9 @@ const FinancialMarketAnalysis = () => {
                     <h1 className="font-extrabold pt-0.5 text-[#F08420] text-xl font-raleway">
                     Financial Overview of 2023 and Insightful Investment Recommendations for 2024
                     </h1>
-                    <h3 className="pb-3 text-[#212020] text-l  font-raleway">
+                    {/* <h3 className="pb-3 text-[#212020] text-l  font-raleway">
                     Author:  Samuel Apanisile, Head- Investment and Risk Advisory
-                    </h3>
+                    </h3> */}
 
                     <p className="leading-[1.2rem] pb-4 font-normal font-inter text-[#212020] text-[1rem]">       
                     As we bid farewell to 2023, a year that has been marked by both challenges and triumphs, the financial landscape in Nigeria reveals a tale of resilience and transformation. As we gear up for the upcoming year, REKIT Financial Advisors is excited to share insights and strategic investment recommendations to guide our clients through the opportunities and challenges that lie ahead.

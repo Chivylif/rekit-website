@@ -73,9 +73,9 @@ const RetirementPlanning = () => {
                     <h1 className="font-extrabold pt-0.5 text-[#F08420] text-xl font-raleway">
                     HOW TO RETIRE RICH: 7 STEPS TO RETIRE LIKE A BOSS. 
                     </h1>
-                    <h3 className="pb-3 text-[#212020] text-l  font-raleway">
+                    {/* <h3 className="pb-3 text-[#212020] text-l  font-raleway">
                     Author:  Samuel Apanisile
-                    </h3>
+                    </h3> */}
 
                     <p className="leading-[1.2rem] pb-4 font-normal font-inter text-[#212020] text-[1rem]">       
                     One of my favourite personal wise sayings which I often share with those who care to listen is:  "People who refuse to learn from the rich may find themselves forever locked in the cycle of financial ignorance and poverty, by missing out on valuable lessons that could pave the way to prosperity." Today, I will show you 7 solid ways to achieve your goal of retiring rich through the story of Bosede Lorie.

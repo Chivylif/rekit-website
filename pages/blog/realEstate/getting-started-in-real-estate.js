@@ -73,9 +73,9 @@ const RealEstate = () => {
                     <h1 className="font-extrabold pt-0.5 text-[#F08420] text-xl font-raleway">
                     Real Estate: Getting Started in Real Estate Investments: A Beginner's Guide
                     </h1>
-                    <h3 className="pb-3 text-[#212020] text-l  font-raleway">
+                    {/* <h3 className="pb-3 text-[#212020] text-l  font-raleway">
                     Author:  Samuel Apanisile
-                    </h3>
+                    </h3> */}
 
                     <p className="leading-[1.2rem] pb-4 font-normal font-inter text-[#212020] text-[1rem]">       
                     Investing in real estate can be a rewarding journey, offering financial growth and portfolio diversification.
