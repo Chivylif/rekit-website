@@ -73,9 +73,9 @@ const InvestmentInsights = () => {
                     <h1 className="font-extrabold pt-0.5 text-[#F08420] text-xl font-raleway">
                     What are bonds? Let's discuss bonds.
                     </h1>
-                    <h3 className="pb-3 text-[#212020] text-l  font-raleway">
+                    {/* <h3 className="pb-3 text-[#212020] text-l  font-raleway">
                     Author:  Samuel Apanisile
-                    </h3>
+                    </h3> */}
 
                     <p className="leading-[1.2rem] pb-4 font-normal font-inter text-[#212020] text-[1rem]">       
                     Welcome dear readers, to the fascinating world of bonds. Whether you are a seasoned investor or just dipping your toes into the financial waters, understanding bonds is the key to unlocking a world of opportunities.

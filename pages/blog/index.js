@@ -4,7 +4,7 @@ import Head from "next/head";
 import { useRouter } from 'next/router';
 import AppLayout from "../../layouts/AppLayout";
 import Image from "next/image";
-import clipThree from "./assets/plan-for-retirement.png"
+import clipThree from "./assets/what-are-equities.jpg"
 import Link from "next/link";
 import { blogPosts } from "../../constants";
 
@@ -89,17 +89,17 @@ const BlogPV = () => {
                     />
                      <Link
                       href={{
-                        pathname: `/blog/retirementPlanning/[slug]`,
-                        query: { slug: 'how-to-plan-for-retirement' },
+                        pathname: `/blog/financialEducation/[slug]`,
+                        query: { slug: 'what-are-equities' },
                       }}
                       
                     >
                     <h1 className="font-extrabold pt-0.5 text-[#F08420] text-xl font-raleway cursor-pointer">
-                    How to Plan for retirement: Exploring the Benefits of Annuities for Retirement Planning.
+                    What are Equities? How to Get Started on Equities
                     </h1>
                     </Link>
                     <p className="leading-[1.2rem] font-normal font-inter text-[#212020] text-[1rem]">       
-                    Why do so many hardworking and intelligent individuals find themselves struggling financially after retirement as if they never earned an income before? 
+                    In today's quest for financial stability and growth, equities shine as beacons of opportunity. But what exactly are equities, and why should you invest in them? Let us delve into the fundamentals, explore their allure, and chart a path for your investment journey.
                     </p>  
                 </div>
 

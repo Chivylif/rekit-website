@@ -296,6 +296,14 @@ export const serviceCardItems = [
 ];
 export const blogPosts = [
   {
+    title: "What are Equities? How to Get Started on Equities",
+    author: "Rekit Financial Advisory",
+    updatedDate: "April 21, 2024 at 10:31:00 AM",
+    description: "Financial Education",
+    category: "financialEducation",
+    slug: "what-are-equities"
+  },
+  {
     title: "How to Plan for retirement: Exploring the Benefits of Annuities for Retirement Planning",
     author: "Adachi Obi",
     updatedDate: "April 5, 2024 at 12:18:00 PM",

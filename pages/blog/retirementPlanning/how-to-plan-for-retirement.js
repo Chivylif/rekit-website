@@ -73,9 +73,9 @@ const RetirementPlanning = () => {
                     <h1 className="font-extrabold pt-0.5 text-[#F08420] text-xl font-raleway">
                     How to Plan for retirement: Exploring the Benefits of Annuities for Retirement Planning
                     </h1>
-                    <h3 className="pb-3 text-[#212020] text-l  font-raleway">
+                    {/* <h3 className="pb-3 text-[#212020] text-l  font-raleway">
                     Author:  Adachi Obi
-                    </h3>
+                    </h3> */}
 
                     <div className="flex justify-center content-center pb-4 ">
                     <Image

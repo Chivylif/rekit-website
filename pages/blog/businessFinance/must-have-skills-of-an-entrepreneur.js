@@ -77,9 +77,9 @@ const BusinessFinance = () => {
                     <h1 className="font-extrabold pt-0.5 text-[#F08420] text-xl font-raleway">
                     The Six Must-Have Skills for Thriving as an Entrepreneur.
                     </h1>
-                    <h3 className="pb-3 text-[#212020] text-l  font-raleway">
+                    {/* <h3 className="pb-3 text-[#212020] text-l  font-raleway">
                     Author:  Samuel Apanisile
-                    </h3>
+                    </h3> */}
 
                     <p className="leading-[1.2rem] pb-4 font-normal font-inter text-[#212020] text-[1rem]">       
                     Hey there, friends! Today, we are diving into the world of your hidden superpowers, and no, we are not talking about flying or disappearing. We are talking about the six must-have skills that all budding entrepreneurs must have to thrive in today’s economy. The interesting thing is these super skills are linked to managing money and investments.

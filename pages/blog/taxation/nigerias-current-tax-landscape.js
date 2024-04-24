@@ -73,9 +73,9 @@ const Taxation = () => {
                     <h1 className="font-extrabold pt-0.5 text-[#F08420] text-xl font-raleway">
                       How to navigate Nigeria's current tax landscape: Insights, Changes, and Smart Strategies
                     </h1>
-                    <h3 className="pb-3 text-[#212020] text-l  font-raleway">
+                    {/* <h3 className="pb-3 text-[#212020] text-l  font-raleway">
                     Author:  Samuel Apanisile
-                    </h3>
+                    </h3> */}
 
                     <p className="leading-[1.2rem] pb-4 font-normal font-inter text-[#212020] text-[1rem]">       
                     In 2024, Nigeria is poised for a significant overhaul of its tax system, with the aim of boosting revenue, ensuring tax compliance, and facilitating economic growth. The Federal Inland Revenue Service (FIRS) is at the forefront of these reforms, targeting a 57% increase in revenue to 19.4 trillion naira ($20.3 billion). President Bola Tinubu's government is on a mission to streamline tax processes, attract investments, and drive the nation towards financial self-sufficiency.
