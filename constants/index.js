@@ -320,7 +320,7 @@ export const blogPosts = [
     slug: "how-to-plan-for-retirement"
   },
   {
-    title: "Insurance",
+    title: "Insurance: A Beginner's Guide to Understanding the Basics",
     author: "Rekit Financial Advisory",
     updatedDate: "February 21, 2024 at 11:12:00 AM",
     description: "Insurance",
