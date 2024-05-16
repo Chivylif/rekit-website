@@ -4,7 +4,7 @@ import Head from "next/head";
 import { useRouter } from 'next/router';
 import AppLayout from "../../layouts/AppLayout";
 import Image from "next/image";
-import clipThree from "./assets/what-are-equities.jpg"
+import clipThree from "./assets/commercial-papers-2.jpg"
 import Link from "next/link";
 import { blogPosts } from "../../constants";
 
