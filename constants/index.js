@@ -296,6 +296,14 @@ export const serviceCardItems = [
 ];
 export const blogPosts = [
   {
+    title: "How Does Commercial Paper Investment Work in Nigeria? A beginner’s guide",
+    author: "Rekit Financial Advisory",
+    updatedDate: "May 16, 2024 at 14:12:00 PM",
+    description: "Financial Education",
+    category: "financialEducation",
+    slug: "how-does-commercial-paper-investment-work-in-nigeria"
+  },
+  {
     title: "What are Equities? How to Get Started on Equities",
     author: "Rekit Financial Advisory",
     updatedDate: "April 21, 2024 at 10:31:00 AM",
