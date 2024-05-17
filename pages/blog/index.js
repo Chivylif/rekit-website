@@ -4,7 +4,7 @@ import Head from "next/head";
 import { useRouter } from 'next/router';
 import AppLayout from "../../layouts/AppLayout";
 import Image from "next/image";
-import clipThree from "./assets/what-are-equities.jpg"
+import clipThree from "./assets/commercial-papers-2.jpg"
 import Link from "next/link";
 import { blogPosts } from "../../constants";
 
@@ -90,16 +90,16 @@ const BlogPV = () => {
                      <Link
                       href={{
                         pathname: `/blog/financialEducation/[slug]`,
-                        query: { slug: 'what-are-equities' },
+                        query: { slug: 'how-does-commercial-paper-investment-work-in-nigeria' },
                       }}
                       
                     >
                     <h1 className="font-extrabold pt-0.5 text-[#F08420] text-xl font-raleway cursor-pointer">
-                    What are Equities? How to Get Started on Equities
+                    How Does Commercial Paper Investment Work in Nigeria? A beginner’s guide
                     </h1>
                     </Link>
                     <p className="leading-[1.2rem] font-normal font-inter text-[#212020] text-[1rem]">       
-                    In today's quest for financial stability and growth, equities shine as beacons of opportunity. But what exactly are equities, and why should you invest in them? Let us delve into the fundamentals, explore their allure, and chart a path for your investment journey.
+                    In the rapidly evolving world of finance, Commercial Paper (CP) stands out for its simplicity and efficiency. Widely utilized by corporations, financial institutions, and governments, CPs serve as a vital tool for addressing short-term financial needs. For investors seeking to navigate Nigeria's financial markets, understanding the ins and outs of CP investment is key. In this guide, we will delve into the fundamentals of CP investments in Nigeria, demystifying its workings, risks, and rewards.
                     </p>  
                 </div>
 
