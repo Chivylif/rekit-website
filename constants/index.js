@@ -296,6 +296,14 @@ export const serviceCardItems = [
 ];
 export const blogPosts = [
   {
+    title: " 5 Investment Strategies for Nigerian Investors to beat inflation",
+    author: "Rekit Financial Advisory",
+    updatedDate: "May 28, 2024 at 18:20:00 PM",
+    description: "Investment Insights",
+    category: "investmentInsights",
+    slug: "5-investment-strategies-for-nigerian-investors"
+  },
+  {
     title: "How Does Commercial Paper Investment Work in Nigeria? A beginner’s guide",
     author: "Rekit Financial Advisory",
     updatedDate: "May 16, 2024 at 14:12:00 PM",
