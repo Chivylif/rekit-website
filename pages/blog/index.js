@@ -4,9 +4,9 @@ import Head from "next/head";
 import { useRouter } from 'next/router';
 import AppLayout from "../../layouts/AppLayout";
 import Image from "next/image";
-import clipThree from "./assets/inflation3.png"
+import clipThree from "./assets/successfulblackparenting.jpg"
 import Link from "next/link";
-import { blogPosts } from "../../constants";
+import { indexBlogs } from "../../constants";
 
 const BlogPV = () => {
 
@@ -89,17 +89,17 @@ const BlogPV = () => {
                     />
                      <Link
                       href={{
-                        pathname: `/blog/investmentInsights/[slug]`,
-                        query: { slug: '5-investment-strategies-for-nigerian-investors' },
+                        pathname: `/blog/personalFinance/[slug]`,
+                        query: { slug: 'parents-guarantee-their-children' },
                       }}
                       
                     >
                     <h1 className="font-extrabold pt-0.5 text-[#F08420] text-xl font-raleway cursor-pointer">
-                    5 Investment Strategies for Nigerian Investors to beat inflation
+                    How can parents guarantee their children's financial future?
                     </h1>
                     </Link>
                     <p className="leading-[1.2rem] font-normal font-inter text-[#212020] text-[1rem]">       
-                    Inflation is a significant concern for Nigerian investors as it erodes purchasing power and diminishes the real returns on investments. Over the past year, Nigeria has experienced rising inflation rates driven by factors such as fluctuating oil prices, supply chain disruptions, and currency depreciation. These economic challenges have made it increasingly difficult for investors to achieve meaningful returns, as the purchasing power of their money declines.
+                    This question is very important because as parents, you want the best for your children. We are sure you dream of them having a secure, prosperous future where they can pursue their passions without financial worries. Achieving this requires strategic planning and wise investments. Here’s a comprehensive guide on steps parents can take to guarantee their children’s financial future:
                     </p>  
                 </div>
 
@@ -138,9 +138,9 @@ const BlogPV = () => {
             </div>
             <div className="lg:w-full flex justify-center content-center px-[0.2rem] pt-1 lg:pt-3 mx-auto"> 
                 <h1 className="font-extrabold pt-1 pb-8 text-3xl font-raleway"> Recent Posts </h1>
-                </div>
-            <div className="grid lg:grid-cols-4 mb-1 lg:mb-1 justify-items-center px-[3rem] pt-[1rem] pb-[3rem]">
-                {blogPosts.map(({ slug, category, description, title }, idx) => {
+            </div>
+            <div className="grid lg:grid-cols-4 mb-1 lg:mb-1 justify-items-center px-[3rem] pt-[1rem]">
+                {indexBlogs.map(({ slug, category, description, title }, idx) => {
                     return(
                       <Link
                       href={{
@@ -152,10 +152,8 @@ const BlogPV = () => {
                         <div
                         ref={postRef} 
                         className="mx-auto px-[1rem] w-5/6 pb-[3rem] cursor-pointer" 
-                        
                         data-index={idx}
-                        data-category={slug}
-                                               
+                        data-category={slug}                               
                         >   
                           <h1 id={idx}  className="font-extrabold pt-0.5 text-[#F08420] text-l font-raleway">
                           {description}
@@ -168,6 +166,11 @@ const BlogPV = () => {
                     
                     )
                 })}
+            </div>
+            <div className="flex justify-center content-center pb-1">
+            <Link href={{pathname: `/blog/view-more`}}>
+                <h2 className="font-extrabold pt-1 pb-1 text-xl font-raleway cursor-pointer"> View More </h2>
+             </Link>
             </div>
         </div>
       </AppLayout>

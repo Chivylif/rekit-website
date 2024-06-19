@@ -296,12 +296,22 @@ export const serviceCardItems = [
 ];
 export const blogPosts = [
   {
+    title: "5 Investment Strategies for Nigerian Investors to beat inflation",
+    author: "Rekit Financial Advisory",
+    updatedDate: "June 13, 2024 at 14:25:00 PM",
+    description: "Personal Finance",
+    category: "personalFinance",
+    slug: "parents-guarantee-their-children",
+    avatar: '/assets/money-question-one.png'
+  },
+  {
     title: " 5 Investment Strategies for Nigerian Investors to beat inflation",
     author: "Rekit Financial Advisory",
     updatedDate: "May 28, 2024 at 18:20:00 PM",
     description: "Investment Insights",
     category: "investmentInsights",
-    slug: "5-investment-strategies-for-nigerian-investors"
+    slug: "5-investment-strategies-for-nigerian-investors",
+    avatar: '/assets/money-question-one.png'
   },
   {
     title: "How Does Commercial Paper Investment Work in Nigeria? A beginner’s guide",
@@ -309,7 +319,8 @@ export const blogPosts = [
     updatedDate: "May 16, 2024 at 14:12:00 PM",
     description: "Financial Education",
     category: "financialEducation",
-    slug: "how-does-commercial-paper-investment-work-in-nigeria"
+    slug: "how-does-commercial-paper-investment-work-in-nigeria",
+    avatar: '/assets/money-question-one.png'
   },
   {
     title: "What are Equities? How to Get Started on Equities",
@@ -317,7 +328,8 @@ export const blogPosts = [
     updatedDate: "April 21, 2024 at 10:31:00 AM",
     description: "Financial Education",
     category: "financialEducation",
-    slug: "what-are-equities"
+    slug: "what-are-equities",
+    avatar: '/assets/money-question-one.png'
   },
   {
     title: "How to Plan for retirement: Exploring the Benefits of Annuities for Retirement Planning",
@@ -325,7 +337,8 @@ export const blogPosts = [
     updatedDate: "April 5, 2024 at 12:18:00 PM",
     description: "Retirement Planning",
     category: "retirementPlaning",
-    slug: "how-to-plan-for-retirement"
+    slug: "how-to-plan-for-retirement",
+    avatar: '/assets/money-question-one.png'
   },
   {
     title: "Insurance: A Beginner's Guide to Understanding the Basics",
@@ -333,7 +346,8 @@ export const blogPosts = [
     updatedDate: "February 21, 2024 at 11:12:00 AM",
     description: "Insurance",
     category: "insurance",
-    slug: "what-is-insurance"
+    slug: "what-is-insurance",
+    avatar: '/assets/money-question-one.png'
   },
   {
     title: "5 money question to ask your partner before marriage",
@@ -341,7 +355,8 @@ export const blogPosts = [
     updatedDate: "February 16, 2024 at 16:02:55 PM",
     description: "Financial Education",
     category: "financialEducation",
-    slug: "5-money-question-to-ask-your-partner-before-marriage"
+    slug: "5-money-question-to-ask-your-partner-before-marriage",
+    avatar: '/assets/money-question-one.png'
   },
   {
     title: "Finance News - 12/02/2024",
@@ -349,7 +364,8 @@ export const blogPosts = [
     updatedDate: "February 12, 2024 at 09:22:12 AM",
     description: "Financial News and Updates",
     category: "financialNewsAndUpdates",
-    slug: "financial-news-12-02-2024"
+    slug: "financial-news-12-02-2024",
+    avatar: '/assets/money-question-one.png'
 
   },
   {
@@ -358,7 +374,8 @@ export const blogPosts = [
     updatedDate: "January 24, 2024 at 16:12:42 PM",
     description: "Taxation",
     category: "taxation",
-    slug: "nigerias-current-tax-landscape"
+    slug: "nigerias-current-tax-landscape",
+    avatar: '/assets/money-question-one.png'
 
   },
   {
@@ -367,7 +384,8 @@ export const blogPosts = [
     updatedDate: "January 23, 2024 at 11:35:33 AM",
     description: "Real Estate",
     category: "realEstate",
-    slug: "getting-started-in-real-estate"
+    slug: "getting-started-in-real-estate",
+    avatar: '/assets/money-question-one.png'
 
   },
    {
@@ -376,7 +394,8 @@ export const blogPosts = [
     updatedDate: "December 20, 2023 at 13:45:06 PM",
     description: "Financial Market Analysis",
     category: "financialMarketAnalysis",
-    slug: "financial-overview-2023-recommendations-2024"
+    slug: "financial-overview-2023-recommendations-2024",
+    avatar: '/assets/money-question-one.png'
 
   },
   {
@@ -385,7 +404,8 @@ export const blogPosts = [
     updatedDate: "December 15, 2023 at 10:22:06 AM",
     description: "Investment Insights",
     category: "investmentInsights",
-    slug: "what-are-bonds"
+    slug: "what-are-bonds",
+    avatar: '/assets/naira-notes.png'
 
   },
   {
@@ -394,7 +414,8 @@ export const blogPosts = [
     updatedDate: "December 5, 2023 at 8:15:19 AM",
     description: "Retirement Planning",
     category: "retirementPlaning",
-    slug: "how-to-retire-rich"
+    slug: "how-to-retire-rich",
+    avatar: '/assets/plan-for-retirement.png'
 
   },
   {
@@ -403,7 +424,8 @@ export const blogPosts = [
     updatedDate: "November 20, 2023 at 10:15:19 AM",
     description: "Business Finance",
     category: "businessFinance",
-    slug: "must-have-skills-of-an-entrepreneur"
+    slug: "must-have-skills-of-an-entrepreneur",
+    avatar: '/assets/skills-entrepreneur-2.jpeg'
 
   },
   {
@@ -412,7 +434,8 @@ export const blogPosts = [
     updatedDate: "November 1, 2023 at 12:04:39 PM",
     description: "Financial Education",
     category: "financialEducation",
-    slug: "what-they-do"
+    slug: "what-they-do",
+    avatar: '/assets/commercial-papers-2.jpg'
 
   },
   {
@@ -421,7 +444,10 @@ export const blogPosts = [
     updatedDate: "October 20, 2023 at 5:37:39 PM",
     description: "Personal Finance",
     category: "personalFinance",
-    slug: "secrets-of-billionaires"
+    slug: "secrets-of-billionaires",
+    avatar: '/assets/financialEducation2.jpg'
 
   }
 ];
+
+export const indexBlogs = blogPosts.slice(0,8);
