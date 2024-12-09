@@ -9,7 +9,7 @@ import BlogRefresh from "../../../components/BlogRefresh";
 import SmallWrapper from "../../../components/SmallWrapper";
 import Image from "next/image";
 import Link from "next/link";
-import clipOne from "../assets/insurance1.jpeg"
+import clipOne from "../../../public/assets/insurance1.jpeg"
 import clipTwo from "../assets/insurance2.jpeg"
 
 import { blogPosts } from "../../../constants";

@@ -296,13 +296,13 @@ export const serviceCardItems = [
 ];
 export const blogPosts = [
   {
-    title: "5 Investment Strategies for Nigerian Investors to beat inflation",
+    title: "How can parents guarantee their children's financial future?",
     author: "Rekit Financial Advisory",
     updatedDate: "June 13, 2024 at 14:25:00 PM",
     description: "Personal Finance",
     category: "personalFinance",
     slug: "parents-guarantee-their-children",
-    avatar: '/assets/money-question-one.png'
+    avatar: '/assets/children-financial-future-1.jpg'
   },
   {
     title: " 5 Investment Strategies for Nigerian Investors to beat inflation",
@@ -311,7 +311,7 @@ export const blogPosts = [
     description: "Investment Insights",
     category: "investmentInsights",
     slug: "5-investment-strategies-for-nigerian-investors",
-    avatar: '/assets/money-question-one.png'
+    avatar: '/assets/inflation2.jpg'
   },
   {
     title: "How Does Commercial Paper Investment Work in Nigeria? A beginner’s guide",
@@ -320,7 +320,7 @@ export const blogPosts = [
     description: "Financial Education",
     category: "financialEducation",
     slug: "how-does-commercial-paper-investment-work-in-nigeria",
-    avatar: '/assets/money-question-one.png'
+    avatar: '/assets/commercialPapers-1.jpeg'
   },
   {
     title: "What are Equities? How to Get Started on Equities",
@@ -329,7 +329,7 @@ export const blogPosts = [
     description: "Financial Education",
     category: "financialEducation",
     slug: "what-are-equities",
-    avatar: '/assets/money-question-one.png'
+    avatar: '/assets/what-are-equities-1.jpeg'
   },
   {
     title: "How to Plan for retirement: Exploring the Benefits of Annuities for Retirement Planning",
@@ -338,7 +338,7 @@ export const blogPosts = [
     description: "Retirement Planning",
     category: "retirementPlaning",
     slug: "how-to-plan-for-retirement",
-    avatar: '/assets/money-question-one.png'
+    avatar: '/assets/plan-for-retirement-1.jpeg'
   },
   {
     title: "Insurance: A Beginner's Guide to Understanding the Basics",
@@ -347,7 +347,7 @@ export const blogPosts = [
     description: "Insurance",
     category: "insurance",
     slug: "what-is-insurance",
-    avatar: '/assets/money-question-one.png'
+    avatar: '/assets/insurance1.jpeg'
   },
   {
     title: "5 money question to ask your partner before marriage",
@@ -356,7 +356,7 @@ export const blogPosts = [
     description: "Financial Education",
     category: "financialEducation",
     slug: "5-money-question-to-ask-your-partner-before-marriage",
-    avatar: '/assets/money-question-one.png'
+    avatar: '/assets/money-question-one.jpeg'
   },
   {
     title: "Finance News - 12/02/2024",
@@ -365,7 +365,7 @@ export const blogPosts = [
     description: "Financial News and Updates",
     category: "financialNewsAndUpdates",
     slug: "financial-news-12-02-2024",
-    avatar: '/assets/money-question-one.png'
+    avatar: '/assets/cbn.jpeg'
 
   },
   {
@@ -375,7 +375,7 @@ export const blogPosts = [
     description: "Taxation",
     category: "taxation",
     slug: "nigerias-current-tax-landscape",
-    avatar: '/assets/money-question-one.png'
+    avatar: '/assets/taxation1.jpeg'
 
   },
   {
@@ -385,7 +385,7 @@ export const blogPosts = [
     description: "Real Estate",
     category: "realEstate",
     slug: "getting-started-in-real-estate",
-    avatar: '/assets/money-question-one.png'
+    avatar: '/assets/realEstate1.jpeg'
 
   },
    {
@@ -395,7 +395,7 @@ export const blogPosts = [
     description: "Financial Market Analysis",
     category: "financialMarketAnalysis",
     slug: "financial-overview-2023-recommendations-2024",
-    avatar: '/assets/money-question-one.png'
+    avatar: '/assets/naira-notes.png'
 
   },
   {
@@ -405,7 +405,7 @@ export const blogPosts = [
     description: "Investment Insights",
     category: "investmentInsights",
     slug: "what-are-bonds",
-    avatar: '/assets/naira-notes.png'
+    avatar: '/assets/bonds-one.jpeg'
 
   },
   {
@@ -415,7 +415,7 @@ export const blogPosts = [
     description: "Retirement Planning",
     category: "retirementPlaning",
     slug: "how-to-retire-rich",
-    avatar: '/assets/plan-for-retirement.png'
+    avatar: '/assets/retirement-planning.jpeg'
 
   },
   {
@@ -425,7 +425,7 @@ export const blogPosts = [
     description: "Business Finance",
     category: "businessFinance",
     slug: "must-have-skills-of-an-entrepreneur",
-    avatar: '/assets/skills-entrepreneur-2.jpeg'
+    avatar: '/assets/skills-entrepreneur-1.jpeg'
 
   },
   {
@@ -435,7 +435,7 @@ export const blogPosts = [
     description: "Financial Education",
     category: "financialEducation",
     slug: "what-they-do",
-    avatar: '/assets/commercial-papers-2.jpg'
+    avatar: '/assets/financialEducation1.jpg'
 
   },
   {
@@ -445,7 +445,7 @@ export const blogPosts = [
     description: "Personal Finance",
     category: "personalFinance",
     slug: "secrets-of-billionaires",
-    avatar: '/assets/financialEducation2.jpg'
+    avatar: '/assets/personalFinance.png'
 
   }
 ];

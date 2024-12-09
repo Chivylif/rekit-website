@@ -5,7 +5,6 @@ import { useRouter } from 'next/router'
 import AppLayout from "../../layouts/AppLayout";
 ;
 import Image from "next/image";
-import clipOne from "./assets/children-financial-future-1.jpg"
 import Link from "next/link";
 
 import { blogPosts } from "../../constants";
@@ -79,8 +78,8 @@ const InvestmentInsights = () => {
                           <Image
                             src={avatar}
                             alt="img"
-                            width={"50px"}
-                            height={"50px"}
+                            width={"200px"}
+                            height={"150px"}
                             style={{
                                 borderRadius: "10px",
                                 

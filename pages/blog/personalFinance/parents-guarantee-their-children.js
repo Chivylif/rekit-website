@@ -5,7 +5,7 @@ import { useRouter } from 'next/router'
 import AppLayout from "../../../layouts/AppLayout";
 import Image from "next/image";
 import Link from "next/link";
-import clipOne from "../assets/children-financial-future-1.jpg"
+import clipOne from "../../../public/assets/children-financial-future-1.jpg"
 import clipThree from "../assets/retirement-planning-2.jpg"
 
 import { blogPosts } from "../../../constants";

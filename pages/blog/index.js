@@ -140,7 +140,7 @@ const BlogPV = () => {
                 <h1 className="font-extrabold pt-1 pb-8 text-3xl font-raleway"> Recent Posts </h1>
             </div>
             <div className="grid lg:grid-cols-4 mb-1 lg:mb-1 justify-items-center px-[3rem] pt-[1rem]">
-                {indexBlogs.map(({ slug, category, description, title }, idx) => {
+                {indexBlogs.map(({ slug, category, description, title, avatar }, idx) => {
                     return(
                       <Link
                       href={{
@@ -154,7 +154,17 @@ const BlogPV = () => {
                         className="mx-auto px-[1rem] w-5/6 pb-[3rem] cursor-pointer" 
                         data-index={idx}
                         data-category={slug}                               
-                        >   
+                        >  
+                        <Image
+                        src={avatar}
+                        alt="img"
+                        width={"200px"}
+                        height={"150px"}
+                        style={{
+                            borderRadius: "10px",
+                            
+                            }}
+                        />  
                           <h1 id={idx}  className="font-extrabold pt-0.5 text-[#F08420] text-l font-raleway">
                           {description}
                           </h1>
