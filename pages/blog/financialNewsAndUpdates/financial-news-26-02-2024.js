@@ -9,7 +9,7 @@ import BlogRefresh from "../../../components/BlogRefresh";
 import SmallWrapper from "../../../components/SmallWrapper";
 import Image from "next/image";
 import Link from "next/link";
-import clipOne from "../assets/naira-notes.png"
+import clipOne from "../../../public/assets/naira-notes.png"
 import clipTwo from "../assets/inflation.jpg"
 
 import { blogPosts } from "../../../constants";
