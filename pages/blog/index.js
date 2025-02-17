@@ -4,7 +4,7 @@ import Head from "next/head";
 import { useRouter } from 'next/router';
 import AppLayout from "../../layouts/AppLayout";
 import Image from "next/image";
-import clipThree from "./assets/successfulblackparenting.jpg"
+import clipThree from "./assets/which-one-is-right-1.jpg"
 import Link from "next/link";
 import { indexBlogs } from "../../constants";
 
@@ -89,17 +89,17 @@ const BlogPV = () => {
                     />
                      <Link
                       href={{
-                        pathname: `/blog/personalFinance/[slug]`,
-                        query: { slug: 'parents-guarantee-their-children' },
+                        pathname: `/blog/financialEducation/[slug]`,
+                        query: { slug: 'which-one-is-right-for-you' },
                       }}
                       
                     >
                     <h1 className="font-extrabold pt-0.5 text-[#F08420] text-xl font-raleway cursor-pointer">
-                    How can parents guarantee their children's financial future?
+                    Treasury Bills, Commercial Papers, or High-Yield Savings: Which One Is Right for You?
                     </h1>
                     </Link>
                     <p className="leading-[1.2rem] font-normal font-inter text-[#212020] text-[1rem]">       
-                    This question is very important because as parents, you want the best for your children. We are sure you dream of them having a secure, prosperous future where they can pursue their passions without financial worries. Achieving this requires strategic planning and wise investments. Here’s a comprehensive guide on steps parents can take to guarantee their children’s financial future:
+                    Choosing where to put your money can be confusing with so many options available. Let's break down three common choices: Treasury Bills, Commercial Papers, and Savings Accounts, to help you understand which might be the best fit for you.
                     </p>  
                 </div>
 
