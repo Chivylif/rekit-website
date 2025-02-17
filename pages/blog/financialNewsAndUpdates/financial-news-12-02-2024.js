@@ -9,7 +9,7 @@ import BlogRefresh from "../../../components/BlogRefresh";
 import SmallWrapper from "../../../components/SmallWrapper";
 import Image from "next/image";
 import Link from "next/link";
-import clipOne from "../assets/cbn.jpeg"
+//import clipOne from "../../../public/assets/cbn.jpeg"
 import clipTwo from "../assets/yemi-cardoso.jpeg"
 
 import { blogPosts } from "../../../constants";
@@ -96,7 +96,7 @@ const FinancialNewsAndUpdates = () => {
 
                     <div className="flex justify-center content-center pb-1 ">
                     <Image
-                    src={clipOne}
+                    src={clipTwo}
                     className=""
                     alt="cbn"
                     style={{
