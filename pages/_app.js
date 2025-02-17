@@ -5,6 +5,7 @@ import Script from "next/script";
 import { useRouter } from "next/router";
 import * as gtag from "../lib/gtag";
 import { initGA, logPageView } from "../lib/ga";
+import Head from "next/head"
 
 function MyApp({ Component, pageProps }) {
   const router = useRouter();
@@ -26,6 +27,10 @@ function MyApp({ Component, pageProps }) {
 
   return (
     <>
+      <Head>
+        {/* Add your meta tag here */}
+        <meta name="google-site-verification" content="6-_nm9cKUGrb52bc_OW5E0Cg78K1thZkdphRk7C3SHA" />
+      </Head>
       {/* Global Site Tag (gtag.js) - Google Analytics */}
       <Script
         strategy="afterInteractive"
