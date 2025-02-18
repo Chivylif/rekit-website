@@ -298,7 +298,7 @@ export const blogPosts = [
   {
     title: "Treasury Bills, Commercial Papers, or High-Yield Savings: Which One Is Right for You?",
     author: "Rekit Financial Advisory",
-    updatedDate: "February 17, 2025 at 12:32:00 PM",
+    updatedDate: "February 17, 2025 at 12:32:00PM",
     description: "Financial Education",
     category: "financialEducation",
     slug: "which-one-is-right-for-you",
@@ -307,7 +307,7 @@ export const blogPosts = [
   {
     title: "How can parents guarantee their children's financial future?",
     author: "Rekit Financial Advisory",
-    updatedDate: "June 13, 2024 at 14:25:00 PM",
+    updatedDate: "June 13, 2024 at 14:25:00PM",
     description: "Personal Finance",
     category: "personalFinance",
     slug: "parents-guarantee-their-children",
