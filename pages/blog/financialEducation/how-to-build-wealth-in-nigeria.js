@@ -9,7 +9,7 @@ import BlogRefresh from "../../../components/BlogRefresh";
 import SmallWrapper from "../../../components/SmallWrapper";
 import Image from "next/image";
 import Link from "next/link";
-import clipTwo from "../assets/which-one-is-right-1.jpg"
+import clipTwo from "../assets/how-to-build-wealth.png"
 import clipOne from "../assets/which-one-is-right-1.png"
 
 import { blogPosts } from "../../../constants";
@@ -23,7 +23,7 @@ const FinancialEducation = () => {
   return (
     <div>
       <Head>
-        <title>Rekit | REKIT Blog | What They Do</title>
+        <title>Rekit | REKIT Blog | How to Build Wealth in Nigeria</title>
         <meta
           name="description"
           content="International reach of Specialist expertise in family wealth management, protection, personalised solutions for the preservation of family wealth"
@@ -47,7 +47,7 @@ const FinancialEducation = () => {
         <meta property="og:image" content="/rekit.png" />
         <meta
           property="og:description"
-          content="Treasury Bills, Commercial Papers, or High-Yield Savings: Which One Is Right for You?"
+          content="How to Build Wealth in Nigeria: The Role of Emotional Intelligence and Direct Debit"
         />
         <meta
           property="og:title"
@@ -67,8 +67,14 @@ const FinancialEducation = () => {
         <div className="lg:w-4/5 px-[0.2rem] pt-5 lg:pt-5 mx-auto pb-5 border-r-3"> 
                 <div className="mx-auto px-[1rem]">
                     <h1 className="font-extrabold pt-0.5 text-[#F08420] text-xl font-raleway">
-                    Treasury Bills, Commercial Papers, or High-Yield Savings: Which One Is Right for You?
+                    How to Build Wealth in Nigeria: The Role of Emotional Intelligence and Direct Debit
                     </h1>                  
+
+                  
+
+                    <p className="leading-[1.2rem] pb-4 font-normal font-inter text-[#212020] text-[1rem]">       
+                    As we move through the dynamic landscape of Nigeria's financial market, from January 2025 to February 2025 as seen in Figure 1 below, which implies stable GDP growth at 3.84%, inflation significantly declined from 34.8% in December 2024 to 24.5% which is still high, exchange rate stabilization at ₦1,520/$, high interest rates at 27.5%, stock market NGX ASI is up 6.1% YTD, real estate and commodities remains a long-term hedge against inflation and strong foreign reserves is at $40B; One thing remains constant: <span className="font-extrabold">the importance of income in wealth creation. </span> Our income is the chief source of wealth creation, and how we manage it determines our financial future.
+                    </p> 
 
                     <div className="flex justify-center content-center pb-1 ">
                     <Image
@@ -83,82 +89,75 @@ const FinancialEducation = () => {
                     
                     </div>
 
-                    <p className="leading-[1.2rem] pb-4 font-normal font-inter text-[#212020] text-[1rem]">       
-                    Choosing where to put your money can be confusing with so many options available. Let's break down three common choices: Treasury Bills, Commercial Papers, and Savings Accounts, to help you understand which might be the best fit for you.
-                    </p> 
-
                     <h2 className="font-extrabold pt-0.5 text-[#212020] text-l font-raleway">
-                    Treasury Bills (T-Bills):
+                    Why Should Investors Pay Attention?
                     </h2>  
-
-                     <p className="leading-[1.2rem] pb-4 font-normal font-inter text-[#212020] text-[1rem]">       
-                     T-Bills are short-term loans you give to the government, usually lasting from a few days up to a year. You buy them at a price lower than their face value, and when they mature, you receive the full amount. The difference between what you paid and what you get back is your profit. Since they're backed by the government, they're considered very safe investments.
-                    </p> 
-
-                    <h2 className="font-extrabold pt-0.5 text-[#212020] text-l font-raleway">
-                    Commercial Papers:
-                    </h2>  
-
-                     <p className="leading-[1.2rem] pb-4 font-normal font-inter text-[#212020] text-[1rem]">       
-                     These are short-term loans to companies, typically for periods up to 270 days. Companies use this money for immediate needs like managing inventory or payroll. Commercial Papers usually offer higher returns than T-Bills because there's a slightly higher risk involved, as companies might be less stable than governments.
-                    </p> 
-
-                    <h2 className="font-extrabold pt-0.5 text-[#212020] text-l font-raleway">
-                    Savings Accounts:
-                    </h2>  
-
-                     <p className="leading-[1.2rem] pb-4 font-normal font-inter text-[#212020] text-[1rem]">       
-                     A Savings Account/High-Yield Savings is an account where you can deposit money and earn interest over time. Your money is easily accessible, making it great for emergency funds or short-term savings. However, the interest rates are often lower compared to T-Bills and Commercial Papers.
-                    </p> 
-
-                    <h2 className="font-extrabold pt-0.5 text-[#212020] text-l font-raleway">
-                    Which Should You Choose?
-                    </h2>  
-
-                     <p className="leading-[1.2rem] pb-4 font-normal font-inter text-[#212020] text-[1rem]">       
-                     The optimal choice depends on a whole lot of factors like your individual financial profile, risk tolerance, and investment objectives.
-                    </p> 
-
-                    <p className="leading-[1.2rem] pb-4 font-normal font-inter text-[#212020] text-[1rem]">       
-                    Do you want learn how to get the most of your money and make the best investment decisions that suit you? We have something for you. We’ll be organizing a webinar where you’ll get to have an interactive session with a financial advisor/expert.
-                    </p> 
-
-                    <p className="leading-[1.2rem] pb-4 font-normal font-inter text-[#212020] text-[1rem]">       
-                    Our experts will provide comprehensive insights into each investment type, guide you through assessing your risk profile, and offer strategies to approach investing effectively.
-                    </p> 
-
-                    <h2 className="font-extrabold pt-0.5 text-[#212020] text-l font-raleway">
-                    Webinar Details:
-                    </h2> 
 
                     <p className="leading-[1.2rem] px-[2rem] pb-4 font-normal font-inter text-[#212020] text-justify text-[1rem]">       
-                    •	Date: February 22, 2025  
+                    •	<span className="font-bold">For local investors:</span> The combination of high bond yields, rising stocks, and improving economic stability means this is an excellent time to diversify between equities, bonds, and real assets to hedge against inflation and earn strong returns.
                     </p> 
 
                     <p className="leading-[1.2rem] px-[2rem] pb-4 font-normal font-inter text-[#212020] text-justify text-[1rem]">       
-                    •	Time: 12:30pm
+                    •	<span className="font-bold">For global investors: </span> Nigeria presents a <span className="font-bold">rare mix of high growth and high yields </span> in emerging markets. The stock market is still undervalued, bonds offer superior real returns, and currency stability reduces risks.
                     </p> 
 
-                    <p className="leading-[1.2rem] px-[2rem] pb-4 font-italics font-inter text-[#212020] text-justify text-[1rem]">       
-                    <a href="https://meet.zoho.com/LsVkwMClHB ">•	Registration Link: https://meet.zoho.com/LsVkwMClHB    </a>
+                     <p className="leading-[1.2rem] pb-4 font-normal font-inter text-[#212020] text-[1rem]">       
+                     However, having knowledge about personal finance, investing, and wealth creation is only half the battle. Turning that knowledge into practical action requires 	<span className="font-bold"> emotional intelligence (EQ) </span> . EQ is the key to unlocking wealth creation, as it enables individuals to make informed, rational decisions about their finances.
                     </p> 
 
-                    <div className="flex justify-center content-center px-[3rem] ">
-                    <Image
-                    src={clipOne}
-                    className=""
-                    alt="dangote-musk-otedola"
-                    style={{
-                        borderRadius: "10px"
-                     
-                        }}
-                    />
+                    <p className="leading-[1.2rem] pb-4 font-normal font-inter text-[#212020] text-[1rem]">       
+                    Unfortunately, 	<span className="font-bold"> low Emotional Intelligence (EQ) is a significant barrier to wealth creation </span>. Despite having knowledge about how to grow wealth and become rich through gathering financial assets, many people struggle to take action. Low EQ leads to impulsive decisions, emotional spending, and a lack of discipline, ultimately keeping individuals stuck in poverty.
+                    </p> 
+
+                    <p className="leading-[1.2rem] pb-4 font-normal font-inter text-[#212020] text-[1rem]">       
+                    Low EQ is the enemy of wealth creation. It is the reason why people fail to achieve their financial goals, despite their best intentions. No one achieves success accidentally; it requires careful planning, discipline, and emotional intelligence.
+                    </p> 
                     
-                    </div>
+                    <p className="leading-[1.2rem] pb-4 font-normal font-inter text-[#212020] text-[1rem]">       
+                    So, how can individuals break free from the shackles of low EQ and unlock their wealth creation potential? 	<span className="font-bold">  The secret key is Direct Debit on income </span>. By automating savings and investments, individuals can:
+                    </p> 
+
+                    <p className="leading-[1.2rem] px-[2rem] pb-4 font-normal font-inter text-[#212020] text-justify text-[1rem]">       
+                    - Cultivate discipline and consistency
+                    </p> 
+
+                    <p className="leading-[1.2rem] px-[2rem] pb-4 font-normal font-inter text-[#212020] text-justify text-[1rem]">       
+                    - Reduce impulse spending and emotional decision-making
+                    </p> 
+
+                    <p className="leading-[1.2rem] px-[2rem] pb-4 font-normal font-inter text-[#212020] text-justify text-[1rem]">       
+                    - Increase self-awareness and understanding of their financial habits
+                    </p> 
+
+                    <p className="leading-[1.2rem] px-[2rem] pb-4 font-normal font-inter text-[#212020] text-justify text-[1rem]">       
+                    - Detach emotionally from their money, making rational financial decisions easier
+                    </p> 
+
+                    <p className="leading-[1.2rem] pb-4 font-normal font-inter text-[#212020] text-[1rem]">       
+                    <span className="font-bold"> Direct Debit </span> is a powerful tool for wealth creation. It forces individuals to prioritize their financial goals, ensuring consistent progress towards wealth creation.
+                    </p> 
+
+                    <p className="leading-[1.2rem] pb-4 font-normal font-inter text-[#212020] text-[1rem]">       
+                    <span className="font-bold"> At REKIT Financial Advisors, we understand the importance of Emotional Intelligence (EQ) and Direct Debit in wealth creation. </span> Our team of expert financial advisors is dedicated to guiding individuals, from retail investors to high-net-worth individuals, on how to smartly structure their income and recommend viable, high-yield savings and investments that align with their risk profile. 
+                    </p> 
+
+                    <p className="leading-[1.2rem] pb-4 font-normal font-inter text-[#212020] text-[1rem]">       
+                    <span className="font-bold"> It takes less than 3mins to assess your risk profile here: </span>
+                     <a href="https://forms.zohopublic.com/rekitfinancialadvisorslimited/form/TestAssessment/formperma/dgIHFm7FxYkRPvOTo7zdJIGL-Ifpbk5XK7NTdxww7Zs"> https://forms.zohopublic.com/rekitfinancialadvisorslimited/form/TestAssessment/formperma/dgIHFm7FxYkRPvOTo7zdJIGL-Ifpbk5XK7NTdxww7Zs  </a> 
+                    </p> 
+                    
+                    <p className="leading-[1.2rem] pb-4 font-normal font-inter text-[#212020] text-[1rem]">       
+                    Do not let low EQ hold you back from achieving your financial goals. Take control of your wealth creation journey with REKIT Financial Advisors. Contact us today to schedule a consultation and start building the financial future you deserve.
+                    </p> 
+
 
                     <p className="leading-[1.2rem] pt-4 pb-4 font-normal font-inter text-[#212020] text-[1rem]">       
-                    Don't miss this opportunity to enhance your financial literacy and to make the best investment decisions for you. Register today and take the first step towards achieving your financial goals.
+                    Email: info@rekitadvisory.com
                     </p> 
+
+                    <p className="leading-[1.2rem] pt-4 pb-4 font-normal font-inter text-[#212020] text-[1rem]">       
+                    Phone: 09011959063
+                    </p>
                 </div>
 
                 </div>
