@@ -296,6 +296,15 @@ export const serviceCardItems = [
 ];
 export const blogPosts = [
   {
+    title: "How to Build Wealth in Nigeria: The Role of Emotional Intelligence and Direct Debit",
+    author: "Rekit Financial Advisory",
+    updatedDate: "March 10, 2025 at 12:32:00 PM",
+    description: "Financial Education",
+    category: "financialEducation",
+    slug: "how-to-build-wealth-in-nigeria",
+    avatar: '/assets/how-to-build-wealth.jpg'
+  },
+  {
     title: "Treasury Bills, Commercial Papers, or High-Yield Savings: Which One Is Right for You?",
     author: "Rekit Financial Advisory",
     updatedDate: "February 17, 2025 at 12:32:00 PM",
