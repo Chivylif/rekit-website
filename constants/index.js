@@ -296,6 +296,15 @@ export const serviceCardItems = [
 ];
 export const blogPosts = [
   {
+    title: "Retirement Planning in Lagos",
+    author: "Rekit Financial Advisory",
+    updatedDate: "April 10, 2025 at 10:58:00 AM",
+    description: "Retirement Planning",
+    category: "retirementPlanning",
+    slug: "retirement-planning",
+    avatar: '/assets/retirement-planning-in-Lagos.png'
+  },
+  {
     title: "How to Build Wealth in Nigeria: The Role of Emotional Intelligence and Direct Debit",
     author: "Rekit Financial Advisory",
     updatedDate: "March 10, 2025 at 12:32:00 PM",

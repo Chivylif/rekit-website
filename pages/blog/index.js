@@ -4,7 +4,7 @@ import Head from "next/head";
 import { useRouter } from 'next/router';
 import AppLayout from "../../layouts/AppLayout";
 import Image from "next/image";
-import clipThree from "./assets/how-to-build-wealth.jpg"
+import clipThree from "./assets/retirement-planning-in-Lagos.png"
 import Link from "next/link";
 import { indexBlogs } from "../../constants";
 
@@ -89,17 +89,17 @@ const BlogPV = () => {
                     />
                      <Link
                       href={{
-                        pathname: `/blog/financialEducation/[slug]`,
-                        query: { slug: 'how-to-build-wealth-in-nigeria' },
+                        pathname: `/blog/retirementPlanning/[slug]`,
+                        query: { slug: 'retirement-planning' },
                       }}
                       
                     >
                     <h1 className="font-extrabold pt-0.5 text-[#F08420] text-xl font-raleway cursor-pointer">
-                    How to Build Wealth in Nigeria: The Role of Emotional Intelligence and Direct Debit
+                    Retirement Planning in Lagos
                     </h1>
                     </Link>
                     <p className="leading-[1.2rem] font-normal font-inter text-[#212020] text-[1rem]">       
-                    As we move through the dynamic landscape of Nigeria's financial market, from January 2025 to February 2025 as seen in Figure 1 below, which implies stable GDP growth at 3.84%, inflation significantly declined from 34.8% in December 2024 to 24.5% which is still high, exchange rate stabilization at ₦1,520/$, high interest rates at 27.5%, stock market NGX ASI is up 6.1% YTD, real estate and commodities remains a long-term hedge against inflation and strong foreign reserves is at $40B; One thing remains constant: the importance of income in wealth creation. Our income is the chief source of wealth creation, and how we manage it determines our financial future.
+                    Retirement planning in Lagos is more important than ever. With Nigeria's fast-paced lifestyle, rising cost of living, and limited social security structures, having a solid retirement plan is not just a luxury, it’s a necessity. Whether you’re in your 20s, 30s, or approaching 60, the decisions you make today will shape the quality of life you’ll enjoy in your retirement years.
                     </p>  
                 </div>
 
