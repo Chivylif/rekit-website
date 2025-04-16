@@ -83,9 +83,9 @@ const RetirementPlanning = () => {
                     Today, we are going to explore how Lagos residents can plan for retirement effectively, what tools and strategies to use, and the key steps to take to achieve financial independence in your later years. Let's go! 😁
                     </p> 
 
-                    <h3 className="pb-3 text-[#212020] text-l  font-raleway">
+                    <h1 className="font-extrabold pt-0.5 text-[#000] text-xl font-raleway">
                     Why Retirement Planning Matters in Lagos
-                    </h3>
+                    </h1>       
                     <div className="flex justify-center content-center pb-4 ">
                     <Image
                     src={clipThree}
@@ -101,10 +101,12 @@ const RetirementPlanning = () => {
                     As we all know, Lagos is Nigeria’s commercial hub, home to millions of workers, entrepreneurs, and retirees. However, many residents underestimate the financial demands of retirement. Factors like healthcare costs, inflation, housing, and daily expenses can quickly drain your savings if you’re not properly prepared.
                     </p>
 
-                    <h3 className="pb-3 text-[#212020] text-l  font-raleway">
-                    Here’s why you must plan for retirement early:
-                    </h3>
 
+
+                    <h1 className="font-extrabold pt-0.5 text-[#000] text-xl font-raleway">
+                    Here’s why you must plan for retirement early:
+                    </h1>   
+                  
                     <p className="leading-[1.2rem] px-[2rem] pb-4 font-normal font-inter text-[#212020] text-justify text-[1rem]">       
                     - No guaranteed pension or social welfare unless you’re a government worker.
                     </p> 
@@ -121,9 +123,10 @@ const RetirementPlanning = () => {
                     - Your ability to earn may decrease with age.
                     </p> 
 
-                    <h3 className="pb-3 text-[#212020] text-l  font-raleway">
+
+                    <h1 className="font-extrabold pt-0.5 text-[#000] text-xl font-raleway">
                     When Should You Start Retirement Planning?
-                    </h3>
+                    </h1>
 
                     <p className="leading-[1.2rem] pb-4 font-normal font-inter text-[#212020] text-[1rem]">                          
                     The short answer: as soon as you start earning. The earlier you begin, the more you can take advantage of compound interest, investment growth, and peace of mind.
@@ -149,13 +152,13 @@ const RetirementPlanning = () => {
                     | 50s-60s | Finalize retirement budget, secure housing, estate planning
                     </p>
 
-                    <h3 className="pb-3 text-[#212020] text-l  font-raleway">
-                    Steps to Plan a Successful Retirement in Lagos
-                    </h3>
 
-                    <h3 className="pb-3 text-[#212020] text-l  font-raleway">
+                    <h1 className="font-extrabold pt-0.5 text-[#000] text-xl font-raleway">
+                    Steps to Plan a Successful Retirement in Lagos
+                    </h1>
+                    <h1 className="font-extrabold pt-0.5 text-[#000] text-xl font-raleway">
                     1. Set Clear Retirement Goals
-                    </h3>
+                    </h1>
 
 
                     <p className="leading-[1.2rem] px-[2rem] pb-4 font-normal font-inter text-[#212020] text-justify text-[1rem]">       
@@ -178,9 +181,9 @@ const RetirementPlanning = () => {
                     Knowing the kind of retirement you want helps you estimate how much you’ll need.
                     </p>  
 
-                    <h3 className="pb-3 text-[#212020] text-l  font-raleway">
+                   <h1 className="font-extrabold pt-0.5 text-[#000] text-xl font-raleway">
                     2. Calculate Your Retirement Needs
-                    </h3>
+                    </h1>
 
                     <p className="leading-[1.2rem] pb-4 font-normal font-inter text-[#212020] text-[1rem]">       
                     Use the "80% Rule"—you’ll likely need 70–80% of your current income during retirement. Factor in:
@@ -210,9 +213,9 @@ const RetirementPlanning = () => {
                     Use online retirement calculators or speak to a <a href="www.rekitonline.com"> financial advisor </a>  in Lagos to get accurate figures.
                     </p>  
 
-                    <h3 className="pb-3 text-[#212020] text-l  font-raleway">
+                    <h1 className="font-extrabold pt-0.5 text-[#000] text-xl font-raleway">
                     3. Create a Retirement Budget
-                    </h3>
+                    </h1>
 
                     <p className="leading-[1.2rem] pb-4 font-normal font-inter text-[#212020] text-[1rem]">       
                     A realistic monthly budget is the backbone of a secure retirement plan. Estimate your future expenses based on your desired lifestyle. Allocate funds for:
@@ -230,9 +233,9 @@ const RetirementPlanning = () => {
                     - Contingencies and inflation
                     </p> 
 
-                    <h3 className="pb-3 text-[#212020] text-l  font-raleway">
+                    <h1 className="font-extrabold pt-0.5 text-[#000] text-xl font-raleway">
                     4. Open a Pension Account (RSA)
-                    </h3>
+                    </h1>
 
                     <p className="leading-[1.2rem] pb-4 font-normal font-inter text-[#212020] text-[1rem]">       
                     Under the Nigerian Contributory Pension Scheme (CPS), both employees and employers contribute a percentage of monthly earnings into a Retirement Savings Account (RSA) managed by a Pension Fund Administrator (PFA).
@@ -246,9 +249,9 @@ const RetirementPlanning = () => {
                     ✅ Tip: Choose a reliable PFA and monitor your statement regularly.
                     </p>  
 
-                    <h3 className="pb-3 text-[#212020] text-l  font-raleway">
+                    <h1 className="font-extrabold pt-0.5 text-[#000] text-xl font-raleway">
                     5. Diversify Your Investment Portfolio
-                    </h3>
+                    </h1>
 
                     <p className="leading-[1.2rem] pb-4 font-normal font-inter text-[#212020] text-[1rem]">       
                     Don’t rely solely on pension contributions. Diversify your income sources with:
@@ -270,9 +273,9 @@ const RetirementPlanning = () => {
                     ⚠️ Always research and consult a <a href="www.rekitonline.com"> licensed investment advisor </a> in Lagos before investing.
                     </p>  
 
-                    <h3 className="pb-3 text-[#212020] text-l  font-raleway">
+                    <h1 className="font-extrabold pt-0.5 text-[#000] text-xl font-raleway">
                     6. Eliminate Debt Before Retirement
-                    </h3>
+                    </h1>
 
                     <p className="leading-[1.2rem] pb-4 font-normal font-inter text-[#212020] text-[1rem]">       
                     Carrying loans, or mortgage payments into retirement can ruin your financial freedom.
@@ -290,9 +293,9 @@ const RetirementPlanning = () => {
                     - Avoid new debt in your 50s and 60s.
                     </p> 
 
-                    <h3 className="pb-3 text-[#212020] text-l  font-raleway">
+                    <h1 className="font-extrabold pt-0.5 text-[#000] text-xl font-raleway">
                     7. Consider Healthcare and Insurance
-                    </h3>
+                    </h1>
 
                     <p className="leading-[1.2rem] pb-4 font-normal font-inter text-[#212020] text-[1rem]">       
                     Healthcare costs in Nigeria can be overwhelming. Plan ahead with:
@@ -310,9 +313,9 @@ const RetirementPlanning = () => {
                     - Emergency Fund: Always keep 6–12 months of living expenses aside.
                     </p> 
 
-                    <h3 className="pb-3 text-[#212020] text-l  font-raleway">
+                    <h1 className="font-extrabold pt-0.5 text-[#000] text-xl font-raleway">
                     8. Secure Your Living Situation
-                    </h3>
+                    </h1>
 
                     <p className="leading-[1.2rem] pb-4 font-normal font-inter text-[#212020] text-[1rem]">       
                     If you don’t own a home, consider acquiring property before retirement. Options include:
@@ -330,9 +333,10 @@ const RetirementPlanning = () => {
                     - Retiring outside the city for cheaper cost of living (e.g., Ogun, Oyo)
                     </p> 
 
-                    <h3 className="pb-3 text-[#212020] text-l  font-raleway">
+
+                    <h1 className="font-extrabold pt-0.5 text-[#000] text-xl font-raleway">
                     9. Plan for Passive Income
-                    </h3>
+                    </h1>
 
                     <p className="leading-[1.2rem] pb-4 font-normal font-inter text-[#212020] text-[1rem]">       
                     Develop income streams that don’t require daily work:
@@ -354,9 +358,10 @@ const RetirementPlanning = () => {
                     - Dividend-paying investments
                     </p> 
 
-                    <h3 className="pb-3 text-[#212020] text-l  font-raleway">
+
+                    <h1 className="font-extrabold pt-0.5 text-[#000] text-xl font-raleway">
                     10. Estate Planning and Wills
-                    </h3>
+                    </h1>
 
                     <p className="leading-[1.2rem] pb-4 font-normal font-inter text-[#212020] text-[1rem]">       
                     Ensure your assets are passed on smoothly with:
@@ -378,9 +383,10 @@ const RetirementPlanning = () => {
                     ✅ Tip: Consult a Lagos-based estate lawyer or a financial advisor for guidance.
                     </p>  
 
-                    <h3 className="pb-3 text-[#212020] text-l  font-raleway">
+
+                    <h1 className="font-extrabold pt-0.5 text-[#000] text-xl font-raleway">
                     Top Retirement Mistakes to Avoid 
-                    </h3>
+                    </h1>
  
 
                     <p className="leading-[1.2rem] px-[2rem] pb-4 font-normal font-inter text-[#212020] text-justify text-[1rem]">       
@@ -403,9 +409,11 @@ const RetirementPlanning = () => {
                     - Failing to track your expenses and investments
                     </p> 
 
-                    <h3 className="pb-3 text-[#212020] text-l  font-raleway">
+ 
+                    <h1 className="font-extrabold pt-0.5 text-[#000] text-xl font-raleway">
                     Get Professional Help
-                    </h3>
+                    </h1>
+ 
 
                     <p className="leading-[1.2rem] pb-4 font-normal font-inter text-[#212020] text-[1rem]">       
                     Several licensed financial advisors and pension consultants in Lagos such as REKIT Financial Advisors, can guide you through a personalized retirement plan. Look for advisors who have:
