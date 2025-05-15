@@ -4,7 +4,7 @@ import Head from "next/head";
 import { useRouter } from 'next/router';
 import AppLayout from "../../layouts/AppLayout";
 import Image from "next/image";
-import clipThree from "./assets/retirement-planning-in-Lagos.png"
+import clipThree from "./assets/legit-financial-advisor.png"
 import Link from "next/link";
 import { indexBlogs } from "../../constants";
 
@@ -89,17 +89,17 @@ const BlogPV = () => {
                     />
                      <Link
                       href={{
-                        pathname: `/blog/retirementPlanning/[slug]`,
-                        query: { slug: 'retirement-planning' },
+                        pathname: `/blog/financialEducation/[slug]`,
+                        query: { slug: 'how-do-i-know-my-financial-advisor-is-legit' },
                       }}
                       
                     >
                     <h1 className="font-extrabold pt-0.5 text-[#F08420] text-xl font-raleway cursor-pointer">
-                    Retirement Planning in Lagos
+                    How Do I Know If My Financial Advisor Is Legitimate?
                     </h1>
                     </Link>
                     <p className="leading-[1.2rem] font-normal font-inter text-[#212020] text-[1rem]">       
-                    Retirement planning in Lagos is more important than ever. With Nigeria's fast-paced lifestyle, rising cost of living, and limited social security structures, having a solid retirement plan is not just a luxury, it’s a necessity. Whether you’re in your 20s, 30s, or approaching 60, the decisions you make today will shape the quality of life you’ll enjoy in your retirement years.
+                    It’s gotten to a point in your life when you need to take better financial decision and you reckon the first step is talking to a financial advisor but with so many so-called experts out there and countless stories of people being misled, you’re probably wondering:
                     </p>  
                 </div>
 
