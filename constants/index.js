@@ -296,6 +296,15 @@ export const serviceCardItems = [
 ];
 export const blogPosts = [
   {
+    title: "How Do I Know If My Financial Advisor Is Legitimate?",
+    author: "Rekit Financial Advisory",
+    updatedDate: "May 14, 2025 at 14:30:00 AM",
+    description: "Financial Education",
+    category: "financialEducation",
+    slug: "how-do-i-know-my-financial-advisor-is-legit",
+    avatar: '/assets/legit-financial-advisor.png'
+  },
+  {
     title: "Retirement Planning in Lagos",
     author: "Rekit Financial Advisory",
     updatedDate: "April 10, 2025 at 10:58:00 AM",
