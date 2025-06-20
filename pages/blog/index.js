@@ -4,7 +4,7 @@ import Head from "next/head";
 import { useRouter } from 'next/router';
 import AppLayout from "../../layouts/AppLayout";
 import Image from "next/image";
-import clipThree from "./assets/legit-financial-advisor.png"
+import clipThree from "./assets/nysc-investing.png"
 import Link from "next/link";
 import { indexBlogs } from "../../constants";
 
@@ -89,17 +89,17 @@ const BlogPV = () => {
                     />
                      <Link
                       href={{
-                        pathname: `/blog/financialEducation/[slug]`,
-                        query: { slug: 'how-do-i-know-my-financial-advisor-is-legit' },
+                        pathname: `/blog/personalFinance/[slug]`,
+                        query: { slug: 'nysc-investing' },
                       }}
                       
                     >
                     <h1 className="font-extrabold pt-0.5 text-[#F08420] text-xl font-raleway cursor-pointer">
-                    How Do I Know If My Financial Advisor Is Legitimate?
+                    How to Start Investing as an NYSC Corper in Nigeria
                     </h1>
                     </Link>
                     <p className="leading-[1.2rem] font-normal font-inter text-[#212020] text-[1rem]">       
-                    It’s gotten to a point in your life when you need to take better financial decision and you reckon the first step is talking to a financial advisor but with so many so-called experts out there and countless stories of people being misled, you’re probably wondering:
+                    Serving your country is honorable but preparing for your financial future is more important.
                     </p>  
                 </div>
 

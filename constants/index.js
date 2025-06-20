@@ -295,6 +295,15 @@ export const serviceCardItems = [
   },
 ];
 export const blogPosts = [
+   {
+    title: "How to Start Investing as an NYSC Corper in Nigeria",
+    author: "Rekit Financial Advisory",
+    updatedDate: "June 18, 2025 at 10:00:00 AM",
+    description: "Personal Education",
+    category: "personalFinance",
+    slug: "nysc-investing",
+    avatar: '/assets/nysc-investing.png'
+  },
   {
     title: "How Do I Know If My Financial Advisor Is Legitimate?",
     author: "Rekit Financial Advisory",
