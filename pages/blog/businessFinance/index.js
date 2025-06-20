@@ -28,11 +28,6 @@ const BusinessFinance = () => {
   const [blogPost, setBlogPost] = useState(null)
   const router = useRouter()
 
- 
-  
-
-
-
   return (
     <div>
       <Head>
