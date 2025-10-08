@@ -53,7 +53,7 @@ const AboutUs = (props) => {
             "Car Purchase ",
             "Education Financial Planning",
             "Vacation Planning ",
-            "Retirement Planning, etc",
+            "Retirement Planning, etc.",
           ]}
         />
       );
