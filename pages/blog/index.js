@@ -4,7 +4,7 @@ import Head from "next/head";
 import { useRouter } from 'next/router';
 import AppLayout from "../../layouts/AppLayout";
 import Image from "next/image";
-import clipThree from "./assets/nysc-investing.png"
+import clipThree from "./assets/young-nigerian-investing.png"
 import Link from "next/link";
 import { indexBlogs } from "../../constants";
 
@@ -84,22 +84,22 @@ const BlogPV = () => {
                     src={clipThree}
                     alt="img"
                     style={{
-                        borderRadius: "10px",
+                        borderRadius: "10px"
                         }}
                     />
                      <Link
                       href={{
-                        pathname: `/blog/personalFinance/[slug]`,
-                        query: { slug: 'nysc-investing' },
+                        pathname: `/blog/financialEducation/[slug]`,
+                        query: { slug: 'how-can-young-Nigerians-build-wealth-early' },
                       }}
                       
                     >
                     <h1 className="font-extrabold pt-0.5 text-[#F08420] text-xl font-raleway cursor-pointer">
-                    How to Start Investing as an NYSC Corper in Nigeria
+                    Investing for the Next Generation: How Young Nigerians Can Build Wealth Early
                     </h1>
                     </Link>
                     <p className="leading-[1.2rem] font-normal font-inter text-[#212020] text-[1rem]">       
-                    Serving your country is honorable but preparing for your financial future is more important.
+                   Recently, in Nigeria, everyone seems to have become financially aware. Graduates and undergraduates are searching daily for new ways to make money; even secondary school students want to get jobs during the holidays. Young Nigerians are becoming more interested in social media discussions about money; how to make it and more importantly, how to make it increase. Thanks to fintech apps that make saving easier.
                     </p>  
                 </div>
 
