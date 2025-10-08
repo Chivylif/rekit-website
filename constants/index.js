@@ -296,6 +296,15 @@ export const serviceCardItems = [
 ];
 export const blogPosts = [
    {
+    title: "Investing for the Next Generation: How Young Nigerians Can Build Wealth Early",
+    author: "Rekit Financial Advisory",
+    updatedDate: "June 18, 2025 at 10:00:00 AM",
+    description: "Financial Education",
+    category: "financialEducation",
+    slug: "how-can-young-Nigerians-build-wealth-early",
+    avatar: '/assets/early-investing.png'
+  },
+   {
     title: "How to Start Investing as an NYSC Corper in Nigeria",
     author: "Rekit Financial Advisory",
     updatedDate: "June 18, 2025 at 10:00:00 AM",
