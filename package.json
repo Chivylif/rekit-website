@@ -13,6 +13,7 @@
     "pm2-restart": "pm2 restart 0"
   },
   "dependencies": {
+    "@ant-design/icons": "^4.7.0",
     "@ant-design/icons-svg": "^4.4.2",
     "@emotion/react": "^11.10.6",
     "@emotion/styled": "^11.10.6",
