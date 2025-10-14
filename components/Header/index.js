@@ -212,6 +212,7 @@ const Header = () => {
               flexDirection: "column",
               justifyContent: "flex-end",
               border: "none",
+              alignItems: "center", 
               marginRight: "1rem",
               background: "transparent",
             }}

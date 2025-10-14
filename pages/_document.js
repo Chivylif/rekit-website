@@ -1,4 +1,7 @@
 import { Html, Head, Main, NextScript } from 'next/document'
+// import 'antd/dist/antd.css'; // for Ant Design v4
+// import '../styles/globals.css'; // your Tailwind or custom styles
+
 // import { GA_TRACKING_ID } from '../lib/gtag' 
 
 export default function Document() {

@@ -14,11 +14,6 @@ const InvestmentInsights = () => {
   const [blogPost, setBlogPost] = useState(null)
   const router = useRouter()
 
- 
-  
-
-
-
   return (
     <div>
       <Head>
@@ -69,7 +64,7 @@ const InvestmentInsights = () => {
                           query: { slug: slug },
                         }}
                         key={idx}
-                        legacyBehavior>
+                        >
                         <div 
                         className="mx-auto px-[1rem] w-5/6 pb-[3rem] cursor-pointer"
                          >
@@ -80,6 +75,10 @@ const InvestmentInsights = () => {
                             height={150}
                             style={{
                                 borderRadius: "10px",
+                                objectFit: "cover", // Add this line
+                                width: "200px",     // Ensure width is fixed
+                                height: "150px",    // Ensure height is fixed
+                                overflow: "hidden", 
                                 
                                 }}
                             />

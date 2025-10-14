@@ -50,8 +50,7 @@ const BlogHeader = () => {
       label: (
         <Link href="/wealth-planning" >
           <div
-            rel="noopener noreferrer"className="text-[#050504] text-base font-inter"
-            
+            rel="noopener noreferrer"className="text-[#050504] text-base font-inter"            
           >
             Wealth Planning
           </div>
@@ -202,6 +201,7 @@ const BlogHeader = () => {
               justifyContent: "flex-end",
               border: "none",
               marginRight: "1rem",
+              alignItems: "center", 
               background: "transparent",
             }}
             mode="inline"

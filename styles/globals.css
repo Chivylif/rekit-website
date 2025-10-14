@@ -5,6 +5,8 @@
 @tailwind components;
 @tailwind utilities;
 
+
+
 html,
 body {
   padding: 0;
@@ -56,6 +58,22 @@ header {
 .ant-menu-title-content > a:active {
   color: #f08420 !important;
 }
+/* ...existing code... */
+
+.ant-menu-horizontal > .ant-menu-item,
+.ant-menu-horizontal > .ant-menu-submenu {
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+  align-items: center !important;
+  display: flex !important;
+}
+.ant-menu-horizontal > .ant-menu-item:first-child,
+.ant-menu-horizontal > .ant-menu-submenu:first-child {
+  margin-left: 0 !important;
+  padding-left: 0 !important;
+}
+
+/* ...existing code... */
 .mylink {
   color: #232323 !important;
 }
