@@ -20,8 +20,10 @@
 }
 /* top would be 116px  */
 .link {
-    color: #232323important;
+    color: #232323 !important;
 }
 .link:hover {
-color: #F08420important;
+color: #F08420 !important;
 }
+
+

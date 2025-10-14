@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import React from 'react'
 import rekitdesktoplogo from '../../assets/images/rekitdesktoplogo.png'
+//import rekitdesktoplogo from '../../assets/images/rekitdesktoplogo.png'
 import rekitfooterlogo from '../../assets/images/footerlogo.png'
 
 export const RekitFooterLogo = () => {

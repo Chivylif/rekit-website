@@ -50,8 +50,7 @@ const BlogHeader = () => {
       label: (
         <Link href="/wealth-planning" >
           <div
-            rel="noopener noreferrer"className="text-[#050504] text-base font-inter"
-            
+            rel="noopener noreferrer"className="text-[#050504] text-base font-inter"            
           >
             Wealth Planning
           </div>
@@ -202,6 +201,7 @@ const BlogHeader = () => {
               justifyContent: "flex-end",
               border: "none",
               marginRight: "1rem",
+              alignItems: "center", 
               background: "transparent",
             }}
             mode="inline"
@@ -224,14 +224,14 @@ const BlogHeader = () => {
       {/* <section className={styles.black}></section> */}
       <section className={styles.head_content}>
         <div className="hidden lg:block ">
-          <Link href="/" legacyBehavior>
+          <Link href="/" >
      
               <RekitLogo />
          
           </Link>
         </div>
         <div href="/" className="lg:hidden -ml-8">
-          <Link href="/" legacyBehavior>
+          <Link href="/" >
            
               <RekitSmallLogo />
            

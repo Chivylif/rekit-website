@@ -114,10 +114,10 @@ const Footer = () => {
                     <List.Item.Meta
                       title={
                         <div className="w-[230px] text-[#0A0B0B] capitalize">
-                          <Link href={item.href} legacyBehavior>
-                            <a className="decoration-none text-[#0A0B0B] hover:text-[#FF912B]">
+                          <Link href={item.href} >
+                            <div className="decoration-none text-[#0A0B0B] hover:text-[#FF912B]">
                               {item.title}
-                            </a>
+                            </div>
                           </Link>
                         </div>
                       }
@@ -134,9 +134,9 @@ const Footer = () => {
                       title={
                         <div className="w-[230px] text-[#0A0B0B]  capitalize">
                           <Link href={item.href} legacyBehavior>
-                            <a className="decoration-none text-[#0A0B0B] hover:text-[#FF912B]">
+                            <div className="decoration-none text-[#0A0B0B] hover:text-[#FF912B]">
                               {item.title}
-                            </a>
+                            </div>
                           </Link>
                         </div>
                       }

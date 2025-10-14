@@ -157,6 +157,10 @@ const BlogPV = () => {
                         height={150}
                         style={{
                             borderRadius: "10px",
+                            objectFit: "cover", // Add this line
+                            width: "200px",     // Ensure width is fixed
+                            height: "150px",    // Ensure height is fixed
+                            overflow: "hidden", 
                             
                             }}
                         />  

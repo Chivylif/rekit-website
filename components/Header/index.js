@@ -20,12 +20,12 @@ const Header = () => {
         {
           label: (
             <Link href="/investment-solutions" legacyBehavior>
-              <a
+              <div
                 rel="noopener noreferrer"
                 className="font-bold mylink font-inter"
               >
                 Investment Solution
-              </a>
+              </div>
             </Link>
           ),
           key: "investmentsolution",
@@ -33,12 +33,12 @@ const Header = () => {
         {
           label: (
             <Link href="/goal-based-investing" legacyBehavior>
-              <a
+              <div
                 rel="noopener noreferrer"
                 className="font-bold mylink font-inter"
               >
                 Goal Based Investing
-              </a>
+              </div>
             </Link>
           ),
           key: "goalbasedinvesting",
@@ -48,12 +48,12 @@ const Header = () => {
     {
       label: (
         <Link href="/wealth-planning" legacyBehavior>
-          <a
+          <div
             rel="noopener noreferrer"
             className="text-[#050504] text-base font-inter"
           >
             Wealth Planning
-          </a>
+          </div>
         </Link>
       ),
       key: "wealthplanning",
@@ -62,12 +62,12 @@ const Header = () => {
     {
       label: (
         <Link href="/our-edge" className="active:text-[#F08420]" legacyBehavior>
-          <a
+          <div
             id="ouredge"
             className="text-[#050504] text-base font-inter active:text-[#F08420]"
           >
             Our Edge
-          </a>
+          </div>
         </Link>
       ),
       key: "ouredge",
@@ -75,12 +75,12 @@ const Header = () => {
         {
           label: (
             <Link href="/our-board" legacyBehavior>
-              <a
+              <div
                 rel="noopener noreferrer"
                 className="font-bold mylink font-inter"
               >
                 Our Board
-              </a>
+              </div>
             </Link>
           ),
           key: "ouboard",
@@ -88,12 +88,12 @@ const Header = () => {
         {
           label: (
             <Link href="/our-mgmt-team" legacyBehavior>
-              <a
+              <div
                 rel="noopener noreferrer"
                 className="font-bold mylink font-inter"
               >
                 Our Management team
-              </a>
+              </div>
             </Link>
           ),
           key: "ourmanagementteam",
@@ -103,12 +103,12 @@ const Header = () => {
     {
       label: (
         <Link href="/about-us" className="active:text-[#F08420]" legacyBehavior>
-          <a
+          <div
             id="about"
             className="text-[#050504] text-base font-inter active:text-[#F08420]"
           >
             About us
-          </a>
+          </div>
         </Link>
       ),
       key: "aboutus",
@@ -116,12 +116,12 @@ const Header = () => {
         {
           label: (
             <Link href="/about-us#whoweare" legacyBehavior>
-              <a
+              <div
                 rel="noopener noreferrer"
                 className="font-bold mylink font-inter"
               >
                 Who we are
-              </a>
+              </div>
             </Link>
           ),
           key: "whoweare",
@@ -129,12 +129,12 @@ const Header = () => {
         {
           label: (
             <Link href="/about-us#whoweserve" legacyBehavior>
-              <a
+              <div
                 rel="noopener noreferrer"
                 className="font-bold mylink font-inter"
               >
                 Who we serve
-              </a>
+              </div>
             </Link>
           ),
           key: "whoweserve",
@@ -144,12 +144,12 @@ const Header = () => {
     {
       label: (
         <Link href="/blog" legacyBehavior>
-          <a
+          <div
             rel="noopener noreferrer"
             className="text-[#050504] text-base font-inter"
           >
             Blog
-          </a>
+          </div>
         </Link>
       ),
       key: "blog",
@@ -157,12 +157,12 @@ const Header = () => {
     {
       label: (
         <Link href="/glossary" legacyBehavior>
-          <a
+          <div
             rel="noopener noreferrer"
             className="text-[#050504] text-base font-inter"
           >
             Resources
-          </a>
+          </div>
         </Link>
       ),
       key: "glossary",
@@ -170,12 +170,12 @@ const Header = () => {
     {
       label: (
         <Link href="/contact-us" legacyBehavior>
-          <a
+          <div
             rel="noopener noreferrer"
             className="text-[#050504] text-base font-inter"
           >
             Contact Us
-          </a>
+          </div>
         </Link>
       ),
       key: "contactus",
@@ -212,6 +212,7 @@ const Header = () => {
               flexDirection: "column",
               justifyContent: "flex-end",
               border: "none",
+              alignItems: "center", 
               marginRight: "1rem",
               background: "transparent",
             }}

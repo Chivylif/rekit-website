@@ -362,7 +362,6 @@ export default function Home() {
                 src={babe}
                 width={800}
                 height={700}
-                quality={70}
                 layout="responsive"
               />
             </div>
@@ -378,7 +377,6 @@ export default function Home() {
                 src={babe2}
                 width={800}
                 height={700}
-                quality={70}
                 className="image"
               />
             </div>
@@ -394,7 +392,6 @@ export default function Home() {
                 src={babe3}
                 width={800}
                 height={700}
-                quality={70}
               />
             </div>
             <Metaa
@@ -409,7 +406,6 @@ export default function Home() {
                 src={babe4}
                 width={800}
                 height={700}
-                quality={70}
               />
             </div>
             <Metaa
@@ -424,7 +420,6 @@ export default function Home() {
                 src={babe5}
                 width={800}
                 height={700}
-                quality={70}
                 className="image"
               />
             </div>
