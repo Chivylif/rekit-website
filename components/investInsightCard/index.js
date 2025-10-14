@@ -51,8 +51,6 @@ const InsightCard = (props) => {
         <p className="leading-[.8rem] font-normal font-inter text-[#212020] text-[.6rem]">
           {description}
         </p>
-        {/* <Link href={articleLink}>
-        <a> */}
         <Button
           shape="round"
           size="small"

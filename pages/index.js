@@ -66,7 +66,7 @@ const SliderBox = ({ title, desc, btnText }) => {
 
       <div>
         <Link href="/coming-soon">
-          <a>
+    
             <Button
               text={btnText}
               shape="round"
@@ -79,7 +79,7 @@ const SliderBox = ({ title, desc, btnText }) => {
               }}
               onClick={navigate}
             />
-          </a>
+       
         </Link>
       </div>
     </div>

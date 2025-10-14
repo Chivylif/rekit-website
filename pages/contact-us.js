@@ -68,7 +68,7 @@ const ContactUs = () => {
         <h1 className="text-[#2A2F33] font-bold text-[28px] mt-6 font-inter">Success</h1>
         </div>
         <div className=" font-bold text-[20px] mt-5 font-raleway">
-          <Link href="/" className="text-[#DE9A5B]">
+          <Link href="/" className="text-[#DE9A5B]" legacyBehavior>
             <a className="text-[#DE9A5B] hover:text-[#DE9A5B] hover:underline">
           Click here to return home
             </a>

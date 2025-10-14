@@ -33,7 +33,7 @@ const WealthPlanningBanner = ({ image, headline, desc }) => {
         </p>
 
         <Link href="/goal-based-investing#calulator">
-          <a>
+     
             <Button
               // style={btnStyles}
               text="Wealth Calculator"
@@ -46,7 +46,7 @@ const WealthPlanningBanner = ({ image, headline, desc }) => {
                 fontSize: ".8rem",
               }}
             />
-          </a>
+      
         </Link>
         {/* <Button
           text={btnText}

@@ -63,12 +63,10 @@ const ServicesWrapper = (props) => {
             <CardItem data={data} />
           </div>
           <div className="my-8 flex flex-col space-y-5 lg:space-y-0 lg:flex-row lg:space-x-4">
-            {/* <Link href="https://app.rekitonline.com"><a>
-                    <Button onClick={btnOneClick} text={btnOneText} shape="round" size="large" className="mybtn highlighted_btn uppercase"/>
-                    </a></Link> */}
+  
             {btnTwoText === "learn more" ? (
               <Link href={link}>
-                <a>
+             
                   <Button
                     onClick={btnTwoClick}
                     text={btnTwoText}
@@ -76,11 +74,11 @@ const ServicesWrapper = (props) => {
                     size="large"
                     className="mybtn normal_btn uppercase"
                   />
-                </a>
+              
               </Link>
             ) : (
               <Link href="/goal-based-investing#calulator">
-                <a>
+         
                   <Button
                     onClick={btnTwoClick}
                     text={btnTwoText}
@@ -88,7 +86,7 @@ const ServicesWrapper = (props) => {
                     size="large"
                     className="mybtn normal_btn uppercase"
                   />
-                </a>
+          
               </Link>
             )}
           </div>

@@ -24,9 +24,7 @@ const Card = (props) => {
       <p className="leading-[1.8rem] font-normal font-inter text-[#212020] text-base">
         {description}
       </p>
-      {/* <Link href="https://app.rekitonline.com/"><a>
-              <Button shape="round" size="large" text="get started" className="mybtn highlighted_btn mt-10 font-semibold uppercase"/>
-                </a></Link> */}
+
     </div>
   );
 };

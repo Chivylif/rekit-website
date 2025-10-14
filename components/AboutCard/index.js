@@ -48,16 +48,7 @@ const AboutUsCard = (props) => {
         )}
         {viewButton && (
           <div className="flex gap-x-5">
-            {/* <Link href="https://app.rekitonline.com/">
-            <a>
-              <Button
-                text="get started"
-                shape="round"
-                size="large"
-                className="mybtn highlighted_btn mt-5 uppercase font-semibold"
-              />
-            </a>
-          </Link> */}
+
             <Button
               text="calculate"
               shape="round"

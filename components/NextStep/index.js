@@ -12,7 +12,7 @@ const NextStep = (props) => {
       >
         <h1 className="w-[95%] py-3 text-lg font-bold lg:text-4xl lg:w-[39%] text-center lg:leading-[3rem]" >{title}</h1>
         <Link href={link}>
-          <a>
+  
 
         <Button
         // onClick={onClick}
@@ -21,7 +21,7 @@ const NextStep = (props) => {
         shape="round" 
         className="mybtn highlighted_btn uppercase font-bold text-base" 
         style={{ display: 'flex', fontFamily: 'Inter', justifyConter: 'center', alignItems: 'center', padding: '1rem 1.5rem', height: '50px'}}/>
-        </a>
+  
         </Link>
     </div>
   )

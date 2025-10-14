@@ -1,4 +1,4 @@
-import "antd/dist/antd.css"; // or 'antd/dist/antd.less'
+//import "antd/dist/antd.css"; // or 'antd/dist/antd.less'
 import "../styles/globals.css";
 import { useEffect } from "react";
 import Script from "next/script";

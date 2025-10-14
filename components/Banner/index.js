@@ -32,30 +32,7 @@ const Banner = ({ image, headline, desc }) => {
           {desc}
         </p>
 
-        {/* <Link href="/coming-soon">
-          <a>
-            <Button
-              // style={btnStyles}
-              text="get started"
-              shape="round"
-              size="large"
-              className="mybtn highlighted_btn uppercase font-bold border-0"
-              style={{
-                padding: ".5rem 2rem",
-                minHeight: "3rem",
-                fontSize: ".8rem",
-              }}
-            />
-          </a>
-        </Link> */}
-        {/* <Button
-          text={btnText}
-          shape="round"
-          size="large"
-          className="mybtn highlighted_btn font-bold"
-          style={{padding: '.5rem 2rem', minHeight: '3rem', fontSize: '.8rem'}}
-          onClick={navigate}
-        /> */}
+       
       </div>
     </div>
   );

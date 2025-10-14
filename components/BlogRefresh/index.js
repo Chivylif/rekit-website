@@ -18,8 +18,6 @@ const BlogRefresh = (props) => {
       <h1 className="w-[95%] py-1 text-lg font-bold lg:text-4xl lg:w-[39%] text-center lg:leading-[3rem]">
         {title}
       </h1>
-      {/* <Link href="/contact-us">
-          <a> */}
 
       <Button
         onClick={onClick}

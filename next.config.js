@@ -1,10 +1,21 @@
-/** @type {import('next').NextConfig} */
+// next.config.js
 const nextConfig = {
   reactStrictMode: true,
-  eslint: {
-    // Warning: This allows production builds to successfully complete even if
-    // your project has ESLint errors.
-    ignoreDuringBuilds: true,
+  transpilePackages: [
+    'antd',
+    '@ant-design/icons',
+    '@ant-design/icons-svg',
+    'rc-pagination',
+    'rc-picker',
+    'rc-util',
+  ],
+  webpack(config) {
+    config.resolve.fallback = {
+      ...config.resolve.fallback,
+      fs: false,
+      path: false,
+    };
+    return config;
   },
 };
 

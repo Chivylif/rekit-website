@@ -159,7 +159,7 @@ const BlogPost = () => {
                 </h1>
               </div>
               <div className=" font-bold text-[20px] mt-5 font-raleway">
-                <Link href="/blog" className="text-[#DE9A5B]">
+                <Link href="/blog" className="text-[#DE9A5B]" legacyBehavior>
                   <a className="text-[#DE9A5B] hover:text-[#DE9A5B] hover:underline">
                     Click here to return to Blog
                   </a>
