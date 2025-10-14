@@ -65,7 +65,7 @@ const ServicesWrapper = (props) => {
           <div className="my-8 flex flex-col space-y-5 lg:space-y-0 lg:flex-row lg:space-x-4">
   
             {btnTwoText === "learn more" ? (
-              <Link href={link} legacyBehavior>
+              <Link href={link} >
              
                   <Button
                     onClick={btnTwoClick}

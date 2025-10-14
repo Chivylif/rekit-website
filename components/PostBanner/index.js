@@ -12,8 +12,8 @@ const PostBanner = ({ image, headline, desc }) => {
         <Image
           // src="/assets/images/unsplash-1.jpeg"
           src={image}
-          layout="fill"
-          objectFit="cover"
+          fill
+          style={{ objectFit: "cover" }}
           // style={{
           //   borderRadius: "20px",
           //   }}

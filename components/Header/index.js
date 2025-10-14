@@ -19,26 +19,26 @@ const Header = () => {
       children: [
         {
           label: (
-            <Link href="/investment-solutions" legacyBehavior>
-              <a
+            <Link href="/investment-solutions" >
+              <div
                 rel="noopener noreferrer"
                 className="font-bold mylink font-inter"
               >
                 Investment Solution
-              </a>
+              </div>
             </Link>
           ),
           key: "investmentsolution",
         },
         {
           label: (
-            <Link href="/goal-based-investing" legacyBehavior>
-              <a
+            <Link href="/goal-based-investing" >
+              <div
                 rel="noopener noreferrer"
                 className="font-bold mylink font-inter"
               >
                 Goal Based Investing
-              </a>
+              </div>
             </Link>
           ),
           key: "goalbasedinvesting",
@@ -47,13 +47,13 @@ const Header = () => {
     },
     {
       label: (
-        <Link href="/wealth-planning" legacyBehavior>
-          <a
+        <Link href="/wealth-planning" >
+          <div
             rel="noopener noreferrer"
             className="text-[#050504] text-base font-inter"
           >
             Wealth Planning
-          </a>
+          </div>
         </Link>
       ),
       key: "wealthplanning",
@@ -61,39 +61,39 @@ const Header = () => {
    
     {
       label: (
-        <Link href="/our-edge" className="active:text-[#F08420]" legacyBehavior>
-          <a
+        <Link href="/our-edge" className="active:text-[#F08420]" >
+          <div
             id="ouredge"
             className="text-[#050504] text-base font-inter active:text-[#F08420]"
           >
             Our Edge
-          </a>
+          </div>
         </Link>
       ),
       key: "ouredge",
       children: [
         {
           label: (
-            <Link href="/our-board" legacyBehavior>
-              <a
+            <Link href="/our-board" >
+              <div
                 rel="noopener noreferrer"
                 className="font-bold mylink font-inter"
               >
                 Our Board
-              </a>
+              </div>
             </Link>
           ),
           key: "ouboard",
         },
         {
           label: (
-            <Link href="/our-mgmt-team" legacyBehavior>
-              <a
+            <Link href="/our-mgmt-team" >
+              <div
                 rel="noopener noreferrer"
                 className="font-bold mylink font-inter"
               >
                 Our Management team
-              </a>
+              </div>
             </Link>
           ),
           key: "ourmanagementteam",
@@ -102,39 +102,39 @@ const Header = () => {
     },
     {
       label: (
-        <Link href="/about-us" className="active:text-[#F08420]" legacyBehavior>
-          <a
+        <Link href="/about-us" className="active:text-[#F08420]" >
+          <div
             id="about"
             className="text-[#050504] text-base font-inter active:text-[#F08420]"
           >
             About us
-          </a>
+          </div>
         </Link>
       ),
       key: "aboutus",
       children: [
         {
           label: (
-            <Link href="/about-us#whoweare" legacyBehavior>
-              <a
+            <Link href="/about-us#whoweare" >
+              <div
                 rel="noopener noreferrer"
                 className="font-bold mylink font-inter"
               >
                 Who we are
-              </a>
+              </div>
             </Link>
           ),
           key: "whoweare",
         },
         {
           label: (
-            <Link href="/about-us#whoweserve" legacyBehavior>
-              <a
+            <Link href="/about-us#whoweserve" >
+              <div
                 rel="noopener noreferrer"
                 className="font-bold mylink font-inter"
               >
                 Who we serve
-              </a>
+              </div>
             </Link>
           ),
           key: "whoweserve",
@@ -143,39 +143,39 @@ const Header = () => {
     }, 
     {
       label: (
-        <Link href="/blog" legacyBehavior>
-          <a
+        <Link href="/blog" >
+          <div
             rel="noopener noreferrer"
             className="text-[#050504] text-base font-inter"
           >
             Blog
-          </a>
+          </div>
         </Link>
       ),
       key: "blog",
     },
     {
       label: (
-        <Link href="/glossary" legacyBehavior>
-          <a
+        <Link href="/glossary" >
+          <div
             rel="noopener noreferrer"
             className="text-[#050504] text-base font-inter"
           >
             Resources
-          </a>
+          </div>
         </Link>
       ),
       key: "glossary",
     },
     {
       label: (
-        <Link href="/contact-us" legacyBehavior>
-          <a
+        <Link href="/contact-us" >
+          <div
             rel="noopener noreferrer"
             className="text-[#050504] text-base font-inter"
           >
             Contact Us
-          </a>
+          </div>
         </Link>
       ),
       key: "contactus",
@@ -235,14 +235,14 @@ const Header = () => {
       {/* <section className={styles.black}></section> */}
       <section className={styles.head_content}>
         <div className="hidden lg:block ">
-          <Link href="/" legacyBehavior>
+          <Link href="/" >
         
               <RekitLogo />
          
           </Link>
         </div>
         <div href="/" className="lg:hidden -ml-8">
-          <Link href="/" legacyBehavior>
+          <Link href="/" >
          
               <RekitSmallLogo />
        
