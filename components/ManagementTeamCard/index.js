@@ -38,8 +38,8 @@ const ManagementTeamCard = (props) => {
       <Image
         src={image}
         alt={`the image of ${name}`}
-        height="374px"
-        width="322px"
+        height={374}
+        width={322}
       />
       <h3 className="text-[#F08420] font-raleway font-bold text-[14px] mb-0">
         {name} <span className="uppercase">{cert && `(${cert})`}</span>

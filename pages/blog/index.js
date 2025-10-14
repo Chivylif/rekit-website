@@ -153,8 +153,8 @@ const BlogPV = () => {
                         <Image
                         src={avatar}
                         alt="img"
-                        width={"200px"}
-                        height={"150px"}
+                        width={200}
+                        height={150}
                         style={{
                             borderRadius: "10px",
                             

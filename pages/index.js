@@ -269,8 +269,8 @@ export default function Home() {
               <Image
                 // src="/assets/images/unsplash-1.jpeg"
                 src={homeCarouselOne}
-                layout="fill"
-                objectFit="cover"
+                fill
+                style={{ objectFit: "cover" }}
               />
             </div>
             <SliderBox
@@ -292,8 +292,8 @@ export default function Home() {
               <Image
                 // src="/assets/images/unsplash-1.jpeg"
                 src={homeCarouselFour}
-                layout="fill"
-                objectFit="cover"
+                fill
+                style={{ objectFit: "cover" }}
               />
             </div>
             <SliderBox
@@ -315,8 +315,8 @@ export default function Home() {
               <Image
                 // src="/assets/images/unsplash-1.jpeg"
                 src={homeCarouselSix}
-                layout="fill"
-                objectFit="cover"
+                fill
+                style={{ objectFit: "cover" }}
               />
             </div>
             <SliderBox

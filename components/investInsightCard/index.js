@@ -27,8 +27,8 @@ const InsightCard = (props) => {
           <Image
             src={image}
             alt="img"
-            width="150px"
-            height="150px"
+            width={150}
+            height={150}
             style={{
               borderRadius: "10px",
             }}

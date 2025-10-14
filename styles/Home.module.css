@@ -21,23 +21,25 @@
   align-items: center;
 }
 
-.footer a {
+.footer div {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-grow: 1;
 }
 
-.title a {
+.title div {
   color: #0070f3;
   text-decoration: none;
+  cursor: pointer;
 }
 
-.title a:hover,
-.title a:focus,
-.title a:active {
+.title div:hover,
+.title div:focus,
+.title div:active {
   text-decoration: underline;
 }
+
 
 .title {
   margin: 0;

@@ -20,8 +20,8 @@ const WealthPlanningBanner = ({ image, headline, desc }) => {
         <Image
           // src="/assets/images/unsplash-1.jpeg"
           src={image}
-          layout="fill"
-          objectFit="cover"
+          fill
+          style={{ objectFit: "cover" }}
         />
       </div>
       <div className=" absolute z-10 left-2  lg:left-[6rem] bottom-5 lg:bottom-[10rem] w-11/12 lg:w-5/12 ">

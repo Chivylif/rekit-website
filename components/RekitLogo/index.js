@@ -12,8 +12,8 @@ export const RekitSmallLogo = () => {
   return (
     <Image
       src={rekitdesktoplogo}
-      width="160px"
-      height="60px"
+      width={160}
+      height={60}
       alt="rekit financial advisors limited brand logo" 
       className="lg:hidden"
       />
@@ -23,8 +23,8 @@ const RekitLogo = () => {
   return (
     <Image
       src={rekitdesktoplogo}
-      width="160px"
-      height="60px"
+       width={160}
+      height={60}
       alt="rekit financial advisors limited brand logo"
       className="hidden"
       />
