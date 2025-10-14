@@ -7,15 +7,7 @@ import Link from "next/link";
 const Banner = ({ image, headline, desc }) => {
   return (
     <div className="linear_gradient relative w-full after:absolute after:inset-0 after:mix-blend-multiply after:w-12/12 after:bg-gradient-to-r from-gray-500 to-gray-200">
-      {/* <Image src={image} alt="about rekit web application and website" /> */}
-      {/* <div className="banner-image-container">
-        <Image
-          src={image}
-          layout="fill"
-          alt="about rekit web application and website"
-          className="image"
-        />
-      </div> */}
+
       <div className="pt-2 h-[66.66vw] lg:h-[36.66vw] w-full relative">
         <Image
           // src="/assets/images/unsplash-1.jpeg"

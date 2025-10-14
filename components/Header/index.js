@@ -19,7 +19,7 @@ const Header = () => {
       children: [
         {
           label: (
-            <Link href="/investment-solutions" >
+            <Link href="/investment-solutions" legacyBehavior>
               <div
                 rel="noopener noreferrer"
                 className="font-bold mylink font-inter"
@@ -32,7 +32,7 @@ const Header = () => {
         },
         {
           label: (
-            <Link href="/goal-based-investing" >
+            <Link href="/goal-based-investing" legacyBehavior>
               <div
                 rel="noopener noreferrer"
                 className="font-bold mylink font-inter"
@@ -47,7 +47,7 @@ const Header = () => {
     },
     {
       label: (
-        <Link href="/wealth-planning" >
+        <Link href="/wealth-planning" legacyBehavior>
           <div
             rel="noopener noreferrer"
             className="text-[#050504] text-base font-inter"
@@ -61,7 +61,7 @@ const Header = () => {
    
     {
       label: (
-        <Link href="/our-edge" className="active:text-[#F08420]" >
+        <Link href="/our-edge" className="active:text-[#F08420]" legacyBehavior>
           <div
             id="ouredge"
             className="text-[#050504] text-base font-inter active:text-[#F08420]"
@@ -74,7 +74,7 @@ const Header = () => {
       children: [
         {
           label: (
-            <Link href="/our-board" >
+            <Link href="/our-board" legacyBehavior>
               <div
                 rel="noopener noreferrer"
                 className="font-bold mylink font-inter"
@@ -87,7 +87,7 @@ const Header = () => {
         },
         {
           label: (
-            <Link href="/our-mgmt-team" >
+            <Link href="/our-mgmt-team" legacyBehavior>
               <div
                 rel="noopener noreferrer"
                 className="font-bold mylink font-inter"
@@ -102,7 +102,7 @@ const Header = () => {
     },
     {
       label: (
-        <Link href="/about-us" className="active:text-[#F08420]" >
+        <Link href="/about-us" className="active:text-[#F08420]" legacyBehavior>
           <div
             id="about"
             className="text-[#050504] text-base font-inter active:text-[#F08420]"
@@ -115,7 +115,7 @@ const Header = () => {
       children: [
         {
           label: (
-            <Link href="/about-us#whoweare" >
+            <Link href="/about-us#whoweare" legacyBehavior>
               <div
                 rel="noopener noreferrer"
                 className="font-bold mylink font-inter"
@@ -128,7 +128,7 @@ const Header = () => {
         },
         {
           label: (
-            <Link href="/about-us#whoweserve" >
+            <Link href="/about-us#whoweserve" legacyBehavior>
               <div
                 rel="noopener noreferrer"
                 className="font-bold mylink font-inter"
@@ -143,7 +143,7 @@ const Header = () => {
     }, 
     {
       label: (
-        <Link href="/blog" >
+        <Link href="/blog" legacyBehavior>
           <div
             rel="noopener noreferrer"
             className="text-[#050504] text-base font-inter"
@@ -156,7 +156,7 @@ const Header = () => {
     },
     {
       label: (
-        <Link href="/glossary" >
+        <Link href="/glossary" legacyBehavior>
           <div
             rel="noopener noreferrer"
             className="text-[#050504] text-base font-inter"
@@ -169,7 +169,7 @@ const Header = () => {
     },
     {
       label: (
-        <Link href="/contact-us" >
+        <Link href="/contact-us" legacyBehavior>
           <div
             rel="noopener noreferrer"
             className="text-[#050504] text-base font-inter"
@@ -235,14 +235,14 @@ const Header = () => {
       {/* <section className={styles.black}></section> */}
       <section className={styles.head_content}>
         <div className="hidden lg:block ">
-          <Link href="/" >
+          <Link href="/" legacyBehavior>
         
               <RekitLogo />
          
           </Link>
         </div>
         <div href="/" className="lg:hidden -ml-8">
-          <Link href="/" >
+          <Link href="/" legacyBehavior>
          
               <RekitSmallLogo />
        
