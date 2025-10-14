@@ -15,6 +15,9 @@ const Button = (props) => {
     onClick,
   } = props;
   return (
+    // <button style={style}
+    // onClick={onClick}
+    // className={className}>{text}</button>
     <AntButton
       onClick={onClick}
       shape={shape}
@@ -28,9 +31,6 @@ const Button = (props) => {
     >
       {text}
     </AntButton>
-    // <button style={style}
-    // onClick={onClick}
-    // className={className}>{text}</button>
   );
 };
 

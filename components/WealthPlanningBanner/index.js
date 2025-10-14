@@ -32,7 +32,7 @@ const WealthPlanningBanner = ({ image, headline, desc }) => {
           {desc}
         </p>
 
-        <Link href="/goal-based-investing#calulator">
+        <Link href="/goal-based-investing#calulator" legacyBehavior>
      
             <Button
               // style={btnStyles}

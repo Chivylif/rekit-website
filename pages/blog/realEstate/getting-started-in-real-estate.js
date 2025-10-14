@@ -60,8 +60,6 @@ const RealEstate = () => {
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-
-
       <AppLayout>
         <div className="flex-col justify-center content-center mx-50 lg:flex-col bg-white md:flex-col pb-10">
         <h1 className="flex justify-center content-center pt-5 text-[#F08420] font-raleway font-bold text-[1.5rem] lg:mx-10 lg:text-[2.5rem] uppercase">
@@ -210,14 +208,14 @@ const RealEstate = () => {
             <div className="grid lg:w-4/5 sm:grid-cols-2 lg:grid-cols-4 mx-auto mb-1 lg:mb-1 justify-items-center lg:justify-items-center px-[4rem] ">
             
                 {relatedPosts.map(({ title, author, category, slug }, idx) => {
-                    return(
+                    return (
                       <Link
-                      href={{
-                        pathname: `/${category}/[slug]`,
-                        query: { slug: slug },
-                      }}
-                      key={idx} 
-                    >
+                        href={{
+                          pathname: `/${category}/[slug]`,
+                          query: { slug: slug },
+                        }}
+                        key={idx}
+                        legacyBehavior>
                         <div 
                         className="mx-auto px-[1rem] w-full pb-[3rem] cursor-pointer"
                          >
@@ -228,8 +226,8 @@ const RealEstate = () => {
                         {title}
                         </p>  
                     </div>
-                    </Link>
-                    )
+                      </Link>
+                    );
                 })}
             </div>
         </div>

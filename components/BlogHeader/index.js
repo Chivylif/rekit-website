@@ -221,14 +221,14 @@ const BlogHeader = () => {
       {/* <section className={styles.black}></section> */}
       <section className={styles.head_content}>
         <div className="hidden lg:block ">
-          <Link href="/">
+          <Link href="/" legacyBehavior>
      
               <RekitLogo />
          
           </Link>
         </div>
         <div href="/" className="lg:hidden -ml-8">
-          <Link href="/">
+          <Link href="/" legacyBehavior>
            
               <RekitSmallLogo />
            

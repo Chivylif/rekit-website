@@ -63,9 +63,8 @@ const SliderBox = ({ title, desc, btnText }) => {
       <div className="open-sans w-full lg:w-[756] font-inter font-semibold text-white text-xs lg:text-lg leading-[1.2rem] lg:leading-[1.8rem] drop-shadow-2xl shadow-black">
         {desc}
       </div>
-
       <div>
-        <Link href="/coming-soon">
+        <Link href="/coming-soon" legacyBehavior>
     
             <Button
               text={btnText}
