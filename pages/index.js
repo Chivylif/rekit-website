@@ -37,6 +37,7 @@ import ServiceWrapperContainer from "../containers/ServiceWrapperContainer";
 import { useRouter } from "next/router";
 import Link from "next/link";
 import { getTheAmountOfTimes } from "../helpers";
+import { SvgIcon } from "../components/SVG/SvgIcon";
 
 const contentStyle = {
   // height: "543px",
@@ -50,11 +51,9 @@ const contentStyle = {
   zIndex: 1,
 };
 
-const SliderBox = ({ title, desc, btnText }) => {
+const SliderBox = ({ title, desc }) => {
   const route = useRouter();
-  const navigate = () => {
-    route.push("/coming-soon");
-  };
+  
   return (
     <div className="left-[10px] right-[10px] lg:right-0 bottom-16 lg:bottom-32 w-11/12 lg:w-5/12 gap-y-4 lg:gap-y-8 flex flex-col lg:left-[50px] text-left z-30 absolute">
       <div className="uppercase leading-[1.8rem] lg:leading-[3.8rem] w-[684] font-semibold text-white font-raleway text-lg lg:text-3xl drop-shadow-2xl shadow-black">
@@ -63,23 +62,25 @@ const SliderBox = ({ title, desc, btnText }) => {
       <div className="open-sans w-full lg:w-[756] font-inter font-semibold text-white text-xs lg:text-lg leading-[1.2rem] lg:leading-[1.8rem] drop-shadow-2xl shadow-black">
         {desc}
       </div>
-      <div>
-        <Link href="/coming-soon" legacyBehavior>
-    
-            <Button
-              text={btnText}
-              shape="round"
-              size="large"
-              className="mybtn highlighted_btn font-bold"
-              style={{
-                padding: ".5rem 2rem",
-                minHeight: "3rem",
-                fontSize: ".8rem",
-              }}
-              onClick={navigate}
-            />
-       
-        </Link>
+      <div className="flex space-x-4 mt-2">
+        <SvgIcon
+          name="playStoreBadgeMini"
+          className="cursor-pointer h-8 lg:h-10 transition-transform hover:scale-105"
+          onClick={() =>
+            route.push(
+              "https://play.google.com/store/apps/details?id=com.myinvestapp.myinvestmobileapp&pcampaignid=web_share"
+            )
+          }
+        />
+        <SvgIcon
+          name="appleStoreBadgeMini"
+          className="cursor-pointer h-8 lg:h-10 transition-transform hover:scale-105"
+          onClick={() =>
+            route.push(
+              "https://apps.apple.com/ng/app/myinvest-by-rekit/id6745278524"
+            )
+          }
+        />
       </div>
     </div>
   );
@@ -134,6 +135,7 @@ const Metaa = ({ title, desc }) => {
 //   )
 // }
 export default function Home() {
+  const router = useRouter();
   const [isOpenHome, setIsOpenHome] = useState(false);
 
   useEffect(() => {
@@ -275,7 +277,6 @@ export default function Home() {
             </div>
             <SliderBox
               title="Rekit Financial Advisors"
-              btnText="GET STARTED"
               desc="Get the support you need to build a diversified investment portfolio and meet your financial goals"
             />
           </div>
@@ -298,7 +299,6 @@ export default function Home() {
             </div>
             <SliderBox
               title="Working to meet your investment goals"
-              btnText="GET STARTED"
               desc="Understand global and domestic financial markets through the help of our trusted financial advisors"
             />
           </div>
@@ -321,7 +321,6 @@ export default function Home() {
             </div>
             <SliderBox
               title="Wealth of experience"
-              btnText="GET STARTED"
               desc="Our client-centric approach provides you with the best-fit solutions and environment to achieve your financial goals"
             />
           </div>
