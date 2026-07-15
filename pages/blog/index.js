@@ -6,7 +6,6 @@ import AppLayout from "../../layouts/AppLayout";
 import Image from "next/image";
 import clipThree from "./assets/young-nigerian-investing.png"
 import Link from "next/link";
-import { indexBlogs } from "../../constants";
 
 const BlogPV = () => {
 
@@ -32,10 +31,23 @@ const BlogPV = () => {
 
   
 
+  const [blogs, setBlogs] = useState([]);
+  const [loading, setLoading] = useState(true);
 
-  
-
-  
+  useEffect(() => {
+    fetch("https://api.myinvest.africa/rekit/api/v2/blogs/search")
+      .then((res) => res.json())
+      .then((data) => {
+        if (data.status && data.data && data.data.content) {
+          setBlogs(data.data.content);
+        }
+        setLoading(false);
+      })
+      .catch((err) => {
+        console.error("Error fetching blogs:", err);
+        setLoading(false);
+      });
+  }, []);
   return (
     <div>
       <Head>
@@ -89,12 +101,13 @@ const BlogPV = () => {
                        href={{
                          pathname: `/blog/financialEducation/[slug]`,
                          query: { slug: 'how-can-young-Nigerians-build-wealth-early' },
-                       }}
-                       legacyBehavior>
-                    <h1 className="font-extrabold pt-0.5 text-[#F08420] text-xl font-raleway cursor-pointer">
-                    Investing for the Next Generation: How Young Nigerians Can Build Wealth Early
-                    </h1>
-                    </Link>
+                       }}>
+                       {/* @next-codemod-error This Link previously used the now removed `legacyBehavior` prop, and has a child that might not be an anchor. The codemod bailed out of lifting the child props to the Link. Check that the child component does not render an anchor, and potentially move the props manually to Link. */
+                       }
+                       <h1 className="font-extrabold pt-0.5 text-[#F08420] text-xl font-raleway cursor-pointer">
+                       Investing for the Next Generation: How Young Nigerians Can Build Wealth Early
+                       </h1>
+                     </Link>
                     <p className="leading-[1.2rem] font-normal font-inter text-[#212020] text-[1rem]">       
                    Recently, in Nigeria, everyone seems to have become financially aware. Graduates and undergraduates are searching daily for new ways to make money; even secondary school students want to get jobs during the holidays. Young Nigerians are becoming more interested in social media discussions about money; how to make it and more importantly, how to make it increase. Thanks to fintech apps that make saving easier.
                     </p>  
@@ -115,8 +128,9 @@ const BlogPV = () => {
                               href={{
                                 pathname: '/blog/[slug]',
                                 query: { slug: category },
-                              }}
-                              legacyBehavior>
+                              }}>
+                              {/* @next-codemod-error This Link previously used the now removed `legacyBehavior` prop, and has a child that might not be an anchor. The codemod bailed out of lifting the child props to the Link. Check that the child component does not render an anchor, and potentially move the props manually to Link. */
+                              }
                               <div
                                className="grid lg:grid-cols-1 mb-1 lg:mb-1"
                              >
@@ -124,7 +138,7 @@ const BlogPV = () => {
                                 {name}
                                  </h1>
                                  </div>
-                           </Link>
+                            </Link>
                           </div>
                         );
                     })}
@@ -135,20 +149,27 @@ const BlogPV = () => {
                 <h1 className="font-extrabold pt-1 pb-8 text-3xl font-raleway"> Recent Posts </h1>
             </div>
             <div className="grid lg:grid-cols-4 mb-1 lg:mb-1 justify-items-center px-[3rem] pt-[1rem]">
-                {indexBlogs.map(({ slug, category, description, title, avatar }, idx) => {
+                {loading ? (
+                    <p className="text-center w-full col-span-4 py-10">Loading blogs...</p>
+                ) : blogs.length === 0 ? (
+                    <p className="text-center w-full col-span-4 py-10">No recent posts available.</p>
+                ) : (
+                  blogs.slice(0, 4).map(({ id, category, title, coverImage, images }, idx) => {
+                    const avatar = coverImage || (images && images.length > 0 ? images[0] : "/assets/images/rekitdesktoplogo.png");
                     return (
                       <Link
                         href={{
-                          pathname: `/blog/${category}/[slug]`,
-                          query: { slug: slug },
+                          pathname: `/blog/post/[id]`,
+                          query: { id: id },
                         }}
-                        key={idx}
-                        legacyBehavior>
+                        key={idx}>
+                        {/* @next-codemod-error This Link previously used the now removed `legacyBehavior` prop, and has a child that might not be an anchor. The codemod bailed out of lifting the child props to the Link. Check that the child component does not render an anchor, and potentially move the props manually to Link. */
+                        }
                         <div
                         ref={postRef} 
                         className="mx-auto px-[1rem] w-5/6 pb-[3rem] cursor-pointer" 
                         data-index={idx}
-                        data-category={slug}                               
+                        data-category={category}                               
                         >  
                         <Image
                         src={avatar}
@@ -164,21 +185,24 @@ const BlogPV = () => {
                             
                             }}
                         />  
-                          <h1 id={idx}  className="font-extrabold pt-0.5 text-[#F08420] text-l font-raleway">
-                          {description}
-                          </h1>
-                          <p id={idx}  className="leading-[1.0rem] font-normal font-inter text-[#212020] text-[0.8rem]">       
+                          <h1 id={`title-${idx}`}  className="font-extrabold pt-0.5 text-[#F08420] text-l font-raleway line-clamp-2">
                           {title}
+                          </h1>
+                          <p id={`cat-${idx}`}  className="leading-[1.0rem] font-normal font-inter text-[#212020] text-[0.8rem] mt-2">       
+                          {category}
                           </p> 
                     </div>
                       </Link>
                     );
-                })}
+                })
+                )}
             </div>
             <div className="flex justify-center content-center pb-1">
-            <Link href={{pathname: `/blog/view-more`}} legacyBehavior>
-                <h2 className="font-extrabold pt-1 pb-1 text-xl font-raleway cursor-pointer"> View More </h2>
-             </Link>
+            <Link href={{pathname: `/blog/view-more`}}>
+              {/* @next-codemod-error This Link previously used the now removed `legacyBehavior` prop, and has a child that might not be an anchor. The codemod bailed out of lifting the child props to the Link. Check that the child component does not render an anchor, and potentially move the props manually to Link. */
+              }
+              <h2 className="font-extrabold pt-1 pb-1 text-xl font-raleway cursor-pointer"> View More </h2>
+            </Link>
             </div>
         </div>
       </AppLayout>

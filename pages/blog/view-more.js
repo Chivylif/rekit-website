@@ -1,18 +1,30 @@
 import * as React from "react";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Head from "next/head";
 import { useRouter } from 'next/router'
 import AppLayout from "../../layouts/AppLayout";
-;
 import Image from "next/image";
 import Link from "next/link";
 
-import { blogPosts } from "../../constants";
-
 const InvestmentInsights = () => {
-  const relatedPosts = blogPosts.filter(p=> p.category.toLowerCase() == "investmentInsights".toLowerCase());
-  const [blogPost, setBlogPost] = useState(null)
-  const router = useRouter()
+  const [blogs, setBlogs] = useState([]);
+  const [loading, setLoading] = useState(true);
+  const router = useRouter();
+
+  useEffect(() => {
+    fetch("https://api.myinvest.africa/rekit/api/v2/blogs/search")
+      .then((res) => res.json())
+      .then((data) => {
+        if (data.status && data.data && data.data.content) {
+          setBlogs(data.data.content);
+        }
+        setLoading(false);
+      })
+      .catch((err) => {
+        console.error("Error fetching blogs:", err);
+        setLoading(false);
+      });
+  }, []);
 
   return (
     <div>
@@ -56,12 +68,18 @@ const InvestmentInsights = () => {
           REKIT BLOG
         </h1>
             <div className="grid lg:w-4/5 sm:grid-cols-2 lg:grid-cols-4 mx-auto mb-1 lg:mb-1 justify-items-center lg:justify-items-center px-[4rem] ">
-                {blogPosts.map(({ title, author, category, slug, avatar }, idx) => {
+                {loading ? (
+                    <p className="text-center w-full col-span-4 py-10">Loading blogs...</p>
+                ) : blogs.length === 0 ? (
+                    <p className="text-center w-full col-span-4 py-10">No posts available.</p>
+                ) : (
+                  blogs.map(({ id, title, category, coverImage, images }, idx) => {
+                    const avatar = coverImage || (images && images.length > 0 ? images[0] : "/assets/images/rekitdesktoplogo.png");
                     return (
                       <Link
                         href={{
-                          pathname: `/blog/${category}/[slug]`,
-                          query: { slug: slug },
+                          pathname: `/blog/post/[id]`,
+                          query: { id: id },
                         }}
                         key={idx}
                         >
@@ -83,15 +101,16 @@ const InvestmentInsights = () => {
                                 }}
                             />
                         {/* <h1 className="font-extrabold pt-0.5 text-[#F08420] text-l font-raleway">
-                        {author}
+                        {category}
                         </h1> */}
-                        <p className="leading-[1.0rem] font-normal font-inter text-[#212020] text-[0.8rem]">       
+                        <p className="leading-[1.0rem] font-normal font-inter text-[#212020] text-[0.8rem] line-clamp-2 mt-2">       
                         {title}
                         </p>  
                     </div>
                       </Link>
                     );
-                })}
+                })
+                )}
             </div>
         </div>
       </AppLayout>

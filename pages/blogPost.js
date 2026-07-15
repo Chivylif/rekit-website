@@ -141,7 +141,6 @@ const BlogPost = () => {
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-
       <AppLayout>
         {
           <Modal
@@ -159,10 +158,10 @@ const BlogPost = () => {
                 </h1>
               </div>
               <div className=" font-bold text-[20px] mt-5 font-raleway">
-                <Link href="/blog" className="text-[#DE9A5B]" legacyBehavior>
-                  <a className="text-[#DE9A5B] hover:text-[#DE9A5B] hover:underline">
+                <Link href="/blog" className="text-[#DE9A5B]">
+                  
                     Click here to return to Blog
-                  </a>
+                  
                 </Link>
               </div>
             </div>

@@ -19,7 +19,9 @@ const Header = () => {
       children: [
         {
           label: (
-            <Link href="/investment-solutions" legacyBehavior>
+            <Link href="/investment-solutions">
+              {/* @next-codemod-error This Link previously used the now removed `legacyBehavior` prop, and has a child that might not be an anchor. The codemod bailed out of lifting the child props to the Link. Check that the child component does not render an anchor, and potentially move the props manually to Link. */
+              }
               <div
                 rel="noopener noreferrer"
                 className="font-bold mylink font-inter"
@@ -32,7 +34,9 @@ const Header = () => {
         },
         {
           label: (
-            <Link href="/goal-based-investing" legacyBehavior>
+            <Link href="/goal-based-investing">
+              {/* @next-codemod-error This Link previously used the now removed `legacyBehavior` prop, and has a child that might not be an anchor. The codemod bailed out of lifting the child props to the Link. Check that the child component does not render an anchor, and potentially move the props manually to Link. */
+              }
               <div
                 rel="noopener noreferrer"
                 className="font-bold mylink font-inter"
@@ -47,7 +51,9 @@ const Header = () => {
     },
     {
       label: (
-        <Link href="/wealth-planning" legacyBehavior>
+        <Link href="/wealth-planning">
+          {/* @next-codemod-error This Link previously used the now removed `legacyBehavior` prop, and has a child that might not be an anchor. The codemod bailed out of lifting the child props to the Link. Check that the child component does not render an anchor, and potentially move the props manually to Link. */
+          }
           <div
             rel="noopener noreferrer"
             className="text-[#050504] text-base font-inter"
@@ -61,7 +67,9 @@ const Header = () => {
    
     {
       label: (
-        <Link href="/our-edge" className="active:text-[#F08420]" legacyBehavior>
+        <Link href="/our-edge" className="active:text-[#F08420]">
+          {/* @next-codemod-error This Link previously used the now removed `legacyBehavior` prop, and has a child that might not be an anchor. The codemod bailed out of lifting the child props to the Link. Check that the child component does not render an anchor, and potentially move the props manually to Link. */
+          }
           <div
             id="ouredge"
             className="text-[#050504] text-base font-inter active:text-[#F08420]"
@@ -74,7 +82,9 @@ const Header = () => {
       children: [
         {
           label: (
-            <Link href="/our-board" legacyBehavior>
+            <Link href="/our-board">
+              {/* @next-codemod-error This Link previously used the now removed `legacyBehavior` prop, and has a child that might not be an anchor. The codemod bailed out of lifting the child props to the Link. Check that the child component does not render an anchor, and potentially move the props manually to Link. */
+              }
               <div
                 rel="noopener noreferrer"
                 className="font-bold mylink font-inter"
@@ -87,7 +97,9 @@ const Header = () => {
         },
         {
           label: (
-            <Link href="/our-mgmt-team" legacyBehavior>
+            <Link href="/our-mgmt-team">
+              {/* @next-codemod-error This Link previously used the now removed `legacyBehavior` prop, and has a child that might not be an anchor. The codemod bailed out of lifting the child props to the Link. Check that the child component does not render an anchor, and potentially move the props manually to Link. */
+              }
               <div
                 rel="noopener noreferrer"
                 className="font-bold mylink font-inter"
@@ -102,7 +114,9 @@ const Header = () => {
     },
     {
       label: (
-        <Link href="/about-us" className="active:text-[#F08420]" legacyBehavior>
+        <Link href="/about-us" className="active:text-[#F08420]">
+          {/* @next-codemod-error This Link previously used the now removed `legacyBehavior` prop, and has a child that might not be an anchor. The codemod bailed out of lifting the child props to the Link. Check that the child component does not render an anchor, and potentially move the props manually to Link. */
+          }
           <div
             id="about"
             className="text-[#050504] text-base font-inter active:text-[#F08420]"
@@ -115,7 +129,9 @@ const Header = () => {
       children: [
         {
           label: (
-            <Link href="/about-us#whoweare" legacyBehavior>
+            <Link href="/about-us#whoweare">
+              {/* @next-codemod-error This Link previously used the now removed `legacyBehavior` prop, and has a child that might not be an anchor. The codemod bailed out of lifting the child props to the Link. Check that the child component does not render an anchor, and potentially move the props manually to Link. */
+              }
               <div
                 rel="noopener noreferrer"
                 className="font-bold mylink font-inter"
@@ -128,7 +144,9 @@ const Header = () => {
         },
         {
           label: (
-            <Link href="/about-us#whoweserve" legacyBehavior>
+            <Link href="/about-us#whoweserve">
+              {/* @next-codemod-error This Link previously used the now removed `legacyBehavior` prop, and has a child that might not be an anchor. The codemod bailed out of lifting the child props to the Link. Check that the child component does not render an anchor, and potentially move the props manually to Link. */
+              }
               <div
                 rel="noopener noreferrer"
                 className="font-bold mylink font-inter"
@@ -143,7 +161,9 @@ const Header = () => {
     }, 
     {
       label: (
-        <Link href="/blog" legacyBehavior>
+        <Link href="/blog">
+          {/* @next-codemod-error This Link previously used the now removed `legacyBehavior` prop, and has a child that might not be an anchor. The codemod bailed out of lifting the child props to the Link. Check that the child component does not render an anchor, and potentially move the props manually to Link. */
+          }
           <div
             rel="noopener noreferrer"
             className="text-[#050504] text-base font-inter"
@@ -156,7 +176,9 @@ const Header = () => {
     },
     {
       label: (
-        <Link href="/glossary" legacyBehavior>
+        <Link href="/glossary">
+          {/* @next-codemod-error This Link previously used the now removed `legacyBehavior` prop, and has a child that might not be an anchor. The codemod bailed out of lifting the child props to the Link. Check that the child component does not render an anchor, and potentially move the props manually to Link. */
+          }
           <div
             rel="noopener noreferrer"
             className="text-[#050504] text-base font-inter"
@@ -169,7 +191,9 @@ const Header = () => {
     },
     {
       label: (
-        <Link href="/contact-us" legacyBehavior>
+        <Link href="/contact-us">
+          {/* @next-codemod-error This Link previously used the now removed `legacyBehavior` prop, and has a child that might not be an anchor. The codemod bailed out of lifting the child props to the Link. Check that the child component does not render an anchor, and potentially move the props manually to Link. */
+          }
           <div
             rel="noopener noreferrer"
             className="text-[#050504] text-base font-inter"
@@ -236,17 +260,17 @@ const Header = () => {
       {/* <section className={styles.black}></section> */}
       <section className={styles.head_content}>
         <div className="hidden lg:block ">
-          <Link href="/" legacyBehavior>
-        
-              <RekitLogo />
-         
+          <Link href="/">
+            {/* @next-codemod-error This Link previously used the now removed `legacyBehavior` prop, and has a child that might not be an anchor. The codemod bailed out of lifting the child props to the Link. Check that the child component does not render an anchor, and potentially move the props manually to Link. */
+            }
+            <RekitLogo />
           </Link>
         </div>
         <div href="/" className="lg:hidden -ml-8">
-          <Link href="/" legacyBehavior>
-         
-              <RekitSmallLogo />
-       
+          <Link href="/">
+            {/* @next-codemod-error This Link previously used the now removed `legacyBehavior` prop, and has a child that might not be an anchor. The codemod bailed out of lifting the child props to the Link. Check that the child component does not render an anchor, and potentially move the props manually to Link. */
+            }
+            <RekitSmallLogo />
           </Link>
         </div>
         <div
