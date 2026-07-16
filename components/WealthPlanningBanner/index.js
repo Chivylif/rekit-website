@@ -32,21 +32,21 @@ const WealthPlanningBanner = ({ image, headline, desc }) => {
           {desc}
         </p>
 
-        <Link href="/goal-based-investing#calulator" legacyBehavior>
-     
-            <Button
-              // style={btnStyles}
-              text="Wealth Calculator"
-              shape="round"
-              size="large"
-              className="mybtn highlighted_btn uppercase font-bold border-0"
-              style={{
-                padding: ".5rem 2rem",
-                minHeight: "3rem",
-                fontSize: ".8rem",
-              }}
-            />
-      
+        <Link href="/goal-based-investing#calulator">
+          {/* @next-codemod-error This Link previously used the now removed `legacyBehavior` prop, and has a child that might not be an anchor. The codemod bailed out of lifting the child props to the Link. Check that the child component does not render an anchor, and potentially move the props manually to Link. */
+          }
+          <Button
+            // style={btnStyles}
+            text="Wealth Calculator"
+            shape="round"
+            size="large"
+            className="mybtn highlighted_btn uppercase font-bold border-0"
+            style={{
+              padding: ".5rem 2rem",
+              minHeight: "3rem",
+              fontSize: ".8rem",
+            }}
+          />
         </Link>
         {/* <Button
           text={btnText}

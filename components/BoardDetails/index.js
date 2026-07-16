@@ -6,7 +6,6 @@ const up = <svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http
 
 const BoardDetails = (props) => {
     const { left, displayDetails, showDetails, step, about=['asdf;lkj'] } = props
-    console.log('left is ' + left);
     const myleft = step === 1 ? 'before:left-100' : step === 2 ? 'before:left-200' : step === 3 ? 'before:left-300' : 'before:left-400'
   return (
     <div>

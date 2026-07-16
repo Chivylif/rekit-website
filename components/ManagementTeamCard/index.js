@@ -32,7 +32,6 @@ const ManagementTeamCard = (props) => {
     switchStep(step);
     showDetails();
   };
-  console.log("showStep", showStep);
   return (
     <div>
       <Image

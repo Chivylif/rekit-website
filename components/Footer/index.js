@@ -133,7 +133,9 @@ const Footer = () => {
                     <List.Item.Meta
                       title={
                         <div className="w-[230px] text-[#0A0B0B]  capitalize">
-                          <Link href={item.href} legacyBehavior>
+                          <Link href={item.href}>
+                            {/* @next-codemod-error This Link previously used the now removed `legacyBehavior` prop, and has a child that might not be an anchor. The codemod bailed out of lifting the child props to the Link. Check that the child component does not render an anchor, and potentially move the props manually to Link. */
+                            }
                             <div className="decoration-none text-[#0A0B0B] hover:text-[#FF912B]">
                               {item.title}
                             </div>

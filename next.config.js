@@ -18,6 +18,10 @@ const nextConfig = {
     };
     return config;
   },
+  turbopack: {},
+  experimental: {
+    optimizePackageImports: ['antd', '@mui/material', 'react-icons', '@ant-design/icons'],
+  },
 };
 
 module.exports = nextConfig;

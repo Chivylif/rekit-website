@@ -65,28 +65,28 @@ const ServicesWrapper = (props) => {
           <div className="my-8 flex flex-col space-y-5 lg:space-y-0 lg:flex-row lg:space-x-4">
   
             {btnTwoText === "learn more" ? (
-              <Link href={link} legacyBehavior>
-             
-                  <Button
-                    onClick={btnTwoClick}
-                    text={btnTwoText}
-                    shape="round"
-                    size="large"
-                    className="mybtn normal_btn uppercase"
-                  />
-              
+              <Link href={link}>
+                {/* @next-codemod-error This Link previously used the now removed `legacyBehavior` prop, and has a child that might not be an anchor. The codemod bailed out of lifting the child props to the Link. Check that the child component does not render an anchor, and potentially move the props manually to Link. */
+                }
+                <Button
+                  onClick={btnTwoClick}
+                  text={btnTwoText}
+                  shape="round"
+                  size="large"
+                  className="mybtn normal_btn uppercase"
+                />
               </Link>
             ) : (
-              <Link href="/goal-based-investing#calulator" legacyBehavior>
-         
-                  <Button
-                    onClick={btnTwoClick}
-                    text={btnTwoText}
-                    shape="round"
-                    size="large"
-                    className="mybtn normal_btn uppercase"
-                  />
-          
+              <Link href="/goal-based-investing#calulator">
+                {/* @next-codemod-error This Link previously used the now removed `legacyBehavior` prop, and has a child that might not be an anchor. The codemod bailed out of lifting the child props to the Link. Check that the child component does not render an anchor, and potentially move the props manually to Link. */
+                }
+                <Button
+                  onClick={btnTwoClick}
+                  text={btnTwoText}
+                  shape="round"
+                  size="large"
+                  className="mybtn normal_btn uppercase"
+                />
               </Link>
             )}
           </div>

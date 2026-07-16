@@ -146,7 +146,7 @@ export default function Home() {
     <div>
       <Head>
         <title>Rekit Financial Advisors Limited</title>
-        <meta charset="UTF-8" />
+        <meta charSet="UTF-8" />
         <meta
           name="description"
           content="Rekit Financial Advisors An Investment advisory company that delivers complementary and personalized, solutions to individuals and corporate organizations."
@@ -361,7 +361,7 @@ export default function Home() {
                 src={babe}
                 width={800}
                 height={700}
-                layout="responsive"
+                style={{ width: '100%', height: 'auto' }}
               />
             </div>
             <Metaa
