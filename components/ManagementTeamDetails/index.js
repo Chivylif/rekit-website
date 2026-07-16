@@ -23,7 +23,6 @@ const ManagementTeamDetails = (props) => {
     step,
     about = ["asdf;lkj"],
   } = props;
-  console.log("left is " + left);
   const myleft =
     step === 1
       ? "before:left-100"

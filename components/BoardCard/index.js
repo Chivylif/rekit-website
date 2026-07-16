@@ -32,7 +32,6 @@ const BoardCard = (props) => {
     switchStep(step);
     showDetails();
   }
-  console.log("showStep", showStep);
   return (
     <div>
       <Image src={image} alt={`the image of ${name}`} />
